@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#dde2ea">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/syncInfo"
+            android:layout_above="@+id/emailText"
+            android:layout_alignLeft="@+id/emailText"
+            android:layout_alignStart="@+id/emailText"
+            android:layout_alignRight="@+id/emailText"
+            android:layout_alignEnd="@+id/emailText"
+            android:gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:text="." />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/emailText"
+            android:layout_above="@+id/syncImage"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/email" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/syncImage"
+            android:src="@drawable/sync"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/backup"
+            android:id="@+id/backupButton"
+            android:layout_below="@+id/syncImage"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/restore"
+            android:id="@+id/restoreButton"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/multiplayer_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:padding="15dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <com.blackstar.math4brain.TextViewUD
+                        android:id="@+id/p1b4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/bt"
+                        android:gravity="center"
+                        android:textSize="30dp" />
+
+                    <com.blackstar.math4brain.TextViewUD
+                        android:id="@+id/p1b3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bt"
+                        android:gravity="center"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <com.blackstar.math4brain.TextViewUD
+                        android:id="@+id/p1b2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bt"
+                        android:gravity="center"
+                        android:textSize="30dp" />
+
+                    <com.blackstar.math4brain.TextViewUD
+                        android:id="@+id/p1b1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bt"
+                        android:gravity="center"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:indeterminate="false"
+                    android:padding="10dp"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/progress_blue_reverse" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <com.blackstar.math4brain.TextViewUD
+                        android:id="@+id/textViewP1Equation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="X + y ="
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="35dp" />
+                </LinearLayout>
+
+                <com.blackstar.math4brain.TextViewUD
+                    android:id="@+id/textViewP1Score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewBlock1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/grey_bg"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:padding="15dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewP2Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/score"
+                android:typeface="normal" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/textViewP2Equation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="X + y ="
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="35dp" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_red" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/p2b1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt"
+                    android:gravity="center"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/p2b2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt"
+                    android:gravity="center"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/p2b3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt"
+                    android:gravity="center"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/p2b4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt"
+                    android:gravity="center"
+                    android:textSize="30dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewBlock2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/grey_bg"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</LinearLayout>

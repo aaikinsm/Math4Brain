@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, MathMentorActivity!</string>
+    <string name="app_name">Kokotoa (De)</string>
+    <string name="filename">m4bfile</string>
+    <string name="crash_toast_text">Ooooops ! Es tut uns leid! Es gab ein Problem, aber ein Bericht zu meinem Entwickler geschickt worden, um das Problem zu beheben!</string>
+    <string name="feedback">Kennen Sie diese App so weit zu genießen? Bitte fühlen Sie sich frei, einen Kommentar oder einen Vorschlag zu verlassen. Ihr reaktion wird geschätzt dank</string>
+    <string name="multiplayer_feedback">Haben Sie Multiplayer-Modus ausprobiert? Bitte fühlen Sie sich frei, einen Kommentar oder einen Vorschlag zu verlassen. Ihr reaktion wird geschätzt dank</string>
+    <string name="view_free_offers">Kostenlose Angebote anzeigen</string>
+    <string name="collected">Gesammelt</string>
+    <string name="total">Gesamt</string>
+    <string name="close">Schließen</string>
+    <string name="total_points">Gesamtpoints</string>
+    <string name="you_are">Sie sind</string>
+    <string name="pts_away_from_unlock">Points weg von Entriegeln Kokotoa PRO </string>
+    <string name="unable_to_get_pts">Unfähig, points vom Server abrufen.</string>
+    <string name="you_just_earned">Sie haben gerade verdient</string>
+    <string name="get_pro_version">Holen Sie sich die Pro-Version</string>
+    <string name="personalize">Personalisieren</string>
+    <string name="user_profiles">Benutzer Profile</string>
+    <string name="difficulty">Schwere</string>
+    <string name="browse">blättern</string>
+    <string name="save">Speichern</string>
+    <string name="eqn_set_to_default">Gleichung Typ wurde geändert, um die Standard</string>
+    <string name="game_settings">Spieleinstellungen</string>
+    <string name="current">derzeitig</string>
+    <string name="select_user_profile">Wählen Sie Benutzerprofil</string>
+    <string name="level">Niveau</string>
+    <string name="completed_equations">Abgeschlossen Gleichungen</string>
+    <string name="number_of_inc_alwd">Anzahl der Fehler erlaubt</string>
+    <string name="time_is_up">Zeit ist um</string>
+    <string name="score">Wertung</string>
+    <string name="try_again">versuchen Sie es erneut</string>
+    <string name="complete">vollständig</string>
+    <string name="next">fortsetzen</string>
+    <string name="too_many_mistakes">Zu viele Fehler</string>
+    <string name="not_enough_points">Sie haben nicht genug points haben</string>
+    <string name="you_need_a_min_of">Sie benötigen ein Minimum an</string>
+    <string name="points_to_proceed">points, um fortzufahren</string>
+    <string name="you_currently_have">Sie haben derzeit</string>
+    <string name="points">points</string>
+    <string name="you_can_earn_more">Sie können mehr points in Minuten Laufmodus verdienen</string>
+    <string name="ok">in Ordnung</string>
+    <string name="eqn_with_no_inc_alwd">Gleichungen ohne Fehler erlaubt</string>
+    <string name="eqn_with_max_of">Gleichungen mit maximal</string>
+    <string name="incorrects_allowed">Fehler erlaubt</string>
+    <string name="you_have_to_complete">Sie haben zu vervollständigen</string>
+    <string name="you_have">Sie haben</string>
+    <string name="secs_to_complete_lvl">Sekunden, um dieses Level zu beenden</string>
+    <string name="start">START</string>
+    <string name="press_start_to_begin">Start drücken, um Start</string>
+    <string name="player1">Spieler 1</string>
+    <string name="player2">Spieler 2</string>
+    <string name="enter">eingeben</string>
+    <string name="refresh">nachladen</string>
+    <string name="no_internet_connection">Keine Internetverbindung verfügbar</string>
+    <string name="your_id_is">Ihre ID ist</string>
+    <string name="enter_opponent_id">"Geben Sie Ihre Gegner ID"</string>
+    <string name="you_win">Sie gewinnen!</string>
+    <string name="you_lose">Sie verlierens</string>
+    <string name="play_again">Nochmal spielen</string>
+    <string name="connected">verbunden</string>
+    <string name="waiting_for_opponent">warten auf Gegner</string>
+    <string name="waiting">warten</string>
+    <string name="vs">Vs</string>
+    <string name="disconnected">getrennt</string>
+    <string name="go">Start!</string>
+    <string name="menu">Menü</string>
+    <string name="brain_fact">Gehirn Tatsache,</string>
+    <string name="your_avg_score_is">Ihre durchschnittliche Punktzahl ist</string>
+    <string name="new_highscore">Neuer Highscore!</string>
+    <string name="review">Beurteilung</string>
+    <string name="you_earned">Sie erhalten</string>
+    <string name="combo">Zugabe</string>
+    <string name="practice">Training</string>
+    <string name="minute_run">Minuten-Lauf</string>
+    <string name="challenge">Herausforderung</string>
+    <string name="multiplayer">Multiplayer</string>
+    <string name="settings">Rahmen</string>
+    <string name="user_info">Benutzer-Info.</string>
+    <string name="exit">beenden</string>
+    <string name="welcome_back">Willkommen zurück</string>
+    <string name="welcome_to_m4b">Willkommen in Kokotoa (Mathematik für das Gehirn)</string>
+    <string name="file_is_corrupt">Die Datei ist beschädigt: Rücksetzen von Benutzerdaten!</string>
+    <string name="leave_feedback">geben Kommentar</string>
+    <string name="perhaps_later">Vielleicht später</string>
+    <string name="get_free_points">Holen Sie sich kostenlos Points!</string>
+    <string name="yes">ja</string>
+    <string name="no">nicht</string>
+    <string name="pro_features">"Anpassbare Hintergründe 
+Sparen Sie bis zu drei Benutzerprofile 
+Keine Werbung 
+Unbegrenzte Online-Gameplay 
+Mehr Gehirn-Fakten"</string>
+    <string name="resume_saved">Voulez-vous poursuivre les progrès déjà enregistré?</string>
+    <string name="resume">fortsetzen</string>
+    <string name="restart">Neustart</string>
+    <string name="one_or_two_devices">Sind Sie im Wettbewerb auf 1 oder 2 Geräte?</string>
+    <string name="one_device">Einzelgerät</string>
+    <string name="two_devices">Zwei Geräte</string>
+    <string name="pro_version_unlocked">Die Pro-Version ist freigeschaltet!</string>
+    <string name="email_subject">Kokotoa (Mathe für das Gehirn) Reaktion</string>
+    <string name="send_email_using">Senden Sie E-Mails mit ..</string>
+    <string name="no_email_client">Es gibt keine E-Mail-Clients installiert.</string>
+    <string name="edit_user_name">Benutzernamen ändern</string>
+    <string name="enter_your_name">Geben Sie Ihren Namen</string>
+    <string name="share">andere informieren</string>
+    <string name="get_more_points">Holen Sie mehr Points</string>
+    <string name="reset">rücksetzen</string>
+    <string name="view_rank">Sehen Sie Ihre Weltrang</string>
+    <string name="top_ranked_users">Nutzer-Urteil</string>
+    <string name="name">Name</string>
+    <string name="average_score">mittlere</string>
+    <string name="user_stats">"Aktuelle Niveau: 
+Rekordergebnis: 
+Durchschnittliche Punktzahl: 
+Gesamtpunkte:"</string>
+    <string name="reminder_change_name">Zur Erinnerung: Ändern der Standard-Benutzernamen</string>
+    <string name="i_rank">Ich Rang #</string>
+    <string name="share_msg">" (weltweit) in "Kokotoa (Mathe für das Gehirn)." Holen Sie sich diese Android App und überprüfen Sie Ihre Weltrang! "</string>
+    <string name="bb_link">"http://appworld.blackberry.com/webstore/content/20484402/"</string>
+    <string name="google_link">"https://play.google.com/store/apps/details?id=com.blackstar.math4brain"</string>
+    <string name="amazon_link">"http://www.amazon.ca/Blackstar-Math-For-The-Brain/dp/B00DR7TK6I"</string>
+    <string name="share_using">andere informieren Sie mit ..</string>
+    <string name="no_name_entered">Namen nicht eingegeben</string>
+    <string name="user_name_changed">Benutzernamen geändert wurde</string>
+    <string name="your_rank">Ihr Rang: #</string>
+    <string name="unable_to_connect">Kann nicht mit dem Netzwerk verbinden</string>
+    <string name="loading">Verladung..</string>
+    <string name="reset_msg">"Zurücksetzen werden alle Benutzerdaten zu löschen 
+Sind Sie sicher, dass Sie zurücksetzen wollen?"</string>
+    <string name="user_data_erased">Benutzerdaten gelöscht wurde</string>
+    <string name="version_outdated">Diese Version ist veraltet. Bitte aktualisiere auf v</string>
+    <string name="new_message">Sie haben eine Nachricht erhalten</string>
+    <string name="default_name">kein Name</string>
+    <string name="percent_sign">"% der "</string>
+    <string name="correct">richtig</string>
+    <string name="wrong">falsch</string>
+    <string name="all_bonus">BONUS</string>
+    <string name="notification_msg">Halten Sie Ihren Geist scharf, Ihr Gehirn trainieren Sie</string>
+    <string name="games_avail">Spiele heute</string>
+    <string name="last_game">Dies ist Ihre letzte Spiel heute</string>
+    <string name="no_more_games">Sie haben keine Spiele mehr verfügbar heute. Holen Sie sich die Pro-Version für unbegrenzten Spielspaß</string>
+    <string name="initial_try">Um Server-Geschwindigkeit zu halten, ist die Zahl der Online-Spiele, die Sie an einem Tag spielen begrenzt. Holen Sie sich die Pro-Version für unbegrenzten Spielspaß</string>
+    <string name="wrong_id">Sie müssen Ihre Gegner ID einzugeben. Verwenden Sie nicht Ihre eigene ID</string>
+    <string name="p1_not_ready">Gegner ist nicht bereit</string>
+    <string name="p1_not_found">Gegner nicht gefunden.</string>
+    <string name="p1_not_joined">Sitzung nicht beitreten.</string>
+    <string name="rate_msg">Wenn Sie viel Spaß mit Kokotoa (Mathe für das Gehirn), würden Sie bitte einen minute Zeit nehmen mir 5 Sterne, um zu bewerten? Vielen Dank für Ihre Unterstützung</string>
+    <string name="rate">Bewerte mich</string>
+    <string name="no_thanks">Nein danke</string>
+    <string name="breakMsg">Geben Sie Ihrem Gehirn eine Pause, kommen Sie später wieder</string>
+    <string name="too_easy">Höhere Schwierigkeits empfohlen</string>
+    <string name="too_difficult">Nieder Schwierigkeit empfohlen</string>
+    <string name="days">tage</string>
+    <string name="prog_chart">Ihr Lernplaner</string>
+    <string name="try_challenge">Versuchen Herausforderung-Modus</string>
+    <string name="evaluation">Auswertung</string>
+    <string name="evaluation_msg">Hey, wir werden ein individuelles Profil für Sie zu erstellen. Lasst uns anfangen</string>
+    <string name="enter_valid_email">Bitte geben Sie eine gültige E-Mail-Adresse ein</string>
+    <string name="email">E-Mail</string>
+    <string name="backup">Sichern Sie Ihre Daten</string>
+    <string name="restore">Daten wiederherstellen</string>
+    <string name="backup_restore">Sichern/wiederherstellen</string>
+    
+    <string-array name="tips">
+        <item>"Frauen-und Männer-Gehirn gibt verschiedene biologisch und intellektuell."</item>
+		<item>"Langeweile ist mehr eine Gewohnheit, in den Gehirnen gebildet und durch Ihre Entscheidungen geformt."</item>
+		<item>"Umwelt zählt, eine gesunde Umwelt hilft Menschen Probleme in Lösungen zu verwandeln."</item>
+		<item>"Menschen sind die einzigen Tiere, emotionale Tränen produzieren."</item>
+		<item>"Rechtshänder leben im Durchschnitt neun Jahre länger als Linkshänder."</item>
+		<item>"Musik verändert Gehirn Wellengeschwindigkeiten in einer Weise, die Stimmungen beeinflussen und die Produktivität zu verändern."</item>
+		<item>"Vorträge und Gespräche profitieren Intelligenz des Sprechers mehr als die Zuhörer."</item>
+		<item>"Es gibt etwa 1350000 Neuronen im menschlichen Rückenmark."</item>
+		<item>"6 Faktoren einer Gehirn-gesunde Lebensweise sind: Bewegung, gesunde Ernährung, mentale Stimulation, Schlaf, Stress-Management, und ein aktives soziales Leben"</item>
+		<item>"Das menschliche Wachstumshormone freisetzt im Schlaf"</item>
+		<item>"2% der Bevölkerung hat keinen Geruchssinn überhaupt."</item>
+		<item>"Häufige geistige Stimulation das Risiko von Alzheimer zu verringern"</item>
+		<item>"Stress buchstäblich schrumpft das Gehirn"</item>
+		<item>"Stress buchstäblich schrumpft das Gehirn"</item>
+		<item>"Erstellen Sie neue Nervenbahnen, wenn Sie eine Lösung für jedes Problem, das Sie stoßen hinzufügen."</item>
+		<item>"Das Gewicht des menschlichen Gehirns ist ungefähr 3 lbs."</item>
+		<item>"Studien zeigen, dass Gehirnwellen sind aktiver im Traum, als wenn Sie wach sind."</item>
+		<item>"Das Gehirn verbraucht 20 Prozent der zirkulierenden Blut und Sauerstoff in Ihrem Körper."</item>
+		<item>"Menschen weiterhin neue Neuronen während des gesamten Lebens in Reaktion auf die geistige Aktivität zu machen."</item>
+		<item>"Jedes Mal, wenn Sie eine Speicher erinnern oder einen neuen Gedanken, erstellen Sie eine neue Verbindung in Ihrem Gehirn."</item>
+		<item>"Das Gehirn besteht aus etwa 75 Prozent Wasser."</item>
+		<item>"8 bis 10, = die Anzahl der Sekunden, bevor das Bewusstsein zu verlieren aufgrund von Blutverlust."</item>
+		<item>"Sie können nicht selbst kitzeln, weil das Gehirn unterscheiden unerwartete äußere Berührung und Ihre eigene Note."</item>
+		<item>"Mangel an Schlaf kann sogar schaden Ihre Fähigkeit, neue Erinnerungen zu schaffen."</item>
+		<item>"Mangel an Schlaf kann sogar schaden Ihre Fähigkeit, neue Erinnerungen zu schaffen"</item>
+		<item>"Die durchschnittliche Zahl der Gedanken, dass die Menschen geglaubt werden, um jeden Tag zu erleben, ist 70.000."</item>
+		<item>"12 Prozent der Menschen nur träumen in schwarz und weiß, während andere in Farbe träumen."</item>
+		<item>"Während Sie schlafen in der Nacht vielleicht die beste Zeit für Ihr Gehirn, um alle Ihre Erinnerungen an den Tag zu konsolidieren."</item>
+		<item>"Während Sie schlafen in der Nacht vielleicht die beste Zeit für Ihr Gehirn, um alle Ihre Erinnerungen an den Tag zu konsolidieren."</item>
+		<item>"Vorlesen und oft im Gespräch mit einem jungen Kind fördert die Entwicklung des Gehirns."</item>
+		<item>"Es gibt keine Schmerzrezeptoren im Gehirn, so dass das Gehirn keinen Schmerz fühlen."</item>
+		<item>"Ein neugeborenes Baby Gehirn wächst etwa dreiMal so groß im ersten Jahr."</item>
+		<item>"Es wird vermutet, dass ein Gähnen arbeitet, um mehr Sauerstoff an das Gehirn senden, daher arbeiten, um es abzukühlen."</item>
+		<item>"Es wird vermutet, dass ein Gähnen arbeitet, um mehr Sauerstoff an das Gehirn senden, daher arbeiten, um es abzukühlen."</item>
+		<item>"Wenn Sie schnarchen, können Sie nicht träumen."</item>
+		<item>"Wenn Sie schnarchen, können Sie nicht träumen."</item>
+		<item>"Die meisten Menschen träumen von 1 bis 2 Stunden in der Nacht und haben einen Durchschnitt von 4 bis 7 Träume jede Nacht."</item>
+		<item>"Das Gehirn weiter zu senden, Gehirnwellen bis etwa 37 Stunden nach dem Tod."</item>
+		<item>"Das alte Sprichwort von Menschen nur mit 10 Prozent ihres Gehirns ist nicht wahr. Jeder Teil des Gehirns hat eine bekannte Funktion."</item>
+		<item>"Die Großhirnrinde dicker wird, wie Sie lernen, es zu benutzen."</item>
+		<item>"Das menschliche Gehirn ist der dickste Organ im Körper und aus mindestens 60 Prozent Fett besteht."</item>
+		<item>"Das Großhirn ist der größte Teil des Gehirns und macht 85 Prozent des Gewichts des Gehirns."</item>
+		<item>"Das Gehirn besteht aus etwa 100 Milliarden Neuronen."</item>
+		<item>"Es gibt 100.000 Meilen von Blutgefäßen im Gehirn."</item>
+		<item>"Die Kapazität für Emotionen wie Freude, Glück, Angst und Schüchternheit sind bereits bei der Geburt entwickelt."</item>
+		<item>"Sie können besser lernen durch das Schreiben von Informationen handschriftlich, nicht durch Tippen."</item>
+		<item>"Eine Geschichte erzählen kann ein guter Weg, um Ihr Gehirn auszuüben"</item>
+		<item>"Meditation reduziert Ihren Stress und verbessert die Leistungsfähigkeit des Gehirns."</item>
+		<item>"Ein wenig körperliche Aktivität und eine intelligente Ernährung wird es viel einfacher für Sie, um Ihr Gehirn in Top-Form zu halten."</item>
+		<item>"Das menschliche Gehirn ist mehr als dreimal so groß wie das Gehirn von Säugetieren, die von ähnlicher Größe sind Körper."</item>
+		<item>"Das menschliche Gehirn ist durch den Schädel, einem Schutzgehäuse 22 Knochen, die miteinander verbunden sind, geschützt."</item>
+		<item>"Das Gehirn ist im Liquor, dieser Flüssigkeit wirkt wie ein Kissen, um Erschütterungen und eine Barriere für Infektionen ausgesetzt."</item>
+		<item>"4 bis 6, = Anzahl der Minuten Ihr Gehirn ohne Sauerstoff überleben, bevor es beginnt zu sterben."</item>
+		<item>"10 bis 23, = Anzahl der Watt Leistung Ihres Gehirns erzeugt, wenn Sie wach sind (das ist genug, um auf eine Glühbirne zu machen!)."</item>
+		<item>"Größe spielt keine Rolle, im Gehirn. Es gibt keine Hinweise, dass ein größeres Gehirn ist schlauer als ein kleineres Gehirn."</item>
+		<item>"Es gibt 100.000 Meilen von Blutgefäßen im Gehirn. Das reicht, um rund um die ganze Erde vier Mal wickeln!"</item>
+		<item>"Die Rate, mit der das Gehirn Informationen verarbeitet, etwa 0,5 Meter / Sekunde (1 MPH) bis 120 Meter / Sekunde (268 MPH)."</item>
+		<item>"Lachen über einen Witz scheint wie eine einfache genug Action, aber es Aktivität in fünf verschiedenen Bereichen des Gehirns erfordert!"</item>
+		<item>"Höhenbedingungen macht das Gehirn sehen seltsame Visionen aufgrund der reduzierten Zufuhr von Sauerstoff."</item>
+		<item>"Wenn Sie niesen, alle Ihre Körperfunktionen zu stoppen, darunter das Herz."</item>
+		<item>"Ihre Nase kann 50.000 verschiedene Düfte erinnern."</item>
+		<item>"Nervenimpulse zu und von dem Gehirn gelangen so schnell zu 170 Meilen pro Stunde."</item>
+		<item>"Unser Gehirn verbraucht 20 Prozent der Energie im Körper und macht nur zwei Prozent unseres Körpergewichts."</item>
+		<item>"Je kälter das Zimmer Sie schlafen, desto besser sind die Chancen, dass Sie schlecht geträumt haben."</item>
+		<item>"Nach zu viel zu essen Ihr Gehör ist weniger scharf"</item>
+		<item>"Frauen waren besser in der Lage, Zitrus, Vanille, Zimt und Kaffee Gerüche identifizieren."</item>
+		<item>"Vitamin E schützt die die Gehirnzellen vor Schäden durch Alkoholkonsum verursacht"</item>
+    </string-array>
+</resources>	

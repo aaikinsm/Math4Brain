@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hola mundo</string>
+    <string name="app_name">Kokotoa (Es)</string>
+    <string name="filename">m4bfile</string>
+    <string name="crash_toast_text">Ooooops! El programa ha fallado, pero un informe se ha enviado a mi desarrollador para ayudar a solucionar el problema!</string>
+    <string name="feedback">¿Le gusta esta aplicación hasta el momento? Por favor, siéntase libre de dejar un comentario o sugerencia. Su retroalimentación es importante para nosotros, gracias</string>
+    <string name="multiplayer_feedback">¿Has probado el modo multijugador? No dude en dejar un comentario o sugerencia por favor. Gracias</string>
+    <string name="view_free_offers">Ver ofertas gratuitas</string>
+    <string name="collected">Coleccionado</string>
+    <string name="total">Total</string>
+    <string name="close">Cerca</string>
+    <string name="total_points">Puntos totales</string>
+    <string name="you_are">Usted está a</string>
+    <string name="pts_away_from_unlock">puntos de distancia para desbloquear Kokotoa PRO</string>
+    <string name="unable_to_get_pts">No se pueden recuperar puntos desde el servidor..</string>
+    <string name="you_just_earned">Sólo has ganado</string>
+    <string name="get_pro_version">Obtener la versión Pro</string>
+    <string name="personalize">Personalizar</string>
+    <string name="user_profiles">Perfiles de usuario</string>
+    <string name="difficulty">dificultad</string>
+    <string name="browse">Navegar</string>
+    <string name="save">Guardar</string>
+    <string name="eqn_set_to_default">tipo de ecuación se ha establecido por defecto</string>
+    <string name="game_settings">Configuración del juego</string>
+    <string name="current">actual</string>
+    <string name="select_user_profile">Seleccionar perfil de usuario</string>
+    <string name="level">Nivel</string>
+    <string name="completed_equations">Ecuaciones completadas</string>
+    <string name="number_of_inc_alwd">Número de errores permitidos</string>
+    <string name="time_is_up">Tiempo se ha acabado</string>
+    <string name="score">Puntuación</string>
+    <string name="try_again">Inténtelo de nuevo</string>
+    <string name="complete">Completo</string>
+    <string name="next">Continuar</string>
+    <string name="too_many_mistakes">Demasiados errores</string>
+    <string name="not_enough_points">Usted no tiene suficientes puntos</string>
+    <string name="you_need_a_min_of">Se necesita un mínimo de</string>
+    <string name="points_to_proceed">puntos para continuar</string>
+    <string name="you_currently_have">Actualmente tiene</string>
+    <string name="points">puntos</string>
+    <string name="you_can_earn_more">Usted puede ganar más puntos en modo de ejecución de minutos</string>
+    <string name="ok">OK</string>
+    <string name="eqn_with_no_inc_alwd">ecuaciones sin errores permitidos</string>
+    <string name="eqn_with_max_of">ecuaciones con un máximo de</string>
+    <string name="incorrects_allowed">Errores permitidos</string>
+    <string name="you_have_to_complete">Usted tiene que completar</string>
+    <string name="you_have">Usted tienes</string>
+    <string name="secs_to_complete_lvl">segundos para completar este nivel</string>
+    <string name="start">EMPEZAR</string>
+    <string name="press_start_to_begin">Presione EMPEZAR para comenzar</string>
+    <string name="player1">Jugador 1</string>
+    <string name="player2">Jugador 2</string>
+    <string name="enter">Ingrese</string>
+    <string name="refresh">Refrescar</string>
+    <string name="no_internet_connection">No hay conexión a internet</string>
+    <string name="your_id_is">Su identificación es</string>
+    <string name="enter_opponent_id">Introduzca el ID de su oponente</string>
+    <string name="you_win">¡USTED GANA!</string>
+    <string name="you_lose">USTED PIERDE</string>
+    <string name="play_again">Juegue de nuevo</string>
+    <string name="connected">conectado</string>
+    <string name="waiting_for_opponent">En espera de rival</string>
+    <string name="waiting">esperando</string>
+    <string name="vs">Versus</string>
+    <string name="disconnected">Lo sentimos, usted ha sido desconectado</string>
+    <string name="go">EMPIECE!</string>
+    <string name="menu">Menú</string>
+    <string name="brain_fact">Datos del Cerebro</string>
+    <string name="your_avg_score_is">Su puntaje promedio es</string>
+    <string name="new_highscore">NUEVO RECORD!</string>
+    <string name="review">RESEÑA</string>
+    <string name="you_earned">Usted ganó</string>
+    <string name="combo">Combo!</string>
+    <string name="practice">Práctica</string>
+    <string name="minute_run">Minuto Ejecutar</string>
+    <string name="challenge">Desafío</string>
+    <string name="multiplayer">Dos jugadores</string>
+    <string name="settings">Ajustes</string>
+    <string name="user_info">Información de usuario</string>
+    <string name="exit">Salida</string>
+    <string name="welcome_back">Bienvenido de vuelta</string>
+    <string name="welcome_to_m4b">Bienvenido a Kokotoa</string>
+    <string name="file_is_corrupt">El archivo está dañado: Restablecer datos de usuario!</string>
+    <string name="leave_feedback">Dar opinión</string>
+    <string name="perhaps_later">Tal vez más tarde</string>
+    <string name="get_free_points">Consigue puntos GRATIS!</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="pro_features">"Características: 
+ Fondos personalizables
+ Ahorre hasta 3 perfiles de usuario
+ Sin anuncios
+ Ilimitado juego en línea
+ Más Datos cerebrales"</string>
+    <string name="resume_saved">¿Quieres reanudar el progreso anterior guardado?</string>
+    <string name="resume">Continuar</string>
+    <string name="restart">Reanudar</string>
+    <string name="one_or_two_devices">¿Está compitiendo en 1 o 2 dispositivos?</string>
+    <string name="one_device">Dispositivo Individualo</string>
+    <string name="two_devices">Dos Dispositivos</string>
+    <string name="pro_version_unlocked">La versión Pro ha sido desbloqueada!</string>
+    <string name="email_subject">Retroalimentación Kokotoa (Es)</string>
+    <string name="send_email_using">Enviar correo electrónico utilizando..</string>
+    <string name="no_email_client">No hay clientes de correo instalados.</string>
+    <string name="edit_user_name">Editar Nombre de usuario</string>
+    <string name="enter_your_name">Introduzca su nombre</string>
+    <string name="share">compartir</string>
+    <string name="get_more_points">Conseguir más puntos</string>
+    <string name="reset">Reiniciar</string>
+    <string name="view_rank">Ver Su Clasificación mundial</string>
+    <string name="top_ranked_users">Clasificación de Usuarios</string>
+    <string name="name">Nombre</string>
+    <string name="average_score">Puntuación Promedio</string>
+    <string name="user_stats">"Nivel actual: 
+Puntuación más alta:
+Puntuación media: 
+Puntos totales:"</string>
+    <string name="reminder_change_name">Recordatorio: Cambia el nombre de usuario por defecto</string>
+    <string name="i_rank">Yo ocupo puesto # </string>
+    <string name="share_msg">" (mundial) en Kokotoa. Obtener esta aplicación Android y comprobar su ranking mundial! "</string>
+    <string name="bb_link">"http://appworld.blackberry.com/webstore/content/20484402/"</string>
+    <string name="google_link">"https://play.google.com/store/apps/details?id=com.blackstar.math4brain"</string>
+    <string name="amazon_link">"http://www.amazon.ca/Blackstar-Math-For-The-Brain/dp/B00DR7TK6I"</string>
+    <string name="share_using">Compartir utilizando..</string>
+    <string name="no_name_entered">No se especificó nombre</string>
+    <string name="user_name_changed">Nombre de usuario se ha cambiado</string>
+    <string name="your_rank">Su posición: #</string>
+    <string name="unable_to_connect">No se puede conectar a la red</string>
+    <string name="loading">Cargando..</string>
+    <string name="reset_msg">"Restablecer borrará todos los datos del usuario 
+ ¿Está seguro de que desea restablecer?"</string>
+    <string name="user_data_erased">Los datos del usuario se ha borrado</string>
+    <string name="version_outdated">Ésta versión es antigua. Por favor, actualice a v</string>
+    <string name="new_message">Ha recibido un mensaje</string>
+    <string name="default_name">sin nombre</string>
+    <string name="percent_sign">"% de "</string>
+    <string name="correct">corregir</string>
+    <string name="wrong">equivocado</string>
+    <string name="all_bonus">Todos BONUS</string>
+    <string name="notification_msg">Mantenga su mente ágil, ejercite su cerebro</string>
+    <string name="games_avail">juegos disponibles en la actualidad</string>
+    <string name="last_game">Este es su último juego hoy</string>
+    <string name="no_more_games">No tienes más juegos disponibles en la actualidad. Obtenga la versión Pro para jugar de forma ilimitada</string>
+    <string name="initial_try">Para mantener la velocidad del servidor, el número de juegos en línea que usted puede jugar en un día es limitado. Obtener la versión Pro para jugar de forma ilimitada</string>
+    <string name="wrong_id">Debe introducir ID de tu oponente, no su propia ID</string>
+    <string name="p1_not_ready">oponente no está listo</string>
+    <string name="p1_not_found">oponente no encontrado</string>
+    <string name="p1_not_joined">Sesión no incorporada</string>
+	<string name="rate_msg">Si le gusta usar Kokotoa, ¿podría por favor tomar un momento para darme puntaje 5 estrellas? Gracias por su apoyo</string>
+    <string name="rate">clasificar me</string>
+    <string name="no_thanks">No gracias</string>
+    <string name="breakMsg">De a su cerebro un descanso, volver más tarde</string>
+    <string name="too_easy">Mayor dificultad recomienda</string>
+    <string name="too_difficult">Menor dificultad recomienda</string>
+    <string name="days">días</string>
+    <string name="prog_chart">Su gráfico de Progreso</string>
+    <string name="try_challenge">Pruebe el modo desafío</string>
+    <string name="evaluation">Evaluación</string>
+    <string name="evaluation_msg">Vamos a crear un perfil personalizado para usted. Empecemos</string>
+    <string name="enter_valid_email">Por favor, introduce una dirección de correo electrónico válida</string>
+    <string name="email">correo electrónico</string>
+    <string name="backup">Copia de seguridad de sus datos</string>
+    <string name="restore">Restaurar los datos</string>
+    <string name="backup_restore">Copia/Restaurar</string>
+
+    
+	<string-array name = "tips">
+	    <item>"El cerebro de las mujeres y de los hombres es diferente biológica e intelectualmente."</item>
+		<item>"El aburrimiento es más un hábito formado en el cerebro y agudizado por sus decisiones, que una realidad."</item>
+		<item>"El Medio Ambiente cuenta, y un entorno saludable ayuda a las personas a transformar problemas en soluciones."</item>
+		<item>"Más fuerte, conexiones emocionales más intensas están ligadas a los recuerdos provocados por el olor."</item>
+		<item>"Las células cerebrales llamadas dendritas utilizan el mundo exterior y toman forma, o crecen con base a lo que usted hace."</item>
+		<item>"La música cambia la velocidad de las ondas cerebrales de manera que afecta los estados de ánimo y altera la productividad."</item>
+		<item>"Las conferencias y conversaciones se benefician de la inteligencia del que habla más que de la audiencia."</item>
+		<item>"Las ondas cerebrales pueden traer ya sea sueño o rendimiento máximo, dependiendo de cómo usted las activa."</item>
+		<item>"Enganche incluso hechos difíciles en una sola cosa que usted conozcas y aumente el aprendizaje en menos tiempo"</item>
+		<item>"La inteligencia múltiple es común a todos, utilizada por unos pocos, y pueden ser más desarrollada todos los días."</item>
+		<item>"El ser humano libera hormonas de crecimiento durante el sueño"</item>
+		<item>"2% de la población no tiene sentido del olfato en absoluto."</item>
+		<item>"La plasticidad permite a la gente volver a reescribir el cerebro humano en formas que lo mantienen más joven y más inteligente."</item>
+		<item>"El estrés reduce literalmente el cerebro."</item>
+		<item>"Inspire la creatividad y la invención a través de la enseñanza a los demás, al mismo tiempo, también se aprende."</item>
+		<item>"Se Crean nuevas vías neuronales cada vez que se agrega una solución a cualquier problema que encuentre."</item>
+		<item>"El peso del cerebro humano es alrededor de 3 libras."</item>
+		<item>"Los estudios demuestran que las ondas cerebrales están más activas durante el sueño que cuando se está despierto."</item>
+		<item>"Su cerebro utiliza el 20 por ciento de la sangre y el oxígeno que circula en su cuerpo."</item>
+		<item>"Los seres humanos siguen creando nuevas neuronas durante toda la vida en respuesta a la actividad mental."</item>
+		<item>"Cada vez que se recuerde una memoria o se tenga un nuevo pensamiento, se está creando una nueva conexión en el cerebro."</item>
+		<item>"El cerebro se compone de alrededor de 75 por ciento de agua."</item>
+		<item>"8 a 10, = al número de segundos que tiene antes de perder el conocimiento debido a la pérdida de sangre."</item>
+		<item>"No se puede hacer cosquillas a sí mismo porque su cerebro distingue entre el tacto externo inesperado y su propio toque."</item>
+		<item>"La falta de sueño puede realmente dañar su capacidad para crear nuevos recuerdos."</item>
+		<item>"El hecho de que no se acuerde de sus sueños no significa que usted no sueñe. Todo el mundo sueña!"</item>
+		<item>"El número promedio de pensamientos que los seres humanos experimentan cada día es 70.000."</item>
+		<item>"12 por ciento de la gente sueña solo en blanco y negro, mientras que otros sueñan en color."</item>
+		<item>"Mientras usted duerme, la noche puede ser el mejor momento para que su cerebro consolide todos los recuerdos del día."</item>
+		<item>"El exceso de estrés ha demostrado que altera las células del cerebro, la estructura cerebral y la función cerebral."</item>
+		<item>"Leer en voz alta y hablar con frecuencia a un niño pequeño ayuda a promover el desarrollo del cerebro."</item>
+		<item>"No existen receptores de dolor en el cerebro, por lo que el cerebro no puede sentir ningún dolor."</item>
+		<item>"El cerebro de un bebé recién nacido crece cerca de tres veces su tamaño en el primer año."</item>
+		<item>"Se piensa que un bostezo ayuda a enviar más oxígeno al cerebro, por lo tanto, trabaja para que se enfríe."</item>
+		<item>"La memoria está formada por asociaciones, por lo que si se quiere ayudar a recordar cosas, es bueno que cree asociaciones por usted mismo."</item>
+		<item>"Si usted está roncando, no está soñando."</item>
+		<item>"Las clases de música han demostrado que incrementan considerablemente la organización del cerebro y la capacidad, tanto en niños como en adultos."</item>
+		<item>"La mayoría de la gente sueña de 1 a 2 horas por la noche y tienen un promedio de 4 a 7 sueños cada noche."</item>
+		<item>"El cerebro continúa enviando ondas cerebrales hasta aproximadamente 37 horas después de la muerte."</item>
+		<item>"El viejo adagio de los seres humanos de que sólo se utiliza el 10 por ciento del cerebro no es cierto. Cada parte del cerebro tiene una función conocida."</item>
+		<item>"La corteza cerebral crece más gruesa a medida que se aprende a usarlo."</item>
+		<item>"El cerebro humano es el órgano más gordo del cuerpo y puede estar formado de por lo menos el 60 por ciento de grasa."</item>
+		<item>"El cerebro es la parte más grande de la cabeza y corresponde al 85 por ciento de su peso."</item>
+		<item>"El cerebro está formado por cerca de 100 mil millones de neuronas."</item>
+		<item>"Hay 100.000 millas de vasos sanguíneos en el cerebro."</item>
+		<item>"La capacidad de emociones como la alegría, la felicidad, el miedo y la timidez ya están desarrollados al nacer."</item>
+		<item>"Usted puede aprender más eficazmente al escribir información a mano, no tecleando."</item>
+		<item>"La narración de historias puede ser una buena manera de ejercitar su cerebro."</item>
+		<item>"La meditación reduce los niveles de estrés y mejora el rendimiento del cerebro."</item>
+		<item>"Un poco de actividad física y una dieta inteligente hará que sea mucho más fácil para usted mantener su cerebro en forma."</item>
+		<item>"El cerebro humano es tres veces más grande que el cerebro de otros mamíferos que son de tamaño corporal similar."</item>
+		<item>"El cerebro humano está protegido por el cráneo, una carcasa protectora formada por 22 huesos que se unen entre sí."</item>
+		<item>"El cerebro está suspendido en el líquido cefalorraquídeo, este líquido actúa como una protección contra impactos físicos y una barrera contra las infecciones."</item>
+		<item>"4 a 6, = el número de minutos que el cerebro puede sobrevivir sin oxígeno antes de que comience a morir."</item>
+		<item>"10 a 23, = el número de vatios de potencia que su cerebro genera cuando está despierto (eso es suficiente para encender una bombilla!)."</item>
+		<item>"El tamaño del cerebro no importa. No hay evidencia de que un cerebro más grande es más inteligente que un cerebro más pequeño."</item>
+		<item>"Hay 100.000 millas de vasos sanguíneos en el cerebro. Eso es suficiente para envolver toda la tierra cuatro veces!"</item>
+		<item>"La velocidad a la que el cerebro procesa la información puede variar de 0,5 metros/segundo (1 mph) a 120 metros/segundo (268 mph)."</item>
+		<item>"Reírse de una broma parece una acción bastante simple, pero requiere de actividad en 5 zonas diferentes de nuestro cerebro!"</item>
+		<item>"Las condiciones de gran altitud hace que el cerebro vea visiones extrañas debido a la reducción del suministro de oxígeno."</item>
+		<item>"Las imágenes que nuestros ojos reciben son en realidad al revés. Nuestro cerebro los corrige, de modo que las vemos al derecho!"</item>
+		<item>"Cuando usted estornuda todas sus funciones corporales se detienen, incluyendo el corazón."</item>
+		<item>"Su nariz puede recordar 50.000 olores diferentes."</item>
+		<item>"Los impulsos nerviosos hacia y desde el cerebro viajes tan rápido como 170 millas por hora."</item>
+		<item>"Nuestro cerebro utiliza el 20 por ciento de nuestra energía corporal y representa sólo el 2 por ciento de nuestro peso corporal."</item>
+		<item>"Mientras más frío haya en la habitación al dormir, mayores serán las posibilidades de que usted tenga un mal sueño."</item>
+		<item>"Después de comer demasiado su capacidad de escuchar es menos nítida"</item>
+		<item>"Las mujeres son más capaces de identificar olores de cítricos, vainilla, canela y café."</item>
+		<item>"La vitamina E protege las células cerebrales del daño causado por el consumo de alcohol"</item>
+		<item>"Los seres humanos son los únicos animales que pueden producir lágrimas emocionales"</item>
+		<item>"Las personas diestras viven, en promedio, nueve años más que las personas zurdas"</item>
+		<item>"Hay alrededor de 1.350.000 neuronas en la médula espinal humana"</item>
+		<item>"El cerebro es mucho más activo durante la noche que durante el día""</item>
+		<item>"La persona promedio puede dormirse en 7 minutos"</item>
+		<item>"El ejercicio regular, una dieta saludable, la estimulación mental, el sueño de calidad, manejo del estrés, y una vida social activa son muy beneficiosas para el cerebro"</item>
+		<item>"La estimulación mental frecuente reduce el riesgo de enfermedad de Alzheimer</item>
+		<item>"Hay un virus que ataca el ADN humano haciendo que la gente sea menos inteligente, perjudicando la actividad cerebral, el aprendizaje y la memoria."</item>
+		<item>"El alcohol no le hace olvidar nada. Cuando se emborracha, el cerebro pierde temporalmente la capacidad de crear recuerdos."</item>
+		<item>"Usted tiene receptores del gusto en el estómago, los intestinos, el páncreas, los pulmones, el ano, los testículos y el cerebro."</item>
+		<item>"El cerebro humano tiene la misma consistencia que el tofu"</item>
+		<item>"El olor del chocolate aumenta las ondas cerebrales, lo que desencadena la relajación"</item>
+        <item>"El olvido es bueno para el cerebro: la eliminación de información innecesaria ayuda al sistema nervioso a mantener su plasticidad."</item>
+        <item>"Un estudio encontró que el uso de un teléfono móvil por un largo tiempo aumenta significativamente el riesgo de tumores cerebrales."</item>
+        <item>"La falta de sueño afecta el cerebro de varias maneras que pueden afectar el juicio y crear reacciones lentas."</item>
+        <item>"Sólo se tarda 6 minutos para que las células cerebrales reaccionen con el alcohol"</item>
+	</string-array>
+</resources>

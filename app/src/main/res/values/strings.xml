@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MathMentorActivity!</string>
+    <string name="app_name">Kokotoa</string>
+    <string name="filename">m4bfile</string>
+    <string name="crash_toast_text">Ooooops ! I crashed, but a report has been sent to my developer to help fix the issue !</string>
+    <string name="feedback">Do you like this app so far? Please feel free to leave a comment or suggestion. Your feedback is appreciated thanks</string>
+    <string name="multiplayer_feedback">Have you tried multiplayer mode? Please feel free to leave a comment or suggestion. Your feedback is appreciated thanks</string>
+    <!--  tapjoy -->
+    <string name="view_free_offers">View Free Offers</string>
+    <string name="collected">Collected</string>
+    <string name="total">Total</string>
+    <string name="close">Close</string>
+    <string name="total_points">Total Points</string>
+    <string name="you_are">You are</string>
+    <string name="pts_away_from_unlock">points away from unlocking Kokotoa PRO (Math for The Brain)</string>
+    <string name="unable_to_get_pts">Unable to retrieve tap points from server.</string>
+    <string name="you_just_earned">"You've just earned"</string>
+    <!--  settings -->
+    <string name="get_pro_version">Get The Pro Version</string>
+    <string name="personalize">Personalize</string>
+    <string name="user_profiles">User Profiles</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="browse">Browse</string>
+    <string name="save">Save</string>
+    <string name="eqn_set_to_default">Equation type has been set to default</string>
+    <string name="game_settings">Game Settings</string>
+    <string name="current">current</string>
+    <string name="select_user_profile">Select User Profile</string>
+    <!--  challenge mode -->
+    <string name="level">Level</string>
+    <string name="completed_equations">Completed Equations</string>
+    <string name="number_of_inc_alwd">Number of mistakes Allowed</string>
+    <string name="time_is_up">Time is Up</string>
+    <string name="score">Score</string>
+    <string name="try_again">Try Again</string>
+    <string name="complete">Complete</string>
+    <string name="next">Continue</string>
+    <string name="too_many_mistakes">Too Many Mistakes</string>
+    <string name="not_enough_points">You do not have enough points</string>
+    <string name="you_need_a_min_of">You need a minimum of</string>
+    <string name="points_to_proceed">points to proceed</string>
+    <string name="you_currently_have">You currently have</string>
+    <string name="points">points</string>
+    <string name="you_can_earn_more">You can earn more points in minute run mode</string>
+    <string name="ok">OK</string>
+    <string name="eqn_with_no_inc_alwd">equations with no mistakes allowed</string>
+    <string name="eqn_with_max_of">equations with a maximum of</string>
+    <string name="incorrects_allowed">Mistakes Allowed</string>
+    <string name="you_have_to_complete">You have to complete</string>
+    <string name="you_have">You have</string>
+    <string name="secs_to_complete_lvl">seconds to complete this level</string>
+    <string name="start">START</string>
+    <string name="press_start_to_begin">Press Start to Begin</string>
+    <!--  multiplayer mode -->
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="enter">Enter</string>
+    <string name="refresh">Reload</string>
+    <string name="no_internet_connection">No internet connection available</string>
+    <string name="your_id_is">Your ID is</string>
+    <string name="enter_opponent_id">"Enter your opponent's ID"</string>
+    <string name="you_win">YOU WIN!</string>
+    <string name="you_lose">YOU LOSE</string>
+    <string name="play_again">Play Again</string>
+    <string name="connected">Connected</string>
+    <string name="waiting_for_opponent">waiting for opponent</string>
+    <string name="waiting">waiting</string>
+    <string name="vs">Vs</string>
+    <string name="disconnected">Sorry, you have been disconnected</string>
+    <string name="go">GO!</string>
+    <string name="menu">Menu</string>
+    <!--  Minute Run -->
+    <string name="brain_fact">Brain Fact</string>
+    <string name="your_avg_score_is">Your Average Score is</string>
+    <string name="new_highscore">NEW HIGH SCORE!</string>
+    <string name="review">REVIEW</string>
+    <string name="you_earned">You Earned</string>
+    <string name="combo">Combo!</string>
+    <!--  menu -->
+    <string name="practice">Practice</string>
+    <string name="minute_run">Minute Run</string>
+    <string name="challenge">Challenge</string>
+    <string name="multiplayer">Multiplayer</string>
+    <string name="settings">Settings</string>
+    <string name="user_info">User Info.</string>
+    <string name="exit">Exit</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="welcome_to_m4b">Welcome to Kokotoa (math for the brain)</string>
+    <string name="file_is_corrupt">File is Corrupt: Re-install the application!</string>
+    <string name="leave_feedback">Give Feedback</string>
+    <string name="perhaps_later">Perhaps Later</string>
+    <string name="get_free_points">Get FREE points!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="pro_features">"Features: 
+Customizable backgrounds 
+Save up to 3 user profiles
+No Ads 
+Unlimited Online Gameplay 
+More Brain Facts"</string>
+    <string name="resume_saved">Do you want to resume previous saved progress?</string>
+    <string name="resume">Resume</string>
+    <string name="restart">Restart</string>
+    <string name="one_or_two_devices">Are you competing on 1 or 2 devices?</string>
+    <string name="one_device">Single Device</string>
+    <string name="two_devices">Two Devices</string>
+    <string name="pro_version_unlocked">The Pro version has been unlocked!</string>
+    <string name="email_subject">Kokotoa (Math for the brain) feedback</string>
+    <string name="send_email_using">Send email using..</string>
+    <string name="no_email_client">There are no email clients installed.</string>
+    <!--  user info -->
+    <string name="edit_user_name">Edit User Name</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="share">Share</string>
+    <string name="get_more_points">Get More Points</string>
+    <string name="reset">Reset</string>
+    <string name="view_rank">View Your World Rank</string>
+    <string name="top_ranked_users">User Rating</string>
+    <string name="name">Name</string>
+    <string name="average_score">Avg. Score</string>
+    <string name="user_stats">"Current Level: 
+High Score: 
+Average Score: 
+Total Points:"</string>
+    <string name="reminder_change_name">Reminder: Change default user name</string>
+    <string name="i_rank">I rank #</string>
+    <string name="share_msg">" (worldwide) in Kokotoa (Math For The Brain). Get this android app and check your world rank! "</string>
+    <string name="bb_link">"http://appworld.blackberry.com/webstore/content/20484402/"</string>
+    <string name="google_link">"https://play.google.com/store/apps/details?id=com.blackstar.math4brain"</string>
+    <string name="amazon_link">"http://www.amazon.ca/Blackstar-Math-For-The-Brain/dp/B00DR7TK6I"</string>
+    <string name="share_using">Share using..</string>
+    <string name="no_name_entered">No name entered</string>
+    <string name="user_name_changed">User name has been changed</string>
+    <string name="your_rank">Your Rank: #</string>
+    <string name="unable_to_connect">Unable to connect to the network</string>
+    <string name="loading">Loading..</string>
+    <string name="version_outdated">This version is outdated. Please upgrade to v</string>
+    <string name="new_message">You have received a message</string>
+    <string name="default_name">no name</string>
+    
+    <string name="percent_sign">"% of "</string>
+    <string name="correct">Correct</string>
+    <string name="wrong">wrong</string>
+    <string name="all_bonus">All BONUS</string>
+    <string name="notification_msg">Keep your mind sharp, exercise your brain</string>
+    <string name="games_avail">games available today</string>
+    <string name="last_game">This is your last game today</string>
+    <string name="no_more_games">You have no more games available today. Get the pro version for unlimited gameplay</string>
+    <string name="initial_try">To maintain server speed, the number of online games you can play in a day is limited. Get the pro version for unlimited gameplay</string>
+    <string name="wrong_id">"You must enter your opponent's ID, not your own ID"</string>
+    <string name="p1_not_ready">opponent is not ready</string>
+    <string name="p1_not_found">opponent not found.</string>
+    <string name="p1_not_joined">session not joined.</string>
+    <string name="rate_msg">If you enjoy using Kokotoa (Math for the Brain), would you please take a moment to rate me 5 stars? Thanks for your support</string>
+    <string name="rate">Rate Me</string>
+    <string name="no_thanks">No thanks</string>
+    <string name="breakMsg">Give your brain a break, come back later</string>
+    <string name="too_easy">Higher difficulty recommended</string>
+    <string name="too_difficult">Lower difficulty recommended</string>
+    <string name="days">days</string>
+    <string name="prog_chart">Your Progress Chart</string>
+    <!--  New -->
+    <string name="try_challenge">Try Challenge Mode</string>
+    <string name="evaluation">Evaluation</string>
+    <string name="evaluation_msg">Hey, we are going to create a customized profile for you. Lets get started</string>
+    <string name="enter_valid_email">Please enter a valid email address</string>
+    <string name="email">email address</string>
+    <string name="backup">Backup data online</string>
+    <string name="restore">Restore data</string>
+    <string name="backup_restore">Backup/Restore</string>
+    
+    <!--  Tips -->
+    <string-array name="tips">
+        <item>"Women’s and men’s brain are different biologically and intellectually."</item>
+		<item>"Boredom is more a habit formed in brains, and shaped by your choices, than a reality."</item>
+		<item>"Environment counts, and a healthy setting helps people transform problems into solutions."</item>
+		<item>"Stronger, more intense emotional connections are linked to memories prompted by scent."</item>
+		<item>"Dendrite brain cells use the outside world and take shape, or grow based on what you do."</item>
+		<item>"Music changes brain wave speeds in ways that impact moods and alter productivity."</item>
+		<item>"Lectures and conversations benefit intelligence of the speaker more than the audience."</item>
+		<item>"Brain waves can bring either sleep or peak performance, based on how you activate them."</item>
+		<item>"Hook even difficult facts onto one thing you know and learning increases in less time"</item>
+		<item>"Multiple intelligences are common to all, used by few, and can be more developed daily."</item>
+		<item>"The human releases growth hormones during sleep"</item>
+		<item>"2% of the population has no sense of smell at all."</item>
+		<item>"Plasticity enables people to rewire the human brain in ways that keep it younger and smarter."</item>
+		<item>"Stress literally shrinks the brain."</item>
+		<item>"Inspire creativity and invention through teaching others, at the same time you also learn."</item>
+		<item>"Create new neuron pathways each time you add a solution to any problem you encounter."</item>
+		<item>"The weight of the human brain is about 3 lbs."</item>
+		<item>"Studies show that brain waves are more active while dreaming than when you are awake."</item>
+		<item>"Your brain uses 20 percent of the blood and oxygen circulating in your body."</item>
+		<item>"Humans continue to make new neurons throughout life in response to mental activity."</item>
+		<item>"Every time you recall a memory or have a new thought, you are creating a new connection in your brain."</item>
+		<item>"The brain is made up of about 75 percent water."</item>
+		<item>"8 to 10, = the number of seconds you have before losing consciousness due to blood loss."</item>
+		<item>"You can’t tickle yourself because your brain distinguished between unexpected external touch and your own touch."</item>
+		<item>"Lack of sleep may actually hurt your ability to create new memories."</item>
+		<item>"Just because you don’t remember your dreams doesn’t mean you don’t dream. Everyone dreams!"</item>
+		<item>"The average number of thoughts that humans are believed to experience each day is 70,000."</item>
+		<item>"12 percent of people dream only in black and white while others dream in color."</item>
+		<item>"While you sleep at night may be the best time for your brain to consolidate all your memories from the day."</item>
+		<item>"Excessive stress has shown to alter brain cells, brain structure and brain function."</item>
+		<item>"Reading aloud and talking often to a young child promotes brain development."</item>
+		<item>"There are no pain receptors in the brain, so the brain can feel no pain."</item>
+		<item>"A newborn baby’s brain grows about three times its size in the first year."</item>
+		<item>"It is thought that a yawn works to send more oxygen to the brain, therefore working to cool it down."</item>
+		<item>"Memory is formed by associations, so if you want help remembering things, create associations for yourself."</item>
+		<item>"If you are snoring, you are not dreaming."</item>
+		<item>"Music lessons have shown to considerably boost brain organization and ability in both children and adults."</item>
+		<item>"Most people dream about 1 to 2 hours a night and have an average of 4 to 7 dreams each night."</item>
+		<item>"The brain continues to send out brain waves until approximately 37 hours after death."</item>
+		<item>"The old adage of humans only using 10percent of their brain is not true. Every part of the brain has a known function."</item>
+		<item>"The cerebral cortex grows thicker as you learn to use it."</item>
+		<item>"The human brain is the fattest organ in the body and may consists of at least 60 percent fat."</item>
+		<item>"The cerebrum is the largest part of the brain and makes up 85 percent of the brain’s weight."</item>
+		<item>"Your brain consists of about 100 billion neurons."</item>
+		<item>"There are 100,000 miles of blood vessels in the brain."</item>
+		<item>"The capacity for such emotions as joy, happiness, fear, and shyness are already developed at birth."</item>
+		<item>"You can learn more effectively by writing information longhand, not by typing."</item>
+		<item>"Story telling can be a good way to exercise your brain."</item>
+		<item>"Meditation reduces your stress levels and improves brain performance."</item>
+		<item>"A little physical activity and a smart diet will make it much easier for you to keep your brain in top shape."</item>
+		<item>"The human brain is over three times as big as the brain of other mammals that are of similar body size."</item>
+		<item>"The human brain is protected by the skull, a protective casing made up of 22 bones that are joined together."</item>
+		<item>"The brain is suspended in Cerebrospinal fluid, this liquid acts as a cushion to physical impact and a barrier to infections."</item>
+		<item>"4 to 6, = the number of minutes your brain can survive without oxygen before it starts to die."</item>
+		<item>"10 to 23, = the number of watts of power your brain generates when you’re awake (that’s enough to turn on a light bulb!)."</item>
+		<item>"Size doesn’t matter in the brain. There is no evidence that a larger brain is smarter than a smaller brain."</item>
+		<item>"There are 100,000 miles of blood vessels in the brain. That's enough to wrap around the whole Earth four times!"</item>
+		<item>"The rate at which your brain processes information can range from 0.5 meters/second (1MPH) to 120 meters/second (268 MPH)."</item>
+		<item>"Laughing at a joke seems like a simple enough action, but it requires activity in 5 different areas of our brain!"</item>
+		<item>"High altitude conditions makes the brain see weird visions due to the reduced supply of oxygen."</item>
+		<item>"The images our eyes receive are actually upside-down. Our brain corrects them, so that we see them the right side-up!"</item>
+		<item>"When you sneeze all your bodily functions stop, including your heart."</item>
+		<item>"Your nose can remember 50,000 different scents."</item>
+		<item>"Nerve impulses to and from the brain travel as fast as 170 miles per an hour."</item>
+		<item>"Our brain uses 20 percent of our body energy and makes up only 2 percent of our body weight."</item>
+		<item>"The colder the room you sleep in, the better the chances that you will have a bad dream."</item>
+		<item>"After eating too much your hearing is less sharp"</item>
+		<item>"Women were better able to identify citrus, vanilla, cinnamon and coffee smells."</item>
+		<item>"Vitamin E protects the brain cells from damage caused by alcohol consumption"</item>
+		<item>"Humans are the only animals to produce emotional tears"</item>
+		<item>"Right-handed people live, on average, nine years longer than left handed people"</item>
+		<item>"There are about 1350000 neurons in the human spinal cord"</item>
+		<item>"The brain is much more active during at night than during the day"</item>
+		<item>"The average person can fall asleep in 7 minutes"</item>
+		<item>"Regular exercise, Healthy diet, Mental stimulation, Quality Sleep, Stress management, and an active social life are great for your brain"</item>
+		<item>"Frequent mental stimulation will reduce the risk of Alzheimer's disease"</item>
+		<item>"There's a virus that attacks human DNA making people less intelligent, impairing brain activity, learning and memory."</item>
+		<item>"Alcohol doesn't make you forget anything. When you get blackout drunk, the brain temporarily loses the ability to create memories."</item>
+		<item>"You have Taste receptors in the stomach, intestines, pancreas, lungs, anus, testicles and the brain."</item>
+		<item>"The human brain has the same consistency as tofu"</item>
+		<item>"The smell of chocolate increases brain waves, which triggers relaxation"</item>
+		<item>"Forgetting is good for the brain: deleting unnecessary information helps the nervous system retain its plasticity."</item>
+		<item>"One study found that using a mobile phone for a long time significantly increases the risk of brain tumors."</item>
+		<item>"Sleep deprivation affects the brain in multiple ways that can impair judgment and slow reaction."</item>
+		<item>"It only takes 6 minutes for brain cells to react to alcohol"</item>	
+    </string-array>
+    	
+</resources>

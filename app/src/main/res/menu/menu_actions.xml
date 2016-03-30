@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <!-- <item android:id="@+id/settings"
+        android:icon="@drawable/settings"
+        android:title="@string/settings"
+        app:showAsAction="ifRoom|withText" />
+    <item android:id="@+id/user"
+        android:icon="@drawable/user"
+        android:title="@string/user_info"
+        app:showAsAction="ifRoom|withText"/> -->
+    <item android:id="@+id/rank"
+        android:title="@string/view_rank" />
+    <item android:id="@+id/sync"
+        android:title="@string/backup_restore"/>
+    <item android:id="@+id/getPro"
+        android:title="@string/get_pro_version" />
+    <item android:id="@+id/feedback"
+        android:title="@string/leave_feedback" />
+    <item android:id="@+id/rate"
+        android:title="@string/rate" />
+    <item android:id="@+id/getPoints"
+        android:title="@string/get_free_points" />
+</menu>

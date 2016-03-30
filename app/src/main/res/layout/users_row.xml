@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow_banner"
+    android:orientation="horizontal"
+    android:paddingRight="5dp" >
+
+    <TextView
+        android:id="@+id/textViewRnk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:text="#1"
+        android:textColor="#000000"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textViewNam"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.75"
+        android:text="my_name"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewLvl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="00"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textViewAvg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="000"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textViewTotal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="0000"
+        android:textColor="#000000" />
+
+</LinearLayout>

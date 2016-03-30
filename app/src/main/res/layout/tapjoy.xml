@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/shadow_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp" >
+
+        <Button
+            android:id="@+id/OffersButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_menu"
+            android:text="@string/view_free_offers"
+            android:textColor="#0000FF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15dp" >
+
+            <TextView
+                android:id="@+id/textViewTJ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/collected"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15dp" >
+
+            <TextView
+                android:id="@+id/textViewTotalPt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/total"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/DisplayAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Display Ad"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/GetPointsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Display points"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/AwardPointsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Award Points"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/SpendPointsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spend Points"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/buttonClose"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_menu"
+            android:text="@string/close" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/AdLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+</FrameLayout>

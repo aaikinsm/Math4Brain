@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lines_bg_lr"
+    android:orientation="vertical" >
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/buttonSwitchPage" android:background="@drawable/button_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/personalize" android:layout_weight="1.0" style="?android:attr/buttonStyleSmall" />
+        <Button android:id="@+id/buttonSelectUser" android:background="@drawable/button_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/user_profiles" android:layout_weight="1.0" style="?android:attr/buttonStyleSmall" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/settingsPage1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TableLayout android:id="@+id/equationType" android:background="@drawable/border" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.1">
+            <LinearLayout android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <CheckBox android:textColor="#ff000000" android:gravity="center_vertical" android:id="@+id/checkBoxAS" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="false" />
+                <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eq_add_subt" android:scaleType="fitStart" android:layout_weight="1.0" />
+                <CheckBox android:textColor="#ff000000" android:id="@+id/checkBoxMD" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" />
+                <ImageView android:id="@+id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eq_mult_div" android:scaleType="fitStart" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <CheckBox android:textColor="#ff000000" android:id="@+id/checkBoxExponent" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <ImageView android:id="@+id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eq_powr" android:scaleType="fitStart" android:layout_weight="1.0" />
+                <CheckBox android:textColor="#ff000000" android:id="@+id/checkBoxPercent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" />
+                <ImageView android:id="@+id/imageView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eq_pcnt" android:scaleType="fitStart" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <CheckBox android:textColor="#ff000000" android:id="@+id/checkBoxAll" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <ImageView android:id="@+id/imageView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eq_all" android:scaleType="fitStart" />
+            </LinearLayout>
+        </TableLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/linearLayoutSnd" android:background="@drawable/border" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.4">
+            <ImageView android:id="@+id/mscIcon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/msc_off" android:layout_weight="1.0" />
+            <ImageView android:id="@+id/sndIcon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/snd_off" android:layout_weight="1.0" />
+            <ImageView android:id="@+id/vibIcon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/vib_off" android:layout_weight="1.0" />
+
+            <ImageView
+                android:id="@+id/micIcon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:src="@drawable/mic_off" />
+
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linearLayout2" android:background="@drawable/border" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.4">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/d1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mi0" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <ImageView android:id="@+id/d2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mi0" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <ImageView android:id="@+id/d3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mi0" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <ImageView android:id="@+id/d4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mi0" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <ImageView android:id="@+id/d5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mi0" android:scaleType="fitCenter" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/settingsPage2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:id="@+id/imageButtonBg1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:scaleType="fitCenter" android:layout_weight="1.0" />
+            <ImageButton android:id="@+id/imageButtonBg2" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:scaleType="fitCenter" android:layout_weight="1.0" />
+            <ImageButton android:id="@+id/imageButtonBg3" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:scaleType="fitCenter" android:layout_weight="1.0" />
+            <ImageButton android:id="@+id/imageButtonBg4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:scaleType="fitCenter" android:layout_weight="1.0" />
+        </LinearLayout>
+        <Button android:layout_gravity="center_horizontal" android:id="@+id/buttonCustomImage" android:background="@drawable/button_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/browse" style="?android:attr/buttonStyleSmall" />
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@+id/imageButtonBg5" android:background="@drawable/shadow_bg" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lines_bg_lr" android:scaleType="fitCenter" android:layout_weight="1.0" />
+    </LinearLayout>
+    <Button android:textStyle="bold" android:id="@+id/buttonDone" android:background="@drawable/button_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/save" />
+</LinearLayout>

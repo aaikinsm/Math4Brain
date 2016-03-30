@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MathMentorActivity!</string>
+    <string name="app_name">Kokotoa (Id)</string>
+    <string name="filename">m4bfile</string>
+    <string name="crash_toast_text">Ooooops! Saya tergagalkan, tapi sebuah laporan telah terkirim ke pengembang untuk membantu perbaiki masalah ini!</string>
+    <string name="feedback"> Sejauh ini apakah Anda suka dengan aplikasi ini? Silahkan tinggalkan komentar atau saran. Umpan balik Anda akan sangat dihargai. </string>
+    <string name="multiplayer_feedback"> Sejauh ini apakah Anda suka dengan aplikasi ini? Silahkan tinggalkan komentar atau saran. Umpan balik Anda akan sangat dihargai. </string>
+    <!--  tapjoy -->
+    <string name="view_free_offers">Lihat Penawaran Gratis</string>
+    <string name="collected">Terkoleksi</string>
+    <string name="total">Jumlah</string>
+    <string name="close">Tutup</string>
+    <string name="total_points">Jumlah Poin</string>
+    <string name="you_are">Anda memerlukan</string>
+    <string name="pts_away_from_unlock">poin untuk membuka ‘Kokotoa PRO’</string>
+    <string name="unable_to_get_pts">Tidak dapat mengambil poin dari server.</string>
+    <string name="you_just_earned">Anda barus aja mendapatkan poin</string>
+    <!--  settings -->
+    <string name="get_pro_version">Dapatkan Versi Pro</string>
+    <string name="personalize">Personalisasikan</string>
+    <string name="user_profiles">Profil Pengguna</string>
+    <string name="difficulty">Kesulitan</string>
+    <string name="browse">Telusuri</string>
+    <string name="save">Simpan</string>
+    <string name="eqn_set_to_default">Jenis persamaan telah disetel ke default</string>
+    <string name="game_settings">Pengaturan Game</string>
+    <string name="current">Saat Ini</string>
+    <string name="select_user_profile">Pilih Profil Pengguna</string>
+    <!--  challenge mode -->
+    <string name="level">Level</string>
+    <string name="completed_equations">Persamaan Selesai</string>
+    <string name="number_of_inc_alwd">Jumlah Kesalahan yg Di-ijinkan</string>
+    <string name="time_is_up">Waktu Habis</string>
+    <string name="score">Skor</string>
+    <string name="try_again">Coba Lagi</string>
+    <string name="complete">Lengkapi</string>
+    <string name="next">Lanjutkan</string>
+    <string name="too_many_mistakes">Terlalu Banyak Kesalahan</string>
+    <string name="not_enough_points">Anda tidak punya cukup poin</string>
+    <string name="you_need_a_min_of">Anda perlu minimal</string>
+    <string name="points_to_proceed">poin untuk lanjut</string>
+    <string name="you_currently_have">Anda saat ini mempunyai</string>
+    <string name="points">poin</string>
+    <string name="you_can_earn_more">Anda bisa mendapatkan lebih banyak poin dengan modus menit berjalan</string>
+    <string name="ok">OK</string>
+    <string name="eqn_with_no_inc_alwd">Persamaan dengan tanpa kesalahan di-jinkan</string>
+    <string name="eqn_with_max_of">Persamaan dengan maksimal</string>
+    <string name="incorrects_allowed">Kesalahan Di-ijinkan</string>
+    <string name="you_have_to_complete">Anda harus selesaikan</string>
+    <string name="you_have">Anda mempunyai</string>
+    <string name="secs_to_complete_lvl">detik untuk menyelesaikan level ini</string>
+    <string name="start">MULAI</string>
+    <string name="press_start_to_begin">Tekan Mulai untuk Memulai</string>
+    <!--  multiplayer mode -->
+    <string name="player1">Pemain 1</string>
+    <string name="player2">Pemain 2</string>
+    <string name="enter">Masuk</string>
+    <string name="refresh">Muat Ulang</string>
+    <string name="no_internet_connection">Tidak ada sambungan internet yang tersedia</string>
+    <string name="your_id_is">ID Anda adalah</string>
+    <string name="enter_opponent_id">Masukkan ID lawan Anda</string>
+    <string name="you_win">ANDA MENAG!</string>
+    <string name="you_lose">ANDA BELUM BERUNTUNG!</string>
+    <string name="play_again">Mainkan Lagi</string>
+    <string name="connected">Tersambung</string>
+    <string name="waiting_for_opponent">Menunggu lawan</string>
+    <string name="waiting">Menunggu</string>
+    <string name="vs">Melawan</string>
+    <string name="disconnected">Maaf, Anda belum tersambung</string>
+    <string name="go">AYO!</string>
+    <string name="menu">Menu</string>
+    <!--  Minute Run -->
+    <string name="brain_fact">Fakta-Fakta Otak</string>
+    <string name="your_avg_score_is">Skor Rata-Rata Anda adalah</string>
+    <string name="new_highscore">SKOR TINGGI BARU</string>
+    <string name="review">TINJAU</string>
+    <string name="you_earned">Anda Mendapatkan Skor</string>
+    <string name="combo">Kombo</string>
+    <!--  menu -->
+    <string name="practice">Latihan</string>
+    <string name="minute_run">Menit Berjalan</string>
+    <string name="challenge">Tantangan</string>
+    <string name="multiplayer">Multi Pemain</string>
+    <string name="settings">Pengaturan</string>
+    <string name="user_info">Info Pengguna</string>
+    <string name="exit">Keluar</string>
+    <string name="welcome_back">Selamat Datang Kembali</string>
+    <string name="welcome_to_m4b">Selamat Datang di Kokotoa</string>
+    <string name="file_is_corrupt">File Rusak: Reset Data Pengguna!</string>
+    <string name="leave_feedback">Berikan Umpan Balik</string>
+    <string name="perhaps_later">Mungkin Nanti</string>
+    <string name="get_free_points">Dapatkan poin GRATIS!</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="pro_features">"Fitur-fitur:
+Background dapat disesuaikan
+Menyimpan hingga 3 profil pengguna
+Tidak ada Iklan
+Gameplay Online Tak Terbatas
+Lebih Banyak Fakta Otak"</string>
+    <string name="resume_saved">Anda ingin lanjutkan permainan sebelumnya yang tersimpan?</string>
+    <string name="resume">Lanjutkan</string>
+    <string name="restart">Mulai Ulang</string>
+    <string name="one_or_two_devices">Anda berkompetisi dengan 1 atau 2 perangkat?</string>
+    <string name="one_device">Satu Perangkat </string>
+    <string name="two_devices">Dua Perangkat </string>
+    <string name="pro_version_unlocked">Versi Pro telah dibuka!</string>
+    <string name="email_subject">Umpan balik Kokotoa (Id)</string>
+    <string name="send_email_using">Kirim email menggunakan</string>
+    <string name="no_email_client">Tidak ada email klien yang terinstal</string>
+    <!--  user info -->
+    <string name="edit_user_name">Edit Nama Pengguna</string>
+    <string name="enter_your_name">Masukkan Nama Anda</string>
+    <string name="share">Bagikan</string>
+    <string name="get_more_points">Dapatkan Lebih Banyak Poin</string>
+    <string name="reset">Reset</string>
+    <string name="view_rank">Lihat Peringkat Dunia Anda</string>
+    <string name="top_ranked_users">Peringkat Pengguna</string>
+    <string name="name">Nama</string>
+    <string name="average_score">Skor Rata-Rata</string>
+    <string name="user_stats">"Level Saat ini:
+Skor Tinggi:
+Skor Rata-Rata:
+Jumlah Poin:"</string>
+    <string name="reminder_change_name">Pengingat: Ubah nama pengguna default</string>
+    <string name="i_rank">Saya peringkat #</string>
+    <string name="share_msg">" (dunia) di Kokotoa. Dapatkan aplikasi Android ini dan periksa peringkat dunia Anda! "</string>
+    <string name="bb_link">"http://appworld.blackberry.com/webstore/content/20484402/"</string>
+    <string name="google_link">"https://play.google.com/store/apps/details?id=com.blackstar.math4brain"</string>
+    <string name="amazon_link">"http://www.amazon.ca/Blackstar-Math-For-The-Brain/dp/B00DR7TK6I"</string>
+    <string name="share_using">Bagikan menggunakan..</string>
+    <string name="no_name_entered">Tidak ada nama yang dimasukkan</string>
+    <string name="user_name_changed">Nama pengguna telah diubah</string>
+    <string name="your_rank">Peringkat Anda: #</string>
+    <string name="unable_to_connect">Tidak dapat tersambung dengan jaringan</string>
+    <string name="loading">Sedang memuat..</string>
+    <string name="version_outdated">Versi ini sudah kadaluarsa. Silahkan upgrade ke v</string>
+    <string name="new_message">Anda telah menerima sebuah pesan</string>
+    <string name="default_name">Tidak ada nama</string>
+    
+    <string name="percent_sign">"% dari "</string>
+    <string name="correct">Benar</string>
+    <string name="wrong">Salah</string>
+    <string name="all_bonus">BONUS</string>
+    <string name="notification_msg">Menjaha pikiran Anda tetap tajam, melatih otak Anda</string>
+    <string name="games_avail">game tersedia hari ini</string>
+    <string name="last_game">Ini adalah game terakhir Anda hari ini</string>
+    <string name="no_more_games">Tidak ada game yang tersedia untuk Anda hari ini. Dapatkan versi Pro untuk gameplay yang tak terbatas.</string>
+    <string name="initial_try">Untuk mempertahankan kecepatan server, jumlah game online yang dapat Anda mainkan per hari adalah terbatas. Dapatkan versi Pro untuk gameplay yang tak terbatas</string>
+    <string name="wrong_id">Anda harus masukkan ID lawan Anda, bukan ID Anda sendiri</string>
+    <string name="p1_not_ready">Lawan belum siap</string>
+    <string name="p1_not_found">Lawan tidak ditemukan</string>
+    <string name="p1_not_joined">Sesi tidak tergabung</string>
+    <string name="rate_msg">Jika Anda menggunakan Kokotoa, maukah Anda meluangkan sedikit waktu untuk memberikan 5 bintang kepada kami?</string>
+    <string name="rate">Beri Kami Nilai</string>
+    <string name="no_thanks">Tidak, terimakasih</string>
+    <string name="breakMsg">Berikan istirahat pada otak Anda, kembalilah lagi nanti</string>
+    <string name="too_easy">Kesulitan yang lebih tinggi direkomendasikan</string>
+    <string name="too_difficult">Kesulitan yang lebih rendah direkomendasikan</string>
+    <string name="days">Hari</string>
+    <string name="prog_chart">Grafik Kemajuan Anda</string>
+    <string name="try_challenge">Coba Tantangan</string>
+    <string name="evaluation">Evaluasi</string>
+    <string name="evaluation_msg">Kita akan membuat profil disesuaikan untuk Anda. Mari kita mulai</string>
+    <string name="enter_valid_email">silakan isi alamat email</string>
+    <string name="email">e-mail</string>
+    <string name="backup">Backup data Anda</string>
+    <string name="restore">Mengembalikan data</string>
+    <string name="backup_restore">Backup/Mengembalikan</string>
+    
+    <!--  Tips -->
+    <string-array name="tips">
+        <item>"Otak perempuan dan laki-laki berbeda secara biologis dan intelektual."</item>
+        <item>"Rasa jenuh adalah lebih pada sebuah kebiasaan yang dibentuk di dalam otak, dan terbentuk oleh pilihan Anda sendiri, bukan realitas."</item>
+        <item>"Lingkungan diperhitungkan, dan sebuah pengaturan yang sehat akan membantu masyarakat untuk mengubah permasalahan menjadi solusi."</item>
+        <item>"Koneksi emosional yang lebih intens, yang lebih kuat, terhubung dengan memori yang didorong oleh aroma."</item>
+        <item>"Sel-sel otak dendrit menggunakan dunia luar dan akan terbentuk, atau tumbuh berdasarkan apa yang Anda lakukan."</item>
+        <item>"Musik mengubah kecepatan gelombang otak dengan cara yang berdampak pada suasana hati dan mengubah produtifitas."</item>
+        <item>"Ceramah dan percakapan lebih memberikan keuntungan kecerdasan untuk pembicara daripada penonton."</item>
+        <item>"Mengkaitkan fakta-fakta yang sulit dengan satu hal yang Anda ketahui dan pembelajaran akan meningkat dalam waktu yang singkat."</item>
+        <item>"Kecerdasan ganda adalah umum untuk semua, digunakan oleh beberapa, dan dapat menjadi lebih berkembang setiap harinya."</item>
+        <item>"Manusia melepaskan hormon pertumbuhan selama tidur."</item>
+        <item>"2% dari populasi tidak memiliki indera penciuman sama sekali."</item>
+        <item>"Plastisitas memungkinan orang untuk menghubungkan otak manusia dengan cara yang akan membuatnya tetap lebih muda dan lebih cerdas."</item>
+        <item>"Stres secara harfiah akan menyusutkan otak."</item>
+        <item>"Menginspirasi kreatifitas dan penemuan melaluhi mengajar orang lain, pada saat yang sama Anda juga belajar."</item>
+        <item>"Berat dari otak manusia berkisar 1,3kg."</item>
+        <item>"Studi menunjukkan bahwa gelombang otak lebih aktif saat sedang bermimpi daripada saat Anda terbangun."</item>
+        <item>"Otak Anda menggunakan 20 persen darah dan oksigen yang bersirkulasi di dalam tubuh Anda."</item>
+        <item>"Manusia akan terus membuat neuron-neuron baru sepanjang hidup sebagai respon terhadap aktifitas mental."</item>
+        <item>"Setiap kali Anda mengenang sebuah memori atau memiliki sebuah pemikiran yang baru, Anda menciptakan sebuah koneksi baru di dalam otak Anda."</item>
+        <item>"Otak terbuat dari sekitar 75% air."</item>
+        <item>"8 hingga 10 = jumlah detik yang Anda miliki sebelum Anda kehilangan kesadaran karena kehilangan darah."</item>
+        <item>"Anda tidak dapat menggelitik otak Anda karena otak Anda mengenal antara sentuhan eksternal yang tidak diharapkan dengan sentuhan Anda sendiri."</item>
+        <item>"Kurang tidur sebenarnya dapat merusak kemampuan Anda dalam menciptakan memori yang baru."</item>
+        <item>"Hanya karena Anda tidak ingat dengan mimpi Anda bukan berarti Anda tidak bermimpi. Semua orang bermimpi!."</item>
+        <item>"Jumlah rata-rata pemikiran yang dialami oleh manusia setiap harinya adalah 70.000."</item>
+        <item>"12 persen impian orang hanya dalam rupa hitam dan putih sementara impian orang lainnya dalam warna-warni."</item>
+        <item>"Saat Anda tidur di malam hari dapat menjadi waktu terbaik bagi otak Anda untuk menggabungkan semua memori hari Anda."</item>
+        <item>"Stres berlebih dapat mengubah sel-sel otak, struktur otak dan fungsi otak."</item>
+        <item>"Membaca dengan lantang dan berbicara dengan sering kepada anak kecil dapat memicu perkembangan otak."</item>
+        <item>"Tidak ada reseptor sakit di otak, jadi otak tidak dapat merasa sakit."</item>
+        <item>"Otak bayi yang baru lahir berkembang sekitar tiga kali lipat dari ukurannya di tahun pertama."</item>
+        <item>"Diperkirakan bahwa menguap akan bekerja mengirimkan oksigen ke otak, sehingga bekerja untuk mendinginkannya."</item>
+        <item>"Memori terbentuk oleh asosiasi, jadi jika Anda ingin membantu mengingat sesuatu, ciptakan asosiasi untuk diri Anda sendiri."</item>
+        <item>"Jika Anda sedang mendengkur, Anda tidak sedang bermimpi."</item>
+        <item>"Pelajaran musik terbukti sangat mendorong pengorganisasian dan kemampuan otak baik untuk anak-anak maupun orang dewasa."</item>
+        <item>"Kebanyakan orang bermimpi sekitar 1 hingga 2 jam dalam semalam dan rata-rata 4 hingga 7 setiap malam."</item>
+        <item>"Otak terus mengirimkan gelombang hingga hampir 37 jam setelah kematian."</item>
+        <item>"Pepatah lama bahwa manusia hanya menggunakan 10 persen dari otak mereka adalah tidak benar. Setiap bagian otak memiliki fungsi yang dikenal."</item>
+        <item>"Otak manusia merupakan organ yang paling berlemak di dalam tubuh dan terdiri dari setidaknya 60% lemak."</item>
+        <item>"Celebrum adalah bagian terbesar dari otak dan merupakan 85 persen dari berat otak keseluruhan."</item>
+        <item>"Otak anak muda terdiri dari 100 miliar neuron."</item>
+        <item>"Ada 100.000 mil dari pembuluh darah di dalam otak."</item>
+        <item>"Daya tamping untuk emosi seperti gembira, bahagia, takut, dan malu sudah berkembang sejak lahir."</item>
+        <item>"Anda dapat belajar dengan lebih efektif dengan menulis informasi menggunakan tangan, bukan dengan mengetik."</item>
+        <item>"Menceritakan kisah dapat menjadi sebuah cara yang baik untuk melatih otak Anda."</item>
+        <item>"Meditasi mengurangi tingkat stress Anda dan meningkatkan kinerja otak."</item>
+        <item>"Sedikit aktifitas fisik dan diet cerdas akan membuat jauh lebih mudah bagi Anda untuk menjaga otak Anda agar tetap sehat."</item>
+        <item>"Otak manusia tiga kali lebih besar dari otak mamalia dengan ukuran tubuh yang sama."</item>
+        <item>"Otak manusia dilindungi oleh tengkorak, sebuah penutup pelindung yang terbuat dari 22 tulang yang tergabung bersama-sama."</item>
+        <item>"Otak tersuspensi di dalam cairan Selebrospinal, cairan ini bertindak sebagai sebuah bantalan terhadap benturan fisik dan penghalang infeksi."</item>
+        <item>"4 hingga 6 = jumlah menit otak Anda dapat bertahan tanpa oksigen sebelum mulai mati."</item>
+        <item>"10 hingga 23 = jumlah watt dari daya yang otak Anda hasilkan ketika Anda bangun (itu cukup untuk menyalakan sebuah bola lampu!)."</item>
+        <item>"Ukuran bukan masalah di dalam otak. Tidak ada bukti bahwa otak yang lebih besar berarti lebih cerdas daripada otak yang berukuran lebih kecil."</item>
+        <item>"Ada 100.000 mil dari pembuluh darah di dalam otak. Itu cukup untuk mengelilingi bumi sebanyak empat kali!."</item>
+        <item>"Kecepatan otak Anda untuk memproses informasi dapat berkisar dari 0,5 meter/detik (1MPH) hingga 120 meter/detik (268MPH)."</item>
+        <item>"Tertawa tampak seperti sebuah tindakan yang cukup sederhana, tapi ini memerlukan aktifitas di 5 area yang berbeda dari otak kita."</item>
+        <item>"Kondisi altitude yang tinggi akan membuat otak melihat visi-visi yang aneh karena berkurangnya suplai oksigen."</item>
+        <item>"Gambar yang diterima oleh mata kita sebenarnya adalah terbalik. Otak kita mengoreksinya, sehingga apa yang kita lihat menjadi berdiri ke atas!."</item>
+        <item>"Ketika Anda bersin semua fungsi tubuh kita akan berhenti kecuali jantung Anda."</item>
+        <item>"Hidung Anda dapat mengingat 50.000 aroma yang berbeda."</item>
+        <item>"Impuls saraf ke dan dari otak berjalan secepat 170 mil per jam."</item>
+        <item>"Otak kita menggunakan 20 persen energi tubuh kita dan hanya membuat 2 persen dari tubuh kita."</item>
+        <item>"Semakin dingin ruangan tempat Anda tidur, akan semakin baik kesempatan Anda untuk memiliki mimpi buruk."</item>
+        <item>"Setelah makan terlalu banyak maka pendengaran Anda akan sedikit tajam."</item>
+        <item>"Wanita mampu mengidentifikasi aroma jeruk, vanilla, kayu manis, kopi dengan lebih baik."</item>
+        <item>"Vitamin E akan melindungi sel otak dari kerusakan yang disebabkan oleh konsumsi alkohol."</item>
+        <item>"Manusia adalah satu-satunya hewan yang memproduksi air mata emosi."</item>
+        <item>"Orang-orang yang tidak kidal hidup rata-rata sembilan kali lebih lama daripada orang-orang yang kidal."</item>
+        <item>"Ada sekitar 1.350.000 neuron di dalam saraf tulang belakang manusia."</item>
+        <item>"Otak jauh lebih efektif di sepanjang malam daripada di sepanjang siang hari."</item>
+        <item>"Rata-rata orang dapat tertidur dalam 7 menit."</item>
+        <item>"Latihan teratur, diet sehat, stimulasi mental, tidur berkualitas, manajemen stress, dan sebuah kehidupan sosial adalah sangat baik untuk otak Anda."</item>
+        <item>"Stimulasi mental secara berkala akan mengurangi resiko penyakit Alzheimer."</item>
+        <item>"Alkohol tidak membuat Anda lupa apapun. Saat Anda menjadi tidak sadarkan diri karena mabuk, otak dengan sementara akan kehilangan kemampuan untuk menciptakan memori."</item>
+        <item>"Anda memiliki reseptor Rasa di dalam perut, usus, pancreas, paru-paru, anus, testikel, dan otak."</item>
+        <item>"Otak manusia memiliki konsistensi yang sama seperti tahu."</item>
+        <item>"Aroma coklat akan meningkatkan gelombang otak, yang akan memicu relaksasi."</item>
+        <item>"Melupakan adalah baik untuk otak: menghapus informasi-informasi yang tidak diperlukan akan membantu sistem saraf menjaga kekenyalannya."</item>
+        <item>"Satu studi ditemukan bahwa penggunaan ponsel untuk waktu yang lama secara signifikan akan meningkatkan resiko tumor otak."</item>
+        <item>"Kurang tidur akan mempengaruhi otak dengan cara yang berlipat-lipat dapat merusak penilaian dan reaksi yang lambat."</item>
+        <item>"Hanya perlu 6 menit bagi sel-sel otak untuk bereaksi terhadap alkohol."</item>
+    </string-array>
+    	
+</resources>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/number_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <view
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="com.blackstar.math4brain.BackgroundAnimated"
+        android:id="@+id/animatedBG"
+        android:layout_gravity="center_horizontal|top"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:src="@drawable/math4thebrain_logo" />
+
+        <TextView
+            android:id="@+id/textViewTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0"
+            android:background="@drawable/white_bg"
+            android:gravity="center"
+            android:padding="7dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="15sp" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="6" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/buttonPractice"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bt_hr"
+                        android:gravity="bottom|center_horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:scaleType="fitCenter"
+                        android:text="@string/practice"
+                        android:textColor="#0000FF"
+                        android:textSize="12sp"
+                        android:typeface="monospace"
+                        android:src="@drawable/practice" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/practice"
+                        android:id="@+id/textPractice"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#00A" />
+
+                    <ImageButton
+                        android:id="@+id/buttonChallenge"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bt_hr"
+                        android:gravity="bottom|center_horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/challenge"
+                        android:textColor="#0000FF"
+                        android:textSize="12sp"
+                        android:typeface="monospace"
+                        android:src="@drawable/challenge"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/challenge"
+                        android:id="@+id/textChallenge"
+                        android:gravity="center"
+                        android:textColor="#00A"
+                        android:layout_marginBottom="10dp" />
+
+                    <ImageButton
+                        android:id="@+id/buttonUserInfo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/bt_hr"
+                        android:gravity="bottom|center_horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/challenge"
+                        android:textColor="#0000FF"
+                        android:textSize="12sp"
+                        android:typeface="monospace"
+                        android:src="@drawable/user"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/user_info"
+                        android:id="@+id/textView"
+                        android:gravity="center"
+                        android:textColor="#00A" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/button60SRun"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bt_hr"
+                        android:gravity="bottom|center_horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/minute_run"
+                        android:textColor="#0000FF"
+                        android:textSize="12sp"
+                        android:typeface="monospace"
+                        android:src="@drawable/minute"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/minute_run"
+                        android:id="@+id/text60SRun"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#00A" />
+
+                    <ImageButton
+                        android:id="@+id/buttonFaceOff"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bt_hr"
+                        android:gravity="bottom|center_horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/multiplayer"
+                        android:textColor="#0000FF"
+                        android:textSize="12sp"
+                        android:typeface="monospace"
+                        android:src="@drawable/multiplayer"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/multiplayer"
+                        android:id="@+id/textFaceOff"
+                        android:gravity="center"
+                        android:textColor="#00A"
+                        android:layout_marginBottom="10dp" />
+
+                    <ImageButton
+                        android:id="@+id/buttonSettings"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/bt_hr"
+                        android:gravity="bottom|center_horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/challenge"
+                        android:textColor="#0000FF"
+                        android:textSize="12sp"
+                        android:typeface="monospace"
+                        android:src="@drawable/settings"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/settings"
+                        android:id="@+id/textView2"
+                        android:gravity="center"
+                        android:textColor="#00A" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="V 2.8.5"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

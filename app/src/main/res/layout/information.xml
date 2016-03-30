@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayoutMenu"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/lines_bg_lr"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/buttonEditName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_small"
+            android:gravity="center"
+            android:text="@string/edit_user_name" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enter_your_name"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:visibility="gone" >
+
+            <requestFocus />
+        </EditText>
+
+        <FrameLayout
+            android:id="@+id/frameLayoutStats"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.1"
+            android:background="@drawable/shadow_banner" >
+
+            <com.blackstar.math4brain.TrackProgressView
+                android:id="@+id/trackProgressView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutStats"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/textViewInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textViewInfo1b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/buttonShare"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/dim_foreground_material_dark"
+            android:text="@string/share"
+            android:visibility="gone"
+            android:src="@drawable/abc_ic_menu_share_mtrl_alpha"
+            android:layout_margin="5dp" />
+
+        <FrameLayout
+            android:id="@+id/frameLayoutRR"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.2" >
+
+            <Button
+                android:id="@+id/buttonViewRank"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="7dp"
+                android:background="@drawable/button_small"
+                android:text="@string/view_rank" />
+
+        </FrameLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBarLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textViewInfo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="your rank"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TableLayout
+            android:id="@+id/tableLayoutTopUsers"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/global"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/top_ranked_users"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TableRow
+                    android:id="@+id/tableRow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/textViewOut"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".75"
+                        android:text="@string/name"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewInform"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/level"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/average_score"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/total_points"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <ListView
+                    android:id="@+id/listViewUsers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </ListView>
+            </LinearLayout>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/buttonInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_menu"
+            android:text="@string/ok"
+            android:textStyle="bold" />
+
+    </LinearLayout>
