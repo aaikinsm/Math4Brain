@@ -20,6 +20,9 @@ import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.OvershootInterpolator;
+import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
@@ -65,6 +68,7 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
 	AdView adView1;
 	InterstitialAd mInterstitialAd;
 	ProgressBar progress;
+	FrameLayout numPad;
     
     /** Called when the activity is first created. */
     @Override
@@ -101,10 +105,10 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
         final ImageButton pass = (ImageButton) findViewById(R.id.buttonPass);
         final ImageButton pass2 = (ImageButton) findViewById(R.id.buttonPass2);
         final ImageButton clear = (ImageButton) findViewById(R.id.buttonClr);
-        final Button next = (Button) findViewById(R.id.buttonNext);
-        final Button back = (Button) findViewById(R.id.buttonBack);
+        final ImageButton next = (ImageButton) findViewById(R.id.buttonNext);
+        final ImageButton back = (ImageButton) findViewById(R.id.buttonBack);
         final Button ad = (Button) findViewById(R.id.buttonAd);
-        final FrameLayout comboPad = (FrameLayout) findViewById(R.id.frameLayoutNumPad);
+        numPad = (FrameLayout) findViewById(R.id.frameLayoutNumPad);
         final LinearLayout scroll = (LinearLayout) findViewById(R.id.linearLayoutScroll);
         final ImageView backgroundImg = (ImageView) findViewById(R.id.imageViewEqnBackground);
         final MediaPlayer mp3Correct = MediaPlayer.create(this, R.raw.correct);
@@ -135,7 +139,8 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
         else if(android.os.Build.MODEL.toLowerCase().contains("kindle"))amazon=true;
 		progress = (ProgressBar) findViewById(R.id.progressBarBlue);
 		progress.setVisibility(View.VISIBLE);
-		clock.setVisibility(View.GONE);
+		clock.setVisibility(View.VISIBLE);
+        numPad.setVisibility(View.INVISIBLE);
 
 
         //Locate the Banner Ad in activity_main.xml
@@ -259,6 +264,8 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
 				showEq.setText(eq.getEquation());
 				startTime = System.currentTimeMillis();
 				dialog.dismiss();
+                numPad.setVisibility(View.VISIBLE);
+				animate();
 			}
 		});
 		dialog.show();
@@ -301,6 +308,7 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
         		clock.setText(gSettings.getClock());
 				progress.setProgress((int) (Double.parseDouble(gSettings.getClock()) * 100 / setTime));
         		if(gSettings.clock==0){
+					clock.setVisibility(View.GONE);
         			//Display ad or banner if not pro version
         			if(!(aScores[0]>minPointsPro || pro)){
         				if(admobActive){
@@ -325,7 +333,7 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
         			if(gSettings.vibrate==1)vb.vibrate(1000);
             		showEq.setText(R.string.time_is_up);
             		gSettings.timeUp = true;
-            		comboPad.setVisibility(View.GONE);
+            		numPad.setVisibility(View.GONE);
             		showIn.setText("");
             		aScores[0] += gSettings.getPoints();
             		aScores[1] += 1;
@@ -337,8 +345,7 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
             			aScores[2]=gSettings.getPoints();
             		}
             		if(!review.equals(""))corrections.setText("*"+getString(R.string.review)+"*\n"+review+"\n");
-            		scroll.setBackgroundResource(R.drawable.shadow_bg);
-            		next.setText(getString(R.string.try_again));
+            		scroll.setBackgroundResource(R.drawable.white_bg);
             		next.setVisibility(View.VISIBLE);
             		back.setVisibility(View.VISIBLE);
                     progress.setVisibility(View.GONE);
@@ -909,11 +916,11 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
         mp3Tick.stop();
         }catch(Exception E){E.printStackTrace();}
 
-		int rn = (int) (Math.random()*(20)) ;
-		if(!pro && rn==1 && Integer.parseInt(gFile[9])>1500 && mInterstitialAd.isLoaded()){
+		int rn = (int) (Math.random()*(15)) ;
+		if(!pro && rn==1 && Integer.parseInt(gFile[9])>1000 && mInterstitialAd.isLoaded()){
 			mInterstitialAd.show();
 		}
-		else if(!pro && rn==3 && Integer.parseInt(gFile[9])>2000){
+		else if(!pro && rn==3 && Integer.parseInt(gFile[9])>1500){
 			TapjoyConnect.getTapjoyConnectInstance().getFullScreenAd(fullAdNotif);
 			FlurryAgent.logEvent("Video_Ad");
 		}
@@ -930,4 +937,11 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
         mHandler.removeCallbacks(breakTimer);
         finish();
     }
+
+	public void animate(){
+		Animation newAnimation = new TranslateAnimation(0,0,1100,0);
+		newAnimation.setDuration(700);
+		newAnimation.setInterpolator(new OvershootInterpolator());
+		numPad.startAnimation(newAnimation);
+	}
 }

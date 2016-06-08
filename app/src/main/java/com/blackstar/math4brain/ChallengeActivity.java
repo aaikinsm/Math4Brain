@@ -18,10 +18,14 @@ import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.OvershootInterpolator;
+import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -43,6 +47,8 @@ public class ChallengeActivity extends Activity{
 	private SpeechRecognizer sr;
 	boolean speechActive = false;
 	ImageButton micButton;
+	ProgressBar progress;
+	FrameLayout numPad;
 
 	@Override
     public void onCreate(Bundle savedInstanceState) {
@@ -68,13 +74,13 @@ public class ChallengeActivity extends Activity{
         final ImageButton pass = (ImageButton) findViewById(R.id.buttonPass);
         final ImageButton pass2 = (ImageButton) findViewById(R.id.buttonPass2);
         final ImageButton clear = (ImageButton) findViewById(R.id.buttonClr);
-        final Button next = (Button) findViewById(R.id.buttonNext);
-        final Button back = (Button) findViewById(R.id.buttonBack);
+        final ImageButton next = (ImageButton) findViewById(R.id.buttonNext);
+        final ImageButton back = (ImageButton) findViewById(R.id.buttonBack);
         final MediaPlayer mp3Correct = MediaPlayer.create(this, R.raw.correct);
         final MediaPlayer mp3Wrong = MediaPlayer.create(this, R.raw.wrong);
         final MediaPlayer mp3Over = MediaPlayer.create(this, R.raw.gameover);
         final ImageView backgroundImg = (ImageView) findViewById(R.id.imageViewEqnBackground);
-        final FrameLayout numPad = (FrameLayout) findViewById(R.id.frameLayoutNumPad);
+       numPad = (FrameLayout) findViewById(R.id.frameLayoutNumPad);
         mp3Tick = MediaPlayer.create(this, R.raw.ticktok);
         gSettings = new GameSettings();       
         final Vibrator vb = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE); 
@@ -91,7 +97,11 @@ public class ChallengeActivity extends Activity{
         clock.setTypeface(myTypeface);
         micButton = (ImageButton) findViewById(R.id.buttonMic);
         sr = SpeechRecognizer.createSpeechRecognizer(this);       
-        sr.setRecognitionListener(new listener());  
+        sr.setRecognitionListener(new listener());
+		progress = (ProgressBar) findViewById(R.id.progressBarRed);
+		progress.setVisibility(View.VISIBLE);
+		clock.setVisibility(View.VISIBLE);
+		numPad.setVisibility(View.INVISIBLE);
 
         //get user level and create settings 
         try {
@@ -204,6 +214,8 @@ public class ChallengeActivity extends Activity{
 	        		eq.createNew();
 	        		showEq.setText(eq.getEquation());
 	        		dialog.dismiss();
+					numPad.setVisibility(View.VISIBLE);
+					animate();
 				}
 			});
 			dialog.show();
@@ -246,6 +258,7 @@ public class ChallengeActivity extends Activity{
         			catch(Exception e){e.printStackTrace();}
         		}
         		clock.setText(gSettings.getClock());
+				progress.setProgress((int) (Double.parseDouble(gSettings.getClock()) * 100 / setTime));
         		//if time is up
         		if(gSettings.clock==0){
         			try{
@@ -256,7 +269,6 @@ public class ChallengeActivity extends Activity{
             		result.setText(getResources().getString(R.string.score)+": "+gSettings.score);
             		gSettings.timeUp = true;
             		numPad.setVisibility(View.GONE);
-            		next.setText(R.string.try_again);
             		next.setVisibility(View.VISIBLE);
             		back.setVisibility(View.VISIBLE);
             		showIn.setVisibility(View.GONE);
@@ -284,8 +296,7 @@ public class ChallengeActivity extends Activity{
             		showEq.setText(getResources().getString(R.string.level)+" "+gSettings.level+" "+getResources().getString(R.string.complete));
             		result.setText(getResources().getString(R.string.score)+": "+gSettings.score);
             		gSettings.timeUp = true;
-            		numPad.setVisibility(View.GONE);           		
-            		next.setText(R.string.next);
+            		numPad.setVisibility(View.GONE);
             		next.setVisibility(View.VISIBLE);
             		back.setVisibility(View.VISIBLE);
             		showIn.setVisibility(View.GONE);          		
@@ -309,7 +320,6 @@ public class ChallengeActivity extends Activity{
             		gSettings.timeUp = true;
             		numPad.setVisibility(View.GONE);
             		showIn.setVisibility(View.GONE);
-            		next.setText(R.string.try_again);
             		next.setVisibility(View.VISIBLE);
             		back.setVisibility(View.VISIBLE);
             		try {
@@ -602,6 +612,12 @@ public class ChallengeActivity extends Activity{
             Log.d(TAG, "onEvent " + eventType);}
     }
 
+	public void animate(){
+		Animation newAnimation = new TranslateAnimation(0,0,1100,0);
+		newAnimation.setDuration(700);
+		newAnimation.setInterpolator(new OvershootInterpolator());
+		numPad.startAnimation(newAnimation);
+	}
 	
 	@Override
     public void onDestroy() {

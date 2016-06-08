@@ -162,88 +162,90 @@ Points totaux:"</string>
     <string name="backup">Sauvegardez vos données</string>
     <string name="restore">Restaurer des données</string>
     <string name="backup_restore">Sauvegardez/Restaurer</string>
+    <string name="press_to_clear">Si vous faites une erreur, retirez rapidement votre réponse en appuyant sur:</string>
+    <string name="press_to_skip">Si vous ne connaissez pas la réponse, passez à la question en appuyant sur:</string>
     
 	<string-array name="tips">
-		<item>"Le cerveau des femmes et des hommes sont différents biologiquement et intellectuellement."</item>
-		<item>"L'ennui est plus une habitude formé dans le cerveau, et façonné par vos choix, que de la réalité"</item>
-		<item>"L’environnement compte, et un cadre sain aide les gens à transformer les problèmes en solutions."</item>
-		<item>"Plus lourd, les liens émotionnels plus intenses sont liés à des souvenirs suscités par l'odeur."</item>
-		<item>"Les cellules du cerveau dendrite utilisent le monde extérieur et prennent forme, ou se développent sur la base de ce que vous faites."</item>
-        <item>"La musique change les vitesses des ondes cérébrales d'une manière qui influent sur l'humeur et altèrent la productivité."</item>
-        <item>"Les conférences et les conversations bénéficient l’intelligence de l'orateur plus que le publique."</item>
-        <item>"Accrochez même des faits difficiles sur une seule chose que vous savez et des augmentations d'apprentissage en moins de temps"</item>
-        <item>"Les Intelligences multiples sont communs à tous, utilisée par quelques-uns, et peuvent être plus développées tous les jours."</item>
-        <item>"L'être humain libère des hormones de croissance pendant le sommeil"</item>
-        <item>"2% de la population n'a pas de sens de l'odorat du tout."</item>
-        <item>"La Plasticité permet aux gens de recaler le cerveau humain d'une manière qui le maintiennent plus jeune et plus intelligemment."</item>
-        <item>"Le stress rétrécit littéralement le cerveau."</item>
-        <item>"Inspirez la créativité et l'invention à travers l'enseignement d'autres, dans le même temps que vous apprenez aussi."</item>
-        <item>"Le poids du cerveau humain est d'environ 3 lbs."</item>
-        <item>"Des études montrent que les ondes cérébrales sont plus actifs tout en rêvant que lorsque vous êtes éveillé."</item>
-        <item>"Votre cerveau utilise 20 pour cent de la circulation du sang et d'oxygène dans votre corps."</item>
-        <item>"Les êtres humains continuent à faire de nouveaux neurones tout au long de la vie en réponse à l'activité mentale."</item>
-        <item>"Chaque fois que vous rappelez une mémoire ou ayez une pensée nouvelle, vous créez une nouvelle connexion dans votre cerveau."</item>
-        <item>"Le cerveau est composé d'environ 75 pour cent de l'eau."</item>
-        <item>"8 à 10, = le nombre de secondes que vous avez avant de perdre conscience en raison de la perte de sang."</item>
-        <item>"Vous ne pouvez pas vous chatouiller parce que votre cerveau distingue entre la tactile externe inattendue et votre touche personnelle."</item>
-        <item>"Le manque de sommeil peut réellement nuire à votre capacité à créer de nouveaux souvenirs."</item>
-        <item>"Juste parce que vous ne vous souvenez pas de vos rêves ne signifie pas que vous ne rêvez pas. Tout le monde rêve!"</item>
-        <item>"Le nombre moyen de pensées que les humains sont censés vivre chaque jour est de 70.000."</item>
-        <item>"2 pour cent des gens ne rêvent que en noir et blanc tandis que d'autres rêvent en couleur."</item>
-        <item>"Pendant que vous dormez, la nuit peut être le meilleur moment pour votre cerveau à consolider tous vos souvenirs de la journée."</item>
-        <item>"L'excès de stress a montré la modification des cellules du cerveau, la structure du cerveau et le fonctionnement du cerveau."</item>
-        <item>"La Lecture à haute voix et parler souvent à un jeune enfant favorise le développement du cerveau."</item>
-        <item>"Il n'y a pas de récepteurs de la douleur dans le cerveau, de sorte que le cerveau peut se sentir aucune douleur."</item>
-        <item>"Le cerveau d'un bébé nouveau-né devient environ trois fois sa taille dans la première année."</item>
-        <item>"On pense que fonctionner un bâillement est d'envoyer plus d'oxygène au cerveau, donc travaillez pour le refroidir."</item>
-        <item>"La mémoire est formée par les associations, donc si vous voulez aider à se souvenir des choses, créez des associations pour vous-même."</item>
-        <item>"Si vous ronflez, vous ne rêvez pas."</item>
-        <item>"Les Leçons de musique ont montré la stimulation considérable de l'organisation du cerveau et de la capacité dans les deux, les enfants et les adultes."</item>
-        <item>"La plupart des gens rêvent environ 1 à 2 heures par nuit et ont une moyenne de 4 à 7 rêves chaque nuit."</item>
-        <item>"Le cerveau continue à envoyer des ondes cérébrales jusqu'à environ 37 heures après la mort."</item>
-        <item>"Le vieil adage de l'homme en utilisant seulement 10 pourcent de leur cerveau n’est pas vrai. Chaque partie du cerveau a une fonction connue."</item>
-        <item>"Le cerveau humain est le plus gros organe dans le corps et peut se compose d'au moins 60 pour cent de graisse."</item>
-        <item>"Le cerveau est la plus grande partie du cerveau qui représente 85 pour cent du poids du cerveau"</item>
-        <item>"Votre cerveau se compose d'environ 100 milliards de neurones."</item>
-        <item>"Il y a 100.000 miles de vaisseaux sanguins dans le cerveau."</item>
-        <item>"La capacité d'émotions telles que la joie, le bonheur, la peur, et la timidité sont déjà développé à la naissance."</item>
-        <item>"Vous pouvez en apprendre plus efficacement en écrivant l'information manuscrite, pas en tapant"</item>
-        <item>"Le conte peut être une bonne façon d'exercer votre cerveau."</item>
-        <item>"La méditation réduit votre niveau de stress et améliore les performances du cerveau."</item>
-        <item>"Un peu d'activité physique et une alimentation intelligente sera beaucoup plus facile pour vous pour garder votre cerveau en pleine forme."</item>
-        <item>"Le cerveau humain est plus de trois fois plus gros que le cerveau des autres mammifères qui sont de la taille d'un organisme semblable."</item>
-        <item>"Le cerveau humain est protégé par le crâne, un carter de protection composé de 22 os qui sont reliées entre elles."</item>
-        <item>"Le cerveau est suspendu dans le liquide céphalo-rachidien, ce liquide agit comme un coussin à l'impact physique et une barrière aux infections."</item>
-        <item>"4 à 6, = le nombre de minutes de votre cerveau peut survivre sans oxygène avant qu'il ne commence à mourir."</item>
-        <item>"0 à 23, = le nombre de watts de puissance de votre cerveau génère quand vous êtes éveillé (ce qui est suffisant pour allumer une ampoule!)."</item>
-        <item>"La taille n'a pas d'importance dans le cerveau. Il n'y a aucune preuve qu'un cerveau plus gros est plus intelligent que d'un cerveau plus petit."</item>
-        <item>"Il y a 100.000 miles de vaisseaux sanguins dans le cerveau. Cela suffit à enrouler autour de la terre entière quatre fois!"</item>
-        <item>"La vitesse à laquelle votre cerveau traite l'information peut varier de 0,5 mètres / seconde (1 mph) à 120 mètres / seconde (268 mph)."</item>
-        <item>"Rire d'une plaisanterie semble comme une action assez simple, mais il nécessite une activité dans 5 zones différentes de notre cerveau!"</item>
-        <item>"Les conditions de haute altitude rendent le cerveau à des visions étranges en raison de l'offre réduite d'oxygène."</item>
-        <item>"Les images que reçoivent nos yeux sont en fait à l'envers. Notre cerveau les corrige, afin que nous les voyons le côté droit!"</item>
-        <item>"Lorsque vous éternuez, toutes vos fonctions corporelles s’arrêtent, y compris votre cœur."</item>
-        <item>"Votre nez peut se rappeler de 50.000 odeurs différentes."</item>
-        <item>"Les impulsions nerveuses vers et durant le voyage sont aussi vite que 170 miles par heure de cerveau."</item>
-        <item>"Notre cerveau utilise 20 pour cent de notre énergie du corps et ne représente que 2 pour cent du poids de notre corps."</item>
-        <item>"La plus froide la salle où vous dormez, les meilleures sont les chances que vous aurez un mauvais rêve."</item>
-        <item>"Après avoir mangé trop, votre audience est moins forte"</item>
-        <item>"Les femmes sont mieux en mesure d'identifier les agrumes, les vanilles, les cannelles et les odeurs du café."</item>
-        <item>"La vitamine E protège les cellules cérébrales contre les dommages causés par la consommation d'alcool"</item>
-        <item>"Les êtres humains sont les seuls animaux à produire des larmes émotionnelles"</item>
-        <item>"Les droitiers vivent, en moyenne, neuf ans de plus que les gens gauchers"</item>
-        <item>"Il y a environ 1.350.000 neurones de la moelle épinière humaine"</item>
-        <item>"Le cerveau est beaucoup plus actif durant la nuit que pendant la journée"</item>
-        <item>"La personne moyenne peut s'endormir en 7 minutes"</item>
-        <item>"Un exercice régulier, une alimentation saine, une stimulation mentale, une qualité du sommeil, une gestion du stress, et une vie sociale active sont parfaits pour votre cerveau"</item>
-        <item>"La stimulation mentale fréquente permettra de réduire le risque de la maladie d'Alzheimer"</item>
-        <item>"L'alcool ne vous rend pas entre d’oublier quelque chose. Lorsque vous obtenez une panne ivre, le cerveau perd temporairement la capacité de création des souvenirs."</item>
-        <item>"Vous avez des récepteurs de goût dans l’estomac, les intestins, le pancréas, les poumons, l'anus, les testicules et le cerveau."</item>
-        <item>"Le cerveau humain a la même consistance que le tofu"</item>
-        <item>"L'odeur du chocolat augmente les ondes cérébrales, ce qui déclenche la détente"</item>
-        <item>"L'oubli est bon pour le cerveau: la suppression des informations inutiles aide le système nerveux à conserver sa plasticité."</item>
-        <item>"Une étude a révélé que l'utilisation d'un téléphone mobile pendant une longue période augmente significativement le risque de tumeurs cérébrales."</item>
-        <item>"La privation de sommeil affecte le cerveau de plusieurs façons qui peuvent altérer le jugement et la réaction lente."</item>
-        <item>"Il ne faut que 6 minutes pour les cellules du cerveau pour réagir à l'alcool"</item>
+        <item>"01 Le cerveau des femmes et des hommes sont différents biologiquement et intellectuellement."</item>
+        <item>"02 L'ennui est plus une habitude formé dans le cerveau, et façonné par vos choix, que de la réalité"</item>
+        <item>"03 L'environnement compte, et un cadre sain aide les gens à transformer les problèmes en solutions."</item>
+        <item>"04 Plus lourd, les liens émotionnels plus intenses sont liés à des souvenirs suscités par l'odeur."</item>
+        <item>"05 Les cellules du cerveau dendrite utilisent le monde extérieur et prennent forme, ou se développent sur la base de ce que vous faites."</item>
+        <item>"06 La musique change les vitesses des ondes cérébrales d'une manière qui influent sur l'humeur et altèrent la productivité."</item>
+        <item>"07 Les conférences et les conversations bénéficient l’intelligence de l'orateur plus que le publique."</item>
+        <item>"08 Il ne faut que 6 minutes pour les cellules du cerveau pour réagir à l'alcool"</item>
+        <item>"09 Accrochez même des faits difficiles sur une seule chose que vous savez et des augmentations d'apprentissage en moins de temps"</item>
+        <item>"10 Les Intelligences multiples sont communs à tous, utilisée par quelques-uns, et peuvent être plus développées tous les jours."</item>
+        <item>"11 L'être humain libère des hormones de croissance pendant le sommeil"</item>
+        <item>"12 2% de la population n'a pas de sens de l'odorat du tout."</item>
+        <item>"13 La Plasticité permet aux gens de recaler le cerveau humain d'une manière qui le maintiennent plus jeune et plus intelligemment."</item>
+        <item>"14 Le stress rétrécit littéralement le cerveau."</item>
+        <item>"15 Inspirez la créativité et l'invention à travers l'enseignement d'autres, dans le même temps que vous apprenez aussi."</item>
+        <item>"16 La privation de sommeil affecte le cerveau de plusieurs façons qui peuvent altérer le jugement et la réaction lente."</item>
+        <item>"17 Le poids du cerveau humain est d'environ 3 lbs."</item>
+        <item>"18 Des études montrent que les ondes cérébrales sont plus actifs tout en rêvant que lorsque vous êtes éveillé."</item>
+        <item>"19 Votre cerveau utilise 20 pour cent de la circulation du sang et d'oxygène dans votre corps."</item>
+        <item>"20 Les êtres humains continuent à faire de nouveaux neurones tout au long de la vie en réponse à l'activité mentale."</item>
+        <item>"21 Chaque fois que vous rappelez une mémoire ou ayez une pensée nouvelle, vous créez une nouvelle connexion dans votre cerveau."</item>
+        <item>"22 Le cerveau est composé d'environ 75 pour cent de l'eau."</item>
+        <item>"23 8 à 10, = le nombre de secondes que vous avez avant de perdre conscience en raison de la perte de sang."</item>
+        <item>"24 Vous ne pouvez pas vous chatouiller parce que votre cerveau distingue entre la tactile externe inattendue et votre touche personnelle."</item>
+        <item>"25 Le manque de sommeil peut réellement nuire à votre capacité à créer de nouveaux souvenirs."</item>
+        <item>"26 Juste parce que vous ne vous souvenez pas de vos rêves ne signifie pas que vous ne rêvez pas. Tout le monde rêve!"</item>
+        <item>"27 Le nombre moyen de pensées que les humains sont censés vivre chaque jour est de 70.000."</item>
+        <item>"28 2 pour cent des gens ne rêvent que en noir et blanc tandis que d'autres rêvent en couleur."</item>
+        <item>"29 Pendant que vous dormez, la nuit peut être le meilleur moment pour votre cerveau à consolider tous vos souvenirs de la journée."</item>
+        <item>"30 L'excès de stress a montré la modification des cellules du cerveau, la structure du cerveau et le fonctionnement du cerveau."</item>
+        <item>"31 La Lecture à haute voix et parler souvent à un jeune enfant favorise le développement du cerveau."</item>
+        <item>"32 Il n'y a pas de récepteurs de la douleur dans le cerveau, de sorte que le cerveau peut se sentir aucune douleur."</item>
+        <item>"33 Le cerveau d'un bébé nouveau-né devient environ trois fois sa taille dans la première année."</item>
+        <item>"34 On pense que fonctionner un bâillement est d'envoyer plus d'oxygène au cerveau, donc travaillez pour le refroidir."</item>
+        <item>"35 La mémoire est formée par les associations, donc si vous voulez aider à se souvenir des choses, créez des associations pour vous-même."</item>
+        <item>"36 Si vous ronflez, vous ne rêvez pas."</item>
+        <item>"37 Les Leçons de musique ont montré la stimulation considérable de l'organisation du cerveau et de la capacité dans les deux, les enfants et les adultes."</item>
+        <item>"38 La plupart des gens rêvent environ 1 à 2 heures par nuit et ont une moyenne de 4 à 7 rêves chaque nuit."</item>
+        <item>"39 Le cerveau continue à envoyer des ondes cérébrales jusqu'à environ 37 heures après la mort."</item>
+        <item>"40 Le vieil adage de l'homme en utilisant seulement 10 pourcent de leur cerveau n’est pas vrai. Chaque partie du cerveau a une fonction connue."</item>
+        <item>"41 Une étude a révélé que l'utilisation d'un téléphone mobile pendant une longue période augmente significativement le risque de tumeurs cérébrales."</item>
+        <item>"42 Le cerveau humain est le plus gros organe dans le corps et peut se compose d'au moins 60 pour cent de graisse."</item>
+        <item>"43 Le cerveau est la plus grande partie du cerveau qui représente 85 pour cent du poids du cerveau"</item>
+        <item>"44 Votre cerveau se compose d'environ 100 milliards de neurones."</item>
+        <item>"45 Il y a 100.000 miles de vaisseaux sanguins dans le cerveau."</item>
+        <item>"46 La capacité d'émotions telles que la joie, le bonheur, la peur, et la timidité sont déjà développé à la naissance."</item>
+        <item>"47 Vous pouvez en apprendre plus efficacement en écrivant l'information manuscrite, pas en tapant"</item>
+        <item>"48 Le conte peut être une bonne façon d'exercer votre cerveau."</item>
+        <item>"49 La méditation réduit votre niveau de stress et améliore les performances du cerveau."</item>
+        <item>"50 Un peu d'activité physique et une alimentation intelligente sera beaucoup plus facile pour vous pour garder votre cerveau en pleine forme."</item>
+        <item>"51 Le cerveau humain est plus de trois fois plus gros que le cerveau des autres mammifères qui sont de la taille d'un organisme semblable."</item>
+        <item>"52 Le cerveau humain est protégé par le crâne, un carter de protection composé de 22 os qui sont reliées entre elles."</item>
+        <item>"53 Le cerveau est suspendu dans le liquide céphalo-rachidien, ce liquide agit comme un coussin à l'impact physique et une barrière aux infections."</item>
+        <item>"54 4 à 6, = le nombre de minutes de votre cerveau peut survivre sans oxygène avant qu'il ne commence à mourir."</item>
+        <item>"55 0 à 23, = le nombre de watts de puissance de votre cerveau génère quand vous êtes éveillé (ce qui est suffisant pour allumer une ampoule!)."</item>
+        <item>"56 La taille n'a pas d'importance dans le cerveau. Il n'y a aucune preuve qu'un cerveau plus gros est plus intelligent que d'un cerveau plus petit."</item>
+        <item>"57 Il y a 100.000 miles de vaisseaux sanguins dans le cerveau. Cela suffit à enrouler autour de la terre entière quatre fois!"</item>
+        <item>"58 La vitesse à laquelle votre cerveau traite l'information peut varier de 0,5 mètres / seconde (1 mph) à 120 mètres / seconde (268 mph)."</item>
+        <item>"59 Rire d'une plaisanterie semble comme une action assez simple, mais il nécessite une activité dans 5 zones différentes de notre cerveau!"</item>
+        <item>"60 Les conditions de haute altitude rendent le cerveau à des visions étranges en raison de l'offre réduite d'oxygène."</item>
+        <item>"61 Les images que reçoivent nos yeux sont en fait à l'envers. Notre cerveau les corrige, afin que nous les voyons le côté droit!"</item>
+        <item>"62 Lorsque vous éternuez, toutes vos fonctions corporelles s’arrêtent, y compris votre cœur."</item>
+        <item>"63 Votre nez peut se rappeler de 50.000 odeurs différentes."</item>
+        <item>"64 Les impulsions nerveuses vers et durant le voyage sont aussi vite que 170 miles par heure de cerveau."</item>
+        <item>"65 Notre cerveau utilise 20 pour cent de notre énergie du corps et ne représente que 2 pour cent du poids de notre corps."</item>
+        <item>"66 La plus froide la salle où vous dormez, les meilleures sont les chances que vous aurez un mauvais rêve."</item>
+        <item>"67 Après avoir mangé trop, votre audience est moins forte"</item>
+        <item>"68 Les femmes sont mieux en mesure d'identifier les agrumes, les vanilles, les cannelles et les odeurs du café."</item>
+        <item>"69 La vitamine E protège les cellules cérébrales contre les dommages causés par la consommation d'alcool"</item>
+        <item>"70 Les êtres humains sont les seuls animaux à produire des larmes émotionnelles"</item>
+        <item>"71 Les droitiers vivent, en moyenne, neuf ans de plus que les gens gauchers"</item>
+        <item>"72 Il y a environ 1.350.000 neurones de la moelle épinière humaine"</item>
+        <item>"73 Le cerveau est beaucoup plus actif durant la nuit que pendant la journée"</item>
+        <item>"74 La personne moyenne peut s'endormir en 7 minutes"</item>
+        <item>"75 Un exercice régulier, une alimentation saine, une stimulation mentale, une qualité du sommeil, une gestion du stress, et une vie sociale active sont parfaits pour votre cerveau"</item>
+        <item>"76 La stimulation mentale fréquente permettra de réduire le risque de la maladie d'Alzheimer"</item>
+        <item>"77 L'oubli est bon pour le cerveau: la suppression des informations inutiles aide le système nerveux à conserver sa plasticité."</item>
+        <item>"78 L'alcool ne vous rend pas entre d’oublier quelque chose. Lorsque vous obtenez une panne ivre, le cerveau perd temporairement la capacité de création des souvenirs."</item>
+        <item>"79 Vous avez des récepteurs de goût dans l’estomac, les intestins, le pancréas, les poumons, l'anus, les testicules et le cerveau."</item>
+        <item>"80 Le cerveau humain a la même consistance que le tofu"</item>
+        <item>"81 L'odeur du chocolat augmente les ondes cérébrales, ce qui déclenche la détente"</item>
     </string-array>
 </resources>

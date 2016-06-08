@@ -168,90 +168,92 @@ Jumlah Poin:"</string>
     <string name="backup">Backup data Anda</string>
     <string name="restore">Mengembalikan data</string>
     <string name="backup_restore">Backup/Mengembalikan</string>
+    <string name="press_to_clear">Jika Anda membuat kesalahan, cepat menghapus jawaban Anda dengan menekan:</string>
+    <string name="press_to_skip">Jika Anda tidak tahu jawabannya, lewati pertanyaan dengan menekan:</string>
     
     <!--  Tips -->
     <string-array name="tips">
-        <item>"Otak perempuan dan laki-laki berbeda secara biologis dan intelektual."</item>
-        <item>"Rasa jenuh adalah lebih pada sebuah kebiasaan yang dibentuk di dalam otak, dan terbentuk oleh pilihan Anda sendiri, bukan realitas."</item>
-        <item>"Lingkungan diperhitungkan, dan sebuah pengaturan yang sehat akan membantu masyarakat untuk mengubah permasalahan menjadi solusi."</item>
-        <item>"Koneksi emosional yang lebih intens, yang lebih kuat, terhubung dengan memori yang didorong oleh aroma."</item>
-        <item>"Sel-sel otak dendrit menggunakan dunia luar dan akan terbentuk, atau tumbuh berdasarkan apa yang Anda lakukan."</item>
-        <item>"Musik mengubah kecepatan gelombang otak dengan cara yang berdampak pada suasana hati dan mengubah produtifitas."</item>
-        <item>"Ceramah dan percakapan lebih memberikan keuntungan kecerdasan untuk pembicara daripada penonton."</item>
-        <item>"Mengkaitkan fakta-fakta yang sulit dengan satu hal yang Anda ketahui dan pembelajaran akan meningkat dalam waktu yang singkat."</item>
-        <item>"Kecerdasan ganda adalah umum untuk semua, digunakan oleh beberapa, dan dapat menjadi lebih berkembang setiap harinya."</item>
-        <item>"Manusia melepaskan hormon pertumbuhan selama tidur."</item>
-        <item>"2% dari populasi tidak memiliki indera penciuman sama sekali."</item>
-        <item>"Plastisitas memungkinan orang untuk menghubungkan otak manusia dengan cara yang akan membuatnya tetap lebih muda dan lebih cerdas."</item>
-        <item>"Stres secara harfiah akan menyusutkan otak."</item>
-        <item>"Menginspirasi kreatifitas dan penemuan melaluhi mengajar orang lain, pada saat yang sama Anda juga belajar."</item>
-        <item>"Berat dari otak manusia berkisar 1,3kg."</item>
-        <item>"Studi menunjukkan bahwa gelombang otak lebih aktif saat sedang bermimpi daripada saat Anda terbangun."</item>
-        <item>"Otak Anda menggunakan 20 persen darah dan oksigen yang bersirkulasi di dalam tubuh Anda."</item>
-        <item>"Manusia akan terus membuat neuron-neuron baru sepanjang hidup sebagai respon terhadap aktifitas mental."</item>
-        <item>"Setiap kali Anda mengenang sebuah memori atau memiliki sebuah pemikiran yang baru, Anda menciptakan sebuah koneksi baru di dalam otak Anda."</item>
-        <item>"Otak terbuat dari sekitar 75% air."</item>
-        <item>"8 hingga 10 = jumlah detik yang Anda miliki sebelum Anda kehilangan kesadaran karena kehilangan darah."</item>
-        <item>"Anda tidak dapat menggelitik otak Anda karena otak Anda mengenal antara sentuhan eksternal yang tidak diharapkan dengan sentuhan Anda sendiri."</item>
-        <item>"Kurang tidur sebenarnya dapat merusak kemampuan Anda dalam menciptakan memori yang baru."</item>
-        <item>"Hanya karena Anda tidak ingat dengan mimpi Anda bukan berarti Anda tidak bermimpi. Semua orang bermimpi!."</item>
-        <item>"Jumlah rata-rata pemikiran yang dialami oleh manusia setiap harinya adalah 70.000."</item>
-        <item>"12 persen impian orang hanya dalam rupa hitam dan putih sementara impian orang lainnya dalam warna-warni."</item>
-        <item>"Saat Anda tidur di malam hari dapat menjadi waktu terbaik bagi otak Anda untuk menggabungkan semua memori hari Anda."</item>
-        <item>"Stres berlebih dapat mengubah sel-sel otak, struktur otak dan fungsi otak."</item>
-        <item>"Membaca dengan lantang dan berbicara dengan sering kepada anak kecil dapat memicu perkembangan otak."</item>
-        <item>"Tidak ada reseptor sakit di otak, jadi otak tidak dapat merasa sakit."</item>
-        <item>"Otak bayi yang baru lahir berkembang sekitar tiga kali lipat dari ukurannya di tahun pertama."</item>
-        <item>"Diperkirakan bahwa menguap akan bekerja mengirimkan oksigen ke otak, sehingga bekerja untuk mendinginkannya."</item>
-        <item>"Memori terbentuk oleh asosiasi, jadi jika Anda ingin membantu mengingat sesuatu, ciptakan asosiasi untuk diri Anda sendiri."</item>
-        <item>"Jika Anda sedang mendengkur, Anda tidak sedang bermimpi."</item>
-        <item>"Pelajaran musik terbukti sangat mendorong pengorganisasian dan kemampuan otak baik untuk anak-anak maupun orang dewasa."</item>
-        <item>"Kebanyakan orang bermimpi sekitar 1 hingga 2 jam dalam semalam dan rata-rata 4 hingga 7 setiap malam."</item>
-        <item>"Otak terus mengirimkan gelombang hingga hampir 37 jam setelah kematian."</item>
-        <item>"Pepatah lama bahwa manusia hanya menggunakan 10 persen dari otak mereka adalah tidak benar. Setiap bagian otak memiliki fungsi yang dikenal."</item>
-        <item>"Otak manusia merupakan organ yang paling berlemak di dalam tubuh dan terdiri dari setidaknya 60% lemak."</item>
-        <item>"Celebrum adalah bagian terbesar dari otak dan merupakan 85 persen dari berat otak keseluruhan."</item>
-        <item>"Otak anak muda terdiri dari 100 miliar neuron."</item>
-        <item>"Ada 100.000 mil dari pembuluh darah di dalam otak."</item>
-        <item>"Daya tamping untuk emosi seperti gembira, bahagia, takut, dan malu sudah berkembang sejak lahir."</item>
-        <item>"Anda dapat belajar dengan lebih efektif dengan menulis informasi menggunakan tangan, bukan dengan mengetik."</item>
-        <item>"Menceritakan kisah dapat menjadi sebuah cara yang baik untuk melatih otak Anda."</item>
-        <item>"Meditasi mengurangi tingkat stress Anda dan meningkatkan kinerja otak."</item>
-        <item>"Sedikit aktifitas fisik dan diet cerdas akan membuat jauh lebih mudah bagi Anda untuk menjaga otak Anda agar tetap sehat."</item>
-        <item>"Otak manusia tiga kali lebih besar dari otak mamalia dengan ukuran tubuh yang sama."</item>
-        <item>"Otak manusia dilindungi oleh tengkorak, sebuah penutup pelindung yang terbuat dari 22 tulang yang tergabung bersama-sama."</item>
-        <item>"Otak tersuspensi di dalam cairan Selebrospinal, cairan ini bertindak sebagai sebuah bantalan terhadap benturan fisik dan penghalang infeksi."</item>
-        <item>"4 hingga 6 = jumlah menit otak Anda dapat bertahan tanpa oksigen sebelum mulai mati."</item>
-        <item>"10 hingga 23 = jumlah watt dari daya yang otak Anda hasilkan ketika Anda bangun (itu cukup untuk menyalakan sebuah bola lampu!)."</item>
-        <item>"Ukuran bukan masalah di dalam otak. Tidak ada bukti bahwa otak yang lebih besar berarti lebih cerdas daripada otak yang berukuran lebih kecil."</item>
-        <item>"Ada 100.000 mil dari pembuluh darah di dalam otak. Itu cukup untuk mengelilingi bumi sebanyak empat kali!."</item>
-        <item>"Kecepatan otak Anda untuk memproses informasi dapat berkisar dari 0,5 meter/detik (1MPH) hingga 120 meter/detik (268MPH)."</item>
-        <item>"Tertawa tampak seperti sebuah tindakan yang cukup sederhana, tapi ini memerlukan aktifitas di 5 area yang berbeda dari otak kita."</item>
-        <item>"Kondisi altitude yang tinggi akan membuat otak melihat visi-visi yang aneh karena berkurangnya suplai oksigen."</item>
-        <item>"Gambar yang diterima oleh mata kita sebenarnya adalah terbalik. Otak kita mengoreksinya, sehingga apa yang kita lihat menjadi berdiri ke atas!."</item>
-        <item>"Ketika Anda bersin semua fungsi tubuh kita akan berhenti kecuali jantung Anda."</item>
-        <item>"Hidung Anda dapat mengingat 50.000 aroma yang berbeda."</item>
-        <item>"Impuls saraf ke dan dari otak berjalan secepat 170 mil per jam."</item>
-        <item>"Otak kita menggunakan 20 persen energi tubuh kita dan hanya membuat 2 persen dari tubuh kita."</item>
-        <item>"Semakin dingin ruangan tempat Anda tidur, akan semakin baik kesempatan Anda untuk memiliki mimpi buruk."</item>
-        <item>"Setelah makan terlalu banyak maka pendengaran Anda akan sedikit tajam."</item>
-        <item>"Wanita mampu mengidentifikasi aroma jeruk, vanilla, kayu manis, kopi dengan lebih baik."</item>
-        <item>"Vitamin E akan melindungi sel otak dari kerusakan yang disebabkan oleh konsumsi alkohol."</item>
-        <item>"Manusia adalah satu-satunya hewan yang memproduksi air mata emosi."</item>
-        <item>"Orang-orang yang tidak kidal hidup rata-rata sembilan kali lebih lama daripada orang-orang yang kidal."</item>
-        <item>"Ada sekitar 1.350.000 neuron di dalam saraf tulang belakang manusia."</item>
-        <item>"Otak jauh lebih efektif di sepanjang malam daripada di sepanjang siang hari."</item>
-        <item>"Rata-rata orang dapat tertidur dalam 7 menit."</item>
-        <item>"Latihan teratur, diet sehat, stimulasi mental, tidur berkualitas, manajemen stress, dan sebuah kehidupan sosial adalah sangat baik untuk otak Anda."</item>
-        <item>"Stimulasi mental secara berkala akan mengurangi resiko penyakit Alzheimer."</item>
-        <item>"Alkohol tidak membuat Anda lupa apapun. Saat Anda menjadi tidak sadarkan diri karena mabuk, otak dengan sementara akan kehilangan kemampuan untuk menciptakan memori."</item>
-        <item>"Anda memiliki reseptor Rasa di dalam perut, usus, pancreas, paru-paru, anus, testikel, dan otak."</item>
-        <item>"Otak manusia memiliki konsistensi yang sama seperti tahu."</item>
-        <item>"Aroma coklat akan meningkatkan gelombang otak, yang akan memicu relaksasi."</item>
-        <item>"Melupakan adalah baik untuk otak: menghapus informasi-informasi yang tidak diperlukan akan membantu sistem saraf menjaga kekenyalannya."</item>
-        <item>"Satu studi ditemukan bahwa penggunaan ponsel untuk waktu yang lama secara signifikan akan meningkatkan resiko tumor otak."</item>
-        <item>"Kurang tidur akan mempengaruhi otak dengan cara yang berlipat-lipat dapat merusak penilaian dan reaksi yang lambat."</item>
-        <item>"Hanya perlu 6 menit bagi sel-sel otak untuk bereaksi terhadap alkohol."</item>
+        <item>"01 Otak perempuan dan laki-laki berbeda secara biologis dan intelektual."</item>
+        <item>"02 Rasa jenuh adalah lebih pada sebuah kebiasaan yang dibentuk di dalam otak, dan terbentuk oleh pilihan Anda sendiri, bukan realitas."</item>
+        <item>"03 Lingkungan diperhitungkan, dan sebuah pengaturan yang sehat akan membantu masyarakat untuk mengubah permasalahan menjadi solusi."</item>
+        <item>"04 Koneksi emosional yang lebih intens, yang lebih kuat, terhubung dengan memori yang didorong oleh aroma."</item>
+        <item>"05 Sel-sel otak dendrit menggunakan dunia luar dan akan terbentuk, atau tumbuh berdasarkan apa yang Anda lakukan."</item>
+        <item>"06 Musik mengubah kecepatan gelombang otak dengan cara yang berdampak pada suasana hati dan mengubah produtifitas."</item>
+        <item>"07 Ceramah dan percakapan lebih memberikan keuntungan kecerdasan untuk pembicara daripada penonton."</item>
+        <item>"08 Hanya perlu 6 menit bagi sel-sel otak untuk bereaksi terhadap alkohol."</item>
+        <item>"09 Mengkaitkan fakta-fakta yang sulit dengan satu hal yang Anda ketahui dan pembelajaran akan meningkat dalam waktu yang singkat."</item>
+        <item>"10 Kecerdasan ganda adalah umum untuk semua, digunakan oleh beberapa, dan dapat menjadi lebih berkembang setiap harinya."</item>
+        <item>"11 Manusia melepaskan hormon pertumbuhan selama tidur."</item>
+        <item>"12 2% dari populasi tidak memiliki indera penciuman sama sekali."</item>
+        <item>"13 Plastisitas memungkinan orang untuk menghubungkan otak manusia dengan cara yang akan membuatnya tetap lebih muda dan lebih cerdas."</item>
+        <item>"14 Stres secara harfiah akan menyusutkan otak."</item>
+        <item>"15 Menginspirasi kreatifitas dan penemuan melaluhi mengajar orang lain, pada saat yang sama Anda juga belajar."</item>
+        <item>"16 Kurang tidur akan mempengaruhi otak dengan cara yang berlipat-lipat dapat merusak penilaian dan reaksi yang lambat."</item>
+        <item>"17 Berat dari otak manusia berkisar 1,3kg."</item>
+        <item>"18 Studi menunjukkan bahwa gelombang otak lebih aktif saat sedang bermimpi daripada saat Anda terbangun."</item>
+        <item>"19 Otak Anda menggunakan 20 persen darah dan oksigen yang bersirkulasi di dalam tubuh Anda."</item>
+        <item>"20 Manusia akan terus membuat neuron-neuron baru sepanjang hidup sebagai respon terhadap aktifitas mental."</item>
+        <item>"21 Setiap kali Anda mengenang sebuah memori atau memiliki sebuah pemikiran yang baru, Anda menciptakan sebuah koneksi baru di dalam otak Anda."</item>
+        <item>"22 Otak terbuat dari sekitar 75% air."</item>
+        <item>"23 8 hingga 10 = jumlah detik yang Anda miliki sebelum Anda kehilangan kesadaran karena kehilangan darah."</item>
+        <item>"24 Anda tidak dapat menggelitik otak Anda karena otak Anda mengenal antara sentuhan eksternal yang tidak diharapkan dengan sentuhan Anda sendiri."</item>
+        <item>"25 Kurang tidur sebenarnya dapat merusak kemampuan Anda dalam menciptakan memori yang baru."</item>
+        <item>"26 Hanya karena Anda tidak ingat dengan mimpi Anda bukan berarti Anda tidak bermimpi. Semua orang bermimpi!."</item>
+        <item>"27 Jumlah rata-rata pemikiran yang dialami oleh manusia setiap harinya adalah 70.000."</item>
+        <item>"28 12 persen impian orang hanya dalam rupa hitam dan putih sementara impian orang lainnya dalam warna-warni."</item>
+        <item>"29 Saat Anda tidur di malam hari dapat menjadi waktu terbaik bagi otak Anda untuk menggabungkan semua memori hari Anda."</item>
+        <item>"30 Stres berlebih dapat mengubah sel-sel otak, struktur otak dan fungsi otak."</item>
+        <item>"31 Membaca dengan lantang dan berbicara dengan sering kepada anak kecil dapat memicu perkembangan otak."</item>
+        <item>"32 Tidak ada reseptor sakit di otak, jadi otak tidak dapat merasa sakit."</item>
+        <item>"33 Otak bayi yang baru lahir berkembang sekitar tiga kali lipat dari ukurannya di tahun pertama."</item>
+        <item>"34 Diperkirakan bahwa menguap akan bekerja mengirimkan oksigen ke otak, sehingga bekerja untuk mendinginkannya."</item>
+        <item>"35 Memori terbentuk oleh asosiasi, jadi jika Anda ingin membantu mengingat sesuatu, ciptakan asosiasi untuk diri Anda sendiri."</item>
+        <item>"36 Jika Anda sedang mendengkur, Anda tidak sedang bermimpi."</item>
+        <item>"37 Pelajaran musik terbukti sangat mendorong pengorganisasian dan kemampuan otak baik untuk anak-anak maupun orang dewasa."</item>
+        <item>"38 Kebanyakan orang bermimpi sekitar 1 hingga 2 jam dalam semalam dan rata-rata 4 hingga 7 setiap malam."</item>
+        <item>"39 Otak terus mengirimkan gelombang hingga hampir 37 jam setelah kematian."</item>
+        <item>"40 Pepatah lama bahwa manusia hanya menggunakan 10 persen dari otak mereka adalah tidak benar. Setiap bagian otak memiliki fungsi yang dikenal."</item>
+        <item>"41 Satu studi ditemukan bahwa penggunaan ponsel untuk waktu yang lama secara signifikan akan meningkatkan resiko tumor otak."</item>
+        <item>"42 Otak manusia merupakan organ yang paling berlemak di dalam tubuh dan terdiri dari setidaknya 60% lemak."</item>
+        <item>"43 Celebrum adalah bagian terbesar dari otak dan merupakan 85 persen dari berat otak keseluruhan."</item>
+        <item>"44 Otak anak muda terdiri dari 100 miliar neuron."</item>
+        <item>"45 Ada 100.000 mil dari pembuluh darah di dalam otak."</item>
+        <item>"46 Daya tamping untuk emosi seperti gembira, bahagia, takut, dan malu sudah berkembang sejak lahir."</item>
+        <item>"47 Anda dapat belajar dengan lebih efektif dengan menulis informasi menggunakan tangan, bukan dengan mengetik."</item>
+        <item>"48 Menceritakan kisah dapat menjadi sebuah cara yang baik untuk melatih otak Anda."</item>
+        <item>"49 Meditasi mengurangi tingkat stress Anda dan meningkatkan kinerja otak."</item>
+        <item>"50 Sedikit aktifitas fisik dan diet cerdas akan membuat jauh lebih mudah bagi Anda untuk menjaga otak Anda agar tetap sehat."</item>
+        <item>"51 Otak manusia tiga kali lebih besar dari otak mamalia dengan ukuran tubuh yang sama."</item>
+        <item>"52 Otak manusia dilindungi oleh tengkorak, sebuah penutup pelindung yang terbuat dari 22 tulang yang tergabung bersama-sama."</item>
+        <item>"53 Otak tersuspensi di dalam cairan Selebrospinal, cairan ini bertindak sebagai sebuah bantalan terhadap benturan fisik dan penghalang infeksi."</item>
+        <item>"54 4 hingga 6 = jumlah menit otak Anda dapat bertahan tanpa oksigen sebelum mulai mati."</item>
+        <item>"55 10 hingga 23 = jumlah watt dari daya yang otak Anda hasilkan ketika Anda bangun (itu cukup untuk menyalakan sebuah bola lampu!)."</item>
+        <item>"56 Ukuran bukan masalah di dalam otak. Tidak ada bukti bahwa otak yang lebih besar berarti lebih cerdas daripada otak yang berukuran lebih kecil."</item>
+        <item>"57 Ada 100.000 mil dari pembuluh darah di dalam otak. Itu cukup untuk mengelilingi bumi sebanyak empat kali!."</item>
+        <item>"58 Kecepatan otak Anda untuk memproses informasi dapat berkisar dari 0,5 meter/detik (1MPH) hingga 120 meter/detik (268MPH)."</item>
+        <item>"59 Tertawa tampak seperti sebuah tindakan yang cukup sederhana, tapi ini memerlukan aktifitas di 5 area yang berbeda dari otak kita."</item>
+        <item>"60 Kondisi altitude yang tinggi akan membuat otak melihat visi-visi yang aneh karena berkurangnya suplai oksigen."</item>
+        <item>"61 Gambar yang diterima oleh mata kita sebenarnya adalah terbalik. Otak kita mengoreksinya, sehingga apa yang kita lihat menjadi berdiri ke atas!."</item>
+        <item>"62 Ketika Anda bersin semua fungsi tubuh kita akan berhenti kecuali jantung Anda."</item>
+        <item>"63 Hidung Anda dapat mengingat 50.000 aroma yang berbeda."</item>
+        <item>"64 Impuls saraf ke dan dari otak berjalan secepat 170 mil per jam."</item>
+        <item>"65 Otak kita menggunakan 20 persen energi tubuh kita dan hanya membuat 2 persen dari tubuh kita."</item>
+        <item>"66 Semakin dingin ruangan tempat Anda tidur, akan semakin baik kesempatan Anda untuk memiliki mimpi buruk."</item>
+        <item>"67 Setelah makan terlalu banyak maka pendengaran Anda akan sedikit tajam."</item>
+        <item>"68 Wanita mampu mengidentifikasi aroma jeruk, vanilla, kayu manis, kopi dengan lebih baik."</item>
+        <item>"69 Vitamin E akan melindungi sel otak dari kerusakan yang disebabkan oleh konsumsi alkohol."</item>
+        <item>"70 Manusia adalah satu-satunya hewan yang memproduksi air mata emosi."</item>
+        <item>"71 Orang-orang yang tidak kidal hidup rata-rata sembilan kali lebih lama daripada orang-orang yang kidal."</item>
+        <item>"72 Ada sekitar 1.350.000 neuron di dalam saraf tulang belakang manusia."</item>
+        <item>"73 Otak jauh lebih efektif di sepanjang malam daripada di sepanjang siang hari."</item>
+        <item>"74 Rata-rata orang dapat tertidur dalam 7 menit."</item>
+        <item>"75 Latihan teratur, diet sehat, stimulasi mental, tidur berkualitas, manajemen stress, dan sebuah kehidupan sosial adalah sangat baik untuk otak Anda."</item>
+        <item>"76 Stimulasi mental secara berkala akan mengurangi resiko penyakit Alzheimer."</item>
+        <item>"77 Melupakan adalah baik untuk otak: menghapus informasi-informasi yang tidak diperlukan akan membantu sistem saraf menjaga kekenyalannya."</item>
+        <item>"78 Alkohol tidak membuat Anda lupa apapun. Saat Anda menjadi tidak sadarkan diri karena mabuk, otak dengan sementara akan kehilangan kemampuan untuk menciptakan memori."</item>
+        <item>"79 Anda memiliki reseptor Rasa di dalam perut, usus, pancreas, paru-paru, anus, testikel, dan otak."</item>
+        <item>"80 Otak manusia memiliki konsistensi yang sama seperti tahu."</item>
+        <item>"81 Aroma coklat akan meningkatkan gelombang otak, yang akan memicu relaksasi."</item>
     </string-array>
     	
 </resources>

@@ -16,6 +16,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -60,8 +61,6 @@ public class InitialEvaluationActivity extends Activity{
         final ImageButton b9 = (ImageButton) findViewById(R.id.button9);
         final ImageButton pass = (ImageButton) findViewById(R.id.buttonPass);
         final ImageButton clear = (ImageButton) findViewById(R.id.buttonClr);
-        final Button next = (Button) findViewById(R.id.buttonNext);
-        final Button back = (Button) findViewById(R.id.buttonBack);
         final MediaPlayer mp3Correct = MediaPlayer.create(this, R.raw.correct);
         final MediaPlayer mp3Over = MediaPlayer.create(this, R.raw.gameover);
         final FrameLayout numPad = (FrameLayout) findViewById(R.id.frameLayoutNumPad);
@@ -103,28 +102,53 @@ public class InitialEvaluationActivity extends Activity{
 			Button dialogButton = (Button) dialog.findViewById(R.id.button1);
 			dialogButton.setVisibility(View.VISIBLE);
 			dialogButton.setText(R.string.start);
-			dialogButton.setOnClickListener (new View.OnClickListener(){
-	        	@Override
-				public void onClick (View v) {
+			dialogButton.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v) {
 					gSettings.start = true;
-	        		startTime = System.currentTimeMillis();
-	        		eq.createNew();
-	        		showEq.setText(eq.getEquation());
+					startTime = System.currentTimeMillis();
+					eq.createNew();
+					showEq.setText(eq.getEquation());
 					hintSleep = 0;
-	        		dialog.dismiss();
+					dialog.dismiss();
 				}
 			});
 			dialog.show();
         
         showEq.setText(R.string.press_start_to_begin);
         showIn.setText("");
+
+		//Tutorial Dialog box
+		final Dialog dialogT = new Dialog(this);
+		dialogT.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		dialogT.setContentView(R.layout.dialogbox);
+		TextView titleT = (TextView) dialogT.findViewById(R.id.textViewTitle);
+		titleT.setVisibility(View.GONE);
+		TextView txtT = (TextView) dialogT.findViewById(R.id.textViewMsg);
+		txtT.setVisibility(View.GONE);
+		LinearLayout tutorial = (LinearLayout) dialogT.findViewById(R.id.tutorialLayout);
+		tutorial.setVisibility(View.VISIBLE);
+		Button dialogButtonT = (Button) dialogT.findViewById(R.id.button1);
+		dialogButtonT.setVisibility(View.VISIBLE);
+		dialogButtonT.setText(R.string.ok);
+		dialogButtonT.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				dialogT.dismiss();
+			}
+		});
  
         
         //Decrement game timer and check if time is up
         mUpdateTimer = new Runnable() {   
         	@Override
 			public void run() {
-        		if (gSettings.start){ 
+				if(gSettings.clock==80){
+					showIn.setText("");
+					gSettings.inputTimer=-1;
+					dialogT.show();
+				}
+        		if (gSettings.start){
         			//set timer
         			nextTime = System.currentTimeMillis();
         			if(startTime!=nextTime){
@@ -371,21 +395,7 @@ public class InitialEvaluationActivity extends Activity{
         		}
         	}
         });
-        
 
-        next.setOnClickListener (new View.OnClickListener(){
-        	@Override
-			public void onClick (View v){
-        		startActivity(new Intent("android.intent.action.CHALLENGE"));
-        		finish();
-        	}
-        });
-        back.setOnClickListener (new View.OnClickListener(){
-        	@Override
-			public void onClick (View v){
-        		finish();
-        	}
-        });
     }
 
 	public void getNextEquation(boolean correct){

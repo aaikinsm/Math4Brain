@@ -169,94 +169,92 @@ Total Points:"</string>
     <string name="backup">Backup data online</string>
     <string name="restore">Restore data</string>
     <string name="backup_restore">Backup/Restore</string>
+    <string name="press_to_clear">If you make a mistake, quickly remove your answer by pressing:</string>
+    <string name="press_to_skip">If you do not know the answer, skip the question by pressing:</string>
     
     <!--  Tips -->
     <string-array name="tips">
-        <item>"Women’s and men’s brain are different biologically and intellectually."</item>
-		<item>"Boredom is more a habit formed in brains, and shaped by your choices, than a reality."</item>
-		<item>"Environment counts, and a healthy setting helps people transform problems into solutions."</item>
-		<item>"Stronger, more intense emotional connections are linked to memories prompted by scent."</item>
-		<item>"Dendrite brain cells use the outside world and take shape, or grow based on what you do."</item>
-		<item>"Music changes brain wave speeds in ways that impact moods and alter productivity."</item>
-		<item>"Lectures and conversations benefit intelligence of the speaker more than the audience."</item>
-		<item>"Brain waves can bring either sleep or peak performance, based on how you activate them."</item>
-		<item>"Hook even difficult facts onto one thing you know and learning increases in less time"</item>
-		<item>"Multiple intelligences are common to all, used by few, and can be more developed daily."</item>
-		<item>"The human releases growth hormones during sleep"</item>
-		<item>"2% of the population has no sense of smell at all."</item>
-		<item>"Plasticity enables people to rewire the human brain in ways that keep it younger and smarter."</item>
-		<item>"Stress literally shrinks the brain."</item>
-		<item>"Inspire creativity and invention through teaching others, at the same time you also learn."</item>
-		<item>"Create new neuron pathways each time you add a solution to any problem you encounter."</item>
-		<item>"The weight of the human brain is about 3 lbs."</item>
-		<item>"Studies show that brain waves are more active while dreaming than when you are awake."</item>
-		<item>"Your brain uses 20 percent of the blood and oxygen circulating in your body."</item>
-		<item>"Humans continue to make new neurons throughout life in response to mental activity."</item>
-		<item>"Every time you recall a memory or have a new thought, you are creating a new connection in your brain."</item>
-		<item>"The brain is made up of about 75 percent water."</item>
-		<item>"8 to 10, = the number of seconds you have before losing consciousness due to blood loss."</item>
-		<item>"You can’t tickle yourself because your brain distinguished between unexpected external touch and your own touch."</item>
-		<item>"Lack of sleep may actually hurt your ability to create new memories."</item>
-		<item>"Just because you don’t remember your dreams doesn’t mean you don’t dream. Everyone dreams!"</item>
-		<item>"The average number of thoughts that humans are believed to experience each day is 70,000."</item>
-		<item>"12 percent of people dream only in black and white while others dream in color."</item>
-		<item>"While you sleep at night may be the best time for your brain to consolidate all your memories from the day."</item>
-		<item>"Excessive stress has shown to alter brain cells, brain structure and brain function."</item>
-		<item>"Reading aloud and talking often to a young child promotes brain development."</item>
-		<item>"There are no pain receptors in the brain, so the brain can feel no pain."</item>
-		<item>"A newborn baby’s brain grows about three times its size in the first year."</item>
-		<item>"It is thought that a yawn works to send more oxygen to the brain, therefore working to cool it down."</item>
-		<item>"Memory is formed by associations, so if you want help remembering things, create associations for yourself."</item>
-		<item>"If you are snoring, you are not dreaming."</item>
-		<item>"Music lessons have shown to considerably boost brain organization and ability in both children and adults."</item>
-		<item>"Most people dream about 1 to 2 hours a night and have an average of 4 to 7 dreams each night."</item>
-		<item>"The brain continues to send out brain waves until approximately 37 hours after death."</item>
-		<item>"The old adage of humans only using 10percent of their brain is not true. Every part of the brain has a known function."</item>
-		<item>"The cerebral cortex grows thicker as you learn to use it."</item>
-		<item>"The human brain is the fattest organ in the body and may consists of at least 60 percent fat."</item>
-		<item>"The cerebrum is the largest part of the brain and makes up 85 percent of the brain’s weight."</item>
-		<item>"Your brain consists of about 100 billion neurons."</item>
-		<item>"There are 100,000 miles of blood vessels in the brain."</item>
-		<item>"The capacity for such emotions as joy, happiness, fear, and shyness are already developed at birth."</item>
-		<item>"You can learn more effectively by writing information longhand, not by typing."</item>
-		<item>"Story telling can be a good way to exercise your brain."</item>
-		<item>"Meditation reduces your stress levels and improves brain performance."</item>
-		<item>"A little physical activity and a smart diet will make it much easier for you to keep your brain in top shape."</item>
-		<item>"The human brain is over three times as big as the brain of other mammals that are of similar body size."</item>
-		<item>"The human brain is protected by the skull, a protective casing made up of 22 bones that are joined together."</item>
-		<item>"The brain is suspended in Cerebrospinal fluid, this liquid acts as a cushion to physical impact and a barrier to infections."</item>
-		<item>"4 to 6, = the number of minutes your brain can survive without oxygen before it starts to die."</item>
-		<item>"10 to 23, = the number of watts of power your brain generates when you’re awake (that’s enough to turn on a light bulb!)."</item>
-		<item>"Size doesn’t matter in the brain. There is no evidence that a larger brain is smarter than a smaller brain."</item>
-		<item>"There are 100,000 miles of blood vessels in the brain. That's enough to wrap around the whole Earth four times!"</item>
-		<item>"The rate at which your brain processes information can range from 0.5 meters/second (1MPH) to 120 meters/second (268 MPH)."</item>
-		<item>"Laughing at a joke seems like a simple enough action, but it requires activity in 5 different areas of our brain!"</item>
-		<item>"High altitude conditions makes the brain see weird visions due to the reduced supply of oxygen."</item>
-		<item>"The images our eyes receive are actually upside-down. Our brain corrects them, so that we see them the right side-up!"</item>
-		<item>"When you sneeze all your bodily functions stop, including your heart."</item>
-		<item>"Your nose can remember 50,000 different scents."</item>
-		<item>"Nerve impulses to and from the brain travel as fast as 170 miles per an hour."</item>
-		<item>"Our brain uses 20 percent of our body energy and makes up only 2 percent of our body weight."</item>
-		<item>"The colder the room you sleep in, the better the chances that you will have a bad dream."</item>
-		<item>"After eating too much your hearing is less sharp"</item>
-		<item>"Women were better able to identify citrus, vanilla, cinnamon and coffee smells."</item>
-		<item>"Vitamin E protects the brain cells from damage caused by alcohol consumption"</item>
-		<item>"Humans are the only animals to produce emotional tears"</item>
-		<item>"Right-handed people live, on average, nine years longer than left handed people"</item>
-		<item>"There are about 1350000 neurons in the human spinal cord"</item>
-		<item>"The brain is much more active during at night than during the day"</item>
-		<item>"The average person can fall asleep in 7 minutes"</item>
-		<item>"Regular exercise, Healthy diet, Mental stimulation, Quality Sleep, Stress management, and an active social life are great for your brain"</item>
-		<item>"Frequent mental stimulation will reduce the risk of Alzheimer's disease"</item>
-		<item>"There's a virus that attacks human DNA making people less intelligent, impairing brain activity, learning and memory."</item>
-		<item>"Alcohol doesn't make you forget anything. When you get blackout drunk, the brain temporarily loses the ability to create memories."</item>
-		<item>"You have Taste receptors in the stomach, intestines, pancreas, lungs, anus, testicles and the brain."</item>
-		<item>"The human brain has the same consistency as tofu"</item>
-		<item>"The smell of chocolate increases brain waves, which triggers relaxation"</item>
-		<item>"Forgetting is good for the brain: deleting unnecessary information helps the nervous system retain its plasticity."</item>
-		<item>"One study found that using a mobile phone for a long time significantly increases the risk of brain tumors."</item>
-		<item>"Sleep deprivation affects the brain in multiple ways that can impair judgment and slow reaction."</item>
-		<item>"It only takes 6 minutes for brain cells to react to alcohol"</item>	
+        <item>"01 Women’s and men’s brain are different biologically and intellectually."</item>
+		<item>"02 Boredom is more a habit formed in brains, and shaped by your choices, than a reality."</item>
+		<item>"03 Environment counts, and a healthy setting helps people transform problems into solutions."</item>
+        <item>"04 Stronger, more intense emotional connections are linked to memories prompted by scent."</item>
+        <item>"05 Dendrite brain cells use the outside world and take shape, or grow based on what you do."</item>
+        <item>"06 Music changes brain wave speeds in ways that impact moods and alter productivity."</item>
+        <item>"07 Lectures and conversations benefit intelligence of the speaker more than the audience."</item>
+        <item>"08 It only takes 6 minutes for brain cells to react to alcohol"</item>
+        <item>"09 Hook even difficult facts onto one thing you know and learning increases in less time"</item>
+        <item>"10 Multiple intelligences are common to all, used by few, and can be more developed daily."</item>
+        <item>"11 The human releases growth hormones during sleep"</item>
+        <item>"12 2% of the population has no sense of smell at all."</item>
+        <item>"13 Plasticity enables people to rewire the human brain in ways that keep it younger and smarter."</item>
+        <item>"14 Stress literally shrinks the brain."</item>
+        <item>"15 Inspire creativity and invention through teaching others, at the same time you also learn."</item>
+        <item>"16 Sleep deprivation affects the brain in multiple ways that can impair judgment and slow reaction."</item>
+        <item>"17 The weight of the human brain is about 3 lbs."</item>
+        <item>"18 Studies show that brain waves are more active while dreaming than when you are awake."</item>
+        <item>"19 Your brain uses 20 percent of the blood and oxygen circulating in your body."</item>
+        <item>"20 Humans continue to make new neurons throughout life in response to mental activity."</item>
+        <item>"21 Every time you recall a memory or have a new thought, you are creating a new connection in your brain."</item>
+        <item>"22 The brain is made up of about 75 percent water."</item>
+        <item>"23 8 to 10, = the number of seconds you have before losing consciousness due to blood loss."</item>
+        <item>"24 You can’t tickle yourself because your brain distinguished between unexpected external touch and your own touch."</item>
+        <item>"25 Lack of sleep may actually hurt your ability to create new memories."</item>
+        <item>"26 Just because you don’t remember your dreams doesn’t mean you don’t dream. Everyone dreams!"</item>
+        <item>"27 The average number of thoughts that humans are believed to experience each day is 70,000."</item>
+        <item>"28 12 percent of people dream only in black and white while others dream in color."</item>
+        <item>"29 While you sleep at night may be the best time for your brain to consolidate all your memories from the day."</item>
+        <item>"30 Excessive stress has shown to alter brain cells, brain structure and brain function."</item>
+        <item>"31 Reading aloud and talking often to a young child promotes brain development."</item>
+        <item>"32 There are no pain receptors in the brain, so the brain can feel no pain."</item>
+        <item>"33 A newborn baby’s brain grows about three times its size in the first year."</item>
+        <item>"34 It is thought that a yawn works to send more oxygen to the brain, therefore working to cool it down."</item>
+        <item>"35 Memory is formed by associations, so if you want help remembering things, create associations for yourself."</item>
+        <item>"36 If you are snoring, you are not dreaming."</item>
+        <item>"37 Music lessons have shown to considerably boost brain organization and ability in both children and adults."</item>
+        <item>"38 Most people dream about 1 to 2 hours a night and have an average of 4 to 7 dreams each night."</item>
+        <item>"39 The brain continues to send out brain waves until approximately 37 hours after death."</item>
+        <item>"40 The old adage of humans only using 10percent of their brain is not true. Every part of the brain has a known function."</item>
+        <item>"41 One study found that using a mobile phone for a long time significantly increases the risk of brain tumors."</item>
+        <item>"42 The human brain is the fattest organ in the body and may consists of at least 60 percent fat."</item>
+        <item>"43 The cerebrum is the largest part of the brain and makes up 85 percent of the brain’s weight."</item>
+        <item>"44 Your brain consists of about 100 billion neurons."</item>
+        <item>"45 There are 100,000 miles of blood vessels in the brain."</item>
+        <item>"46 The capacity for such emotions as joy, happiness, fear, and shyness are already developed at birth."</item>
+        <item>"47 You can learn more effectively by writing information longhand, not by typing."</item>
+        <item>"48 Story telling can be a good way to exercise your brain."</item>
+        <item>"49 Meditation reduces your stress levels and improves brain performance."</item>
+        <item>"50 A little physical activity and a smart diet will make it much easier for you to keep your brain in top shape."</item>
+        <item>"51 The human brain is over three times as big as the brain of other mammals that are of similar body size."</item>
+        <item>"52 The human brain is protected by the skull, a protective casing made up of 22 bones that are joined together."</item>
+        <item>"53 The brain is suspended in Cerebrospinal fluid, this liquid acts as a cushion to physical impact and a barrier to infections."</item>
+        <item>"54 4 to 6, = the number of minutes your brain can survive without oxygen before it starts to die."</item>
+        <item>"55 10 to 23, = the number of watts of power your brain generates when you’re awake (that’s enough to turn on a light bulb!)."</item>
+        <item>"56 Size doesn’t matter in the brain. There is no evidence that a larger brain is smarter than a smaller brain."</item>
+        <item>"57 There are 100,000 miles of blood vessels in the brain. That's enough to wrap around the whole Earth four times!"</item>
+        <item>"58 The rate at which your brain processes information can range from 0.5 meters/second (1MPH) to 120 meters/second (268 MPH)."</item>
+        <item>"59 Laughing at a joke seems like a simple enough action, but it requires activity in 5 different areas of our brain!"</item>
+        <item>"60 High altitude conditions makes the brain see weird visions due to the reduced supply of oxygen."</item>
+        <item>"61 The images our eyes receive are actually upside-down. Our brain corrects them, so that we see them the right side-up!"</item>
+        <item>"62 When you sneeze all your bodily functions stop, including your heart."</item>
+        <item>"63 Your nose can remember 50,000 different scents."</item>
+        <item>"64 Nerve impulses to and from the brain travel as fast as 170 miles per an hour."</item>
+        <item>"65 Our brain uses 20 percent of our body energy and makes up only 2 percent of our body weight."</item>
+        <item>"66 The colder the room you sleep in, the better the chances that you will have a bad dream."</item>
+        <item>"67 After eating too much your hearing is less sharp"</item>
+        <item>"68 Women were better able to identify citrus, vanilla, cinnamon and coffee smells."</item>
+        <item>"69 Vitamin E protects the brain cells from damage caused by alcohol consumption"</item>
+        <item>"70 Humans are the only animals to produce emotional tears"</item>
+        <item>"71 Right-handed people live, on average, nine years longer than left handed people"</item>
+        <item>"72 There are about 1350000 neurons in the human spinal cord"</item>
+        <item>"73 The brain is much more active during at night than during the day"</item>
+        <item>"74 The average person can fall asleep in 7 minutes"</item>
+        <item>"75 Regular exercise, Healthy diet, Mental stimulation, Quality Sleep, Stress management, and an active social life are great for your brain"</item>
+        <item>"76 Frequent mental stimulation will reduce the risk of Alzheimer's disease"</item>
+        <item>"77 Forgetting is good for the brain: deleting unnecessary information helps the nervous system retain its plasticity."</item>
+        <item>"78 Alcohol doesn't make you forget anything. When you get blackout drunk, the brain temporarily loses the ability to create memories."</item>
+        <item>"79 You have Taste receptors in the stomach, intestines, pancreas, lungs, anus, testicles and the brain."</item>
+        <item>"80 The human brain has the same consistency as tofu"</item>
+        <item>"81 The smell of chocolate increases brain waves, which triggers relaxation"</item>
     </string-array>
     	
 </resources>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@drawable/number_background"
+    android:background="@drawable/gradient_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <view
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         class="com.blackstar.math4brain.BackgroundAnimated"
         android:id="@+id/animatedBG"
         android:layout_gravity="center_horizontal|top"
@@ -15,7 +15,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:layout_weight="1"
         android:orientation="vertical">
 
@@ -24,19 +24,41 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="8"
-            android:src="@drawable/math4thebrain_logo" />
+            android:src="@drawable/math4thebrain_logo"
+            android:layout_marginTop="20dp" />
 
-        <TextView
-            android:id="@+id/textViewTip"
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="0"
             android:background="@drawable/white_bg"
-            android:gravity="center"
-            android:padding="7dp"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textSize="15sp" />
+            android:id="@+id/linearLayoutTip">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:id="@+id/imageViewTip"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:src="@drawable/tip" />
+
+            <TextView
+                android:id="@+id/textViewTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="15sp"
+                android:text="edsf g sg sdfg sdfgsdfg sdfgdf gsdfgsfg h fgd f gdfgd g dg dgg"
+                android:textColor="#000000" />
+        </LinearLayout>
 
         <FrameLayout
             android:id="@+id/frameLayout1"
@@ -56,7 +78,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
@@ -64,9 +86,8 @@
                         android:id="@+id/buttonPractice"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_margin="4dp"
                         android:layout_weight="1"
-                        android:background="@drawable/bt_hr"
+                        android:background="@drawable/button4_menu"
                         android:gravity="bottom|center_horizontal"
                         android:paddingBottom="10dp"
                         android:paddingTop="10dp"
@@ -75,7 +96,10 @@
                         android:textColor="#0000FF"
                         android:textSize="12sp"
                         android:typeface="monospace"
-                        android:src="@drawable/practice" />
+                        android:src="@drawable/practice"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="4dp" />
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -91,9 +115,8 @@
                         android:id="@+id/buttonChallenge"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_margin="4dp"
                         android:layout_weight="1"
-                        android:background="@drawable/bt_hr"
+                        android:background="@drawable/button4_menu"
                         android:gravity="bottom|center_horizontal"
                         android:paddingBottom="10dp"
                         android:paddingTop="10dp"
@@ -102,7 +125,10 @@
                         android:textSize="12sp"
                         android:typeface="monospace"
                         android:src="@drawable/challenge"
-                        android:scaleType="fitCenter" />
+                        android:scaleType="fitCenter"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="4dp" />
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -118,9 +144,8 @@
                         android:id="@+id/buttonUserInfo"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_margin="4dp"
-                        android:layout_weight="2"
-                        android:background="@drawable/bt_hr"
+                        android:layout_weight="1.1"
+                        android:background="@drawable/button4_menu"
                         android:gravity="bottom|center_horizontal"
                         android:paddingBottom="10dp"
                         android:paddingTop="10dp"
@@ -129,7 +154,10 @@
                         android:textSize="12sp"
                         android:typeface="monospace"
                         android:src="@drawable/user"
-                        android:scaleType="fitCenter" />
+                        android:scaleType="fitCenter"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="4dp" />
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -144,7 +172,7 @@
 
                 <LinearLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
@@ -152,9 +180,8 @@
                         android:id="@+id/button60SRun"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_margin="4dp"
                         android:layout_weight="1"
-                        android:background="@drawable/bt_hr"
+                        android:background="@drawable/button4_menu"
                         android:gravity="bottom|center_horizontal"
                         android:paddingBottom="10dp"
                         android:paddingTop="10dp"
@@ -163,7 +190,10 @@
                         android:textSize="12sp"
                         android:typeface="monospace"
                         android:src="@drawable/minute"
-                        android:scaleType="fitCenter" />
+                        android:scaleType="fitCenter"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="4dp" />
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -179,9 +209,8 @@
                         android:id="@+id/buttonFaceOff"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_margin="4dp"
                         android:layout_weight="1"
-                        android:background="@drawable/bt_hr"
+                        android:background="@drawable/button4_menu"
                         android:gravity="bottom|center_horizontal"
                         android:paddingBottom="10dp"
                         android:paddingTop="10dp"
@@ -190,7 +219,10 @@
                         android:textSize="12sp"
                         android:typeface="monospace"
                         android:src="@drawable/multiplayer"
-                        android:scaleType="fitCenter" />
+                        android:scaleType="fitCenter"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="4dp" />
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -206,9 +238,8 @@
                         android:id="@+id/buttonSettings"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_margin="4dp"
-                        android:layout_weight="2"
-                        android:background="@drawable/bt_hr"
+                        android:layout_weight="1.1"
+                        android:background="@drawable/button4_menu"
                         android:gravity="bottom|center_horizontal"
                         android:paddingBottom="10dp"
                         android:paddingTop="10dp"
@@ -217,7 +248,10 @@
                         android:textSize="12sp"
                         android:typeface="monospace"
                         android:src="@drawable/settings"
-                        android:scaleType="fitCenter" />
+                        android:scaleType="fitCenter"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="4dp" />
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -241,7 +275,8 @@
             android:layout_gravity="center"
             android:text="V 2.8.5"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            android:textColor="#555555" />
 
     </LinearLayout>
 

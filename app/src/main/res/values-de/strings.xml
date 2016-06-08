@@ -162,6 +162,8 @@ Sind Sie sicher, dass Sie zurücksetzen wollen?"</string>
     <string name="backup">Sichern Sie Ihre Daten</string>
     <string name="restore">Daten wiederherstellen</string>
     <string name="backup_restore">Sichern/wiederherstellen</string>
+    <string name="press_to_clear">Wenn Sie einen Fehler machen, entfernen Sie schnell Ihre Antwort, indem Sie:</string>
+    <string name="press_to_skip">Wenn Sie die Antwort nicht wissen, lassen Sie die Frage durch Drücken von:</string>
     
     <string-array name="tips">
         <item>"Frauen-und Männer-Gehirn gibt verschiedene biologisch und intellektuell."</item>

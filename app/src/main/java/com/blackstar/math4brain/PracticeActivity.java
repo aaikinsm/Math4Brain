@@ -16,6 +16,10 @@ import android.speech.SpeechRecognizer;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.OvershootInterpolator;
+import android.view.animation.TranslateAnimation;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -35,6 +39,7 @@ public class PracticeActivity extends Activity{
 	ImageButton micButton;
 	Runnable gotInput;
     Handler mHandler = new Handler();
+	FrameLayout numPad;
 
 	/** Called when the activity is first created. */
     @Override
@@ -43,11 +48,11 @@ public class PracticeActivity extends Activity{
         setContentView(R.layout.mathquestion);
         
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+		numPad = (FrameLayout) findViewById(R.id.frameLayoutNumPad);
         final TextView showEq = (TextView) findViewById(R.id.textViewEquation);
         final TextView showIn = (TextView) findViewById(R.id.textViewInput);
         final TextView result = (TextView) findViewById(R.id.textViewResult);
         final TextView clock = (TextView) findViewById(R.id.textViewTimer);
-        final LinearLayout timer = (LinearLayout) findViewById(R.id.linearLayoutTimer);
         final ImageView backgroundImg = (ImageView) findViewById(R.id.imageViewEqnBackground);
         final ImageButton b0 = (ImageButton) findViewById(R.id.button0);
         final ImageButton b1 = (ImageButton) findViewById(R.id.button1);
@@ -115,7 +120,6 @@ public class PracticeActivity extends Activity{
         showEq.setText(eq.getEquation());
         showIn.setText("");
         clock.setText("");
-        timer.setVisibility(View.INVISIBLE);
         if(gSettings.microphone==1){        	
         	micButton.setVisibility(View.VISIBLE);
         	pass2.setVisibility(View.VISIBLE);
@@ -326,6 +330,15 @@ public class PracticeActivity extends Activity{
         	}
         });
     }
+
+	@Override
+	public void onResume(){
+		super.onResume();
+		Animation newAnimation = new TranslateAnimation(0,0,1100,0);
+		newAnimation.setDuration(700);
+		newAnimation.setInterpolator(new OvershootInterpolator());
+		numPad.startAnimation(newAnimation);
+	}
 
 	@Override
 	protected void onDestroy() {

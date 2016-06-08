@@ -18,12 +18,13 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
+import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
+import android.view.animation.DecelerateInterpolator;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -66,6 +67,7 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier{
 	IabHelper mHelper;
 	Activity activity = this;
 	LinearLayout menuSpace;
+	LinearLayout tipLayout;
 	MediaPlayer mp3Click;
 	Typeface myTypeface;
 	long[][] dataT = new long[365][2];
@@ -85,9 +87,11 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier{
         final TextView version = (TextView) findViewById(R.id.version);
 
         menuSpace = (LinearLayout) findViewById(R.id.linearLayoutMenu);
+		tipLayout = (LinearLayout) findViewById(R.id.linearLayoutTip);
         mp3Click = MediaPlayer.create(this, R.raw.click);
         gSettings = new GameSettings();
         tv = (TextView) findViewById(R.id.textViewTip);
+		ImageView tipImg = (ImageView) findViewById(R.id.imageViewTip);
         myTypeface = Typeface.createFromAsset(getAssets(), "fawn.ttf");
 
 		if((int)(Math.random()*3) ==0) mp3Bg = MediaPlayer.create(this, R.raw.main_bg_music2);
@@ -208,6 +212,7 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier{
         //show brain fact
 		Tips tp = new Tips();
         tv.setText(tp.getTip(pro, getResources()));
+		tipImg.setImageResource(tp.getImgResource());
         
         //user data to report to flurry analytics
         final Map<String, String> userParams = new HashMap<>();
@@ -289,7 +294,7 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier{
         	@Override
 			public void onClick (View v){
 				//FlurryAgent.logEvent("Challenge");
-                if (resumable)resumeDialog();
+                if (resumable)animateTransition(LevelSelectActivity.class);
                 else animateTransition(ChallengeActivity.class);
         	}
         });
@@ -346,7 +351,7 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier{
                 getPoints();
                 return true;
             case R.id.getPro:
-                mHelper.launchPurchaseFlow(activity, sku, 10001, mPurchaseFinishedListener, gFile[13]);
+                if(!blackberry && !amazon) mHelper.launchPurchaseFlow(activity, sku, 10001, mPurchaseFinishedListener, gFile[13]);
                 return true;
 			case R.id.sync:
 				Intent s = new Intent(getApplicationContext(), SyncDataActivity.class);
@@ -584,47 +589,6 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier{
         }
     }
 
-
-    public void resumeDialog(){
-    	//Challenge mode: restart or resume;   	
-    	reload();
-    	clickSound();
-    	final Dialog dialog = new Dialog(this);
-		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-		dialog.setContentView(R.layout.dialogbox);
-		TextView body = (TextView) dialog.findViewById(R.id.textViewMsg);
-		Button dialogButton = (Button) dialog.findViewById(R.id.button1);
-		final DisplayLevels localDisplayLevels = (DisplayLevels)dialog.findViewById(R.id.displayLevels1);
-	    localDisplayLevels.setVisibility(View.VISIBLE);
-	    localDisplayLevels.setLevel(Integer.parseInt(gFile[7]), myTypeface);
-		dialogButton.setVisibility(View.VISIBLE);
-		body.setText(R.string.resume_saved);
-		dialogButton.setText(R.string.resume);
-		dialogButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss();
-                startActivity(new Intent(getApplicationContext(), ChallengeActivity.class));
-            }
-        });
-		localDisplayLevels.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View arg0, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    int out = (localDisplayLevels.getSelectedLevel(event.getX(), event.getY())) - 1;
-                    if (out > 0 && out <= Integer.parseInt(gFile[7])) {
-                        gFile[7] = out + "";
-                        write();
-                        dialog.dismiss();
-                        startActivity(new Intent(getApplicationContext(), ChallengeActivity.class));
-                    }
-                }
-                return false;
-            }
-        });
-		dialog.show();
-    }
-    
     public void multiplayerDialog(){
     	//Multiplayer: 1 or 2;
     	clickSound();
@@ -821,14 +785,20 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier{
 	public void animateTransition(final Class intent){
 		if (intent != null){
 			clickSound();
-			Animation newAnimation = new TranslateAnimation(0,0,0,450);
-	        newAnimation.setDuration(600);
+			//close menu animation
+			Animation aAnimation = new AlphaAnimation(1,0);
+			aAnimation.setDuration(700);
+			tipLayout.startAnimation(aAnimation);
+			Animation newAnimation = new TranslateAnimation(0,0,0,1100);
+	        newAnimation.setDuration(700);
+			newAnimation.setInterpolator(new AccelerateInterpolator());
 	        menuSpace.startAnimation(newAnimation);
 	        newAnimation.setAnimationListener(new AnimationListener() {
 	            @Override
 				public void onAnimationEnd(Animation animation) {
+					tipLayout.setVisibility(View.INVISIBLE);
 	            	menuSpace.setVisibility(View.INVISIBLE);
-	            	startActivity(new Intent(getApplicationContext(),intent));
+	            	startActivity(new Intent(getApplicationContext(), intent));
 	            }
 				@Override
 				public void onAnimationRepeat(Animation animation) {}
@@ -836,13 +806,16 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier{
 				public void onAnimationStart(Animation animation) {}
 	        });
 		}else{
-	        Animation newAnimation = new TranslateAnimation(0,0,450,0);
-	        newAnimation.setDuration(600);
+			//open menu animation
+	        Animation newAnimation = new TranslateAnimation(0,0,1100,0);
+	        newAnimation.setDuration(700);
+			newAnimation.setInterpolator(new DecelerateInterpolator());
+			tipLayout.setVisibility(View.VISIBLE);
 	        menuSpace.setVisibility(View.VISIBLE);
 	        menuSpace.startAnimation(newAnimation);
 	        Animation aAnimation = new AlphaAnimation(0,1);
 	        aAnimation.setDuration(1000);
-	        tv.startAnimation(aAnimation);
+			tipLayout.startAnimation(aAnimation);
 		}
 	}
 

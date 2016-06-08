@@ -163,93 +163,91 @@ Puntos totales:"</string>
     <string name="backup">Copia de seguridad de sus datos</string>
     <string name="restore">Restaurar los datos</string>
     <string name="backup_restore">Copia/Restaurar</string>
+    <string name="press_to_clear">Si comete un error, eliminar rápidamente su respuesta pulsando:</string>
+    <string name="press_to_skip">Si no sabe la respuesta, no tome la pregunta pulsando:</string>
 
     
 	<string-array name = "tips">
-	    <item>"El cerebro de las mujeres y de los hombres es diferente biológica e intelectualmente."</item>
-		<item>"El aburrimiento es más un hábito formado en el cerebro y agudizado por sus decisiones, que una realidad."</item>
-		<item>"El Medio Ambiente cuenta, y un entorno saludable ayuda a las personas a transformar problemas en soluciones."</item>
-		<item>"Más fuerte, conexiones emocionales más intensas están ligadas a los recuerdos provocados por el olor."</item>
-		<item>"Las células cerebrales llamadas dendritas utilizan el mundo exterior y toman forma, o crecen con base a lo que usted hace."</item>
-		<item>"La música cambia la velocidad de las ondas cerebrales de manera que afecta los estados de ánimo y altera la productividad."</item>
-		<item>"Las conferencias y conversaciones se benefician de la inteligencia del que habla más que de la audiencia."</item>
-		<item>"Las ondas cerebrales pueden traer ya sea sueño o rendimiento máximo, dependiendo de cómo usted las activa."</item>
-		<item>"Enganche incluso hechos difíciles en una sola cosa que usted conozcas y aumente el aprendizaje en menos tiempo"</item>
-		<item>"La inteligencia múltiple es común a todos, utilizada por unos pocos, y pueden ser más desarrollada todos los días."</item>
-		<item>"El ser humano libera hormonas de crecimiento durante el sueño"</item>
-		<item>"2% de la población no tiene sentido del olfato en absoluto."</item>
-		<item>"La plasticidad permite a la gente volver a reescribir el cerebro humano en formas que lo mantienen más joven y más inteligente."</item>
-		<item>"El estrés reduce literalmente el cerebro."</item>
-		<item>"Inspire la creatividad y la invención a través de la enseñanza a los demás, al mismo tiempo, también se aprende."</item>
-		<item>"Se Crean nuevas vías neuronales cada vez que se agrega una solución a cualquier problema que encuentre."</item>
-		<item>"El peso del cerebro humano es alrededor de 3 libras."</item>
-		<item>"Los estudios demuestran que las ondas cerebrales están más activas durante el sueño que cuando se está despierto."</item>
-		<item>"Su cerebro utiliza el 20 por ciento de la sangre y el oxígeno que circula en su cuerpo."</item>
-		<item>"Los seres humanos siguen creando nuevas neuronas durante toda la vida en respuesta a la actividad mental."</item>
-		<item>"Cada vez que se recuerde una memoria o se tenga un nuevo pensamiento, se está creando una nueva conexión en el cerebro."</item>
-		<item>"El cerebro se compone de alrededor de 75 por ciento de agua."</item>
-		<item>"8 a 10, = al número de segundos que tiene antes de perder el conocimiento debido a la pérdida de sangre."</item>
-		<item>"No se puede hacer cosquillas a sí mismo porque su cerebro distingue entre el tacto externo inesperado y su propio toque."</item>
-		<item>"La falta de sueño puede realmente dañar su capacidad para crear nuevos recuerdos."</item>
-		<item>"El hecho de que no se acuerde de sus sueños no significa que usted no sueñe. Todo el mundo sueña!"</item>
-		<item>"El número promedio de pensamientos que los seres humanos experimentan cada día es 70.000."</item>
-		<item>"12 por ciento de la gente sueña solo en blanco y negro, mientras que otros sueñan en color."</item>
-		<item>"Mientras usted duerme, la noche puede ser el mejor momento para que su cerebro consolide todos los recuerdos del día."</item>
-		<item>"El exceso de estrés ha demostrado que altera las células del cerebro, la estructura cerebral y la función cerebral."</item>
-		<item>"Leer en voz alta y hablar con frecuencia a un niño pequeño ayuda a promover el desarrollo del cerebro."</item>
-		<item>"No existen receptores de dolor en el cerebro, por lo que el cerebro no puede sentir ningún dolor."</item>
-		<item>"El cerebro de un bebé recién nacido crece cerca de tres veces su tamaño en el primer año."</item>
-		<item>"Se piensa que un bostezo ayuda a enviar más oxígeno al cerebro, por lo tanto, trabaja para que se enfríe."</item>
-		<item>"La memoria está formada por asociaciones, por lo que si se quiere ayudar a recordar cosas, es bueno que cree asociaciones por usted mismo."</item>
-		<item>"Si usted está roncando, no está soñando."</item>
-		<item>"Las clases de música han demostrado que incrementan considerablemente la organización del cerebro y la capacidad, tanto en niños como en adultos."</item>
-		<item>"La mayoría de la gente sueña de 1 a 2 horas por la noche y tienen un promedio de 4 a 7 sueños cada noche."</item>
-		<item>"El cerebro continúa enviando ondas cerebrales hasta aproximadamente 37 horas después de la muerte."</item>
-		<item>"El viejo adagio de los seres humanos de que sólo se utiliza el 10 por ciento del cerebro no es cierto. Cada parte del cerebro tiene una función conocida."</item>
-		<item>"La corteza cerebral crece más gruesa a medida que se aprende a usarlo."</item>
-		<item>"El cerebro humano es el órgano más gordo del cuerpo y puede estar formado de por lo menos el 60 por ciento de grasa."</item>
-		<item>"El cerebro es la parte más grande de la cabeza y corresponde al 85 por ciento de su peso."</item>
-		<item>"El cerebro está formado por cerca de 100 mil millones de neuronas."</item>
-		<item>"Hay 100.000 millas de vasos sanguíneos en el cerebro."</item>
-		<item>"La capacidad de emociones como la alegría, la felicidad, el miedo y la timidez ya están desarrollados al nacer."</item>
-		<item>"Usted puede aprender más eficazmente al escribir información a mano, no tecleando."</item>
-		<item>"La narración de historias puede ser una buena manera de ejercitar su cerebro."</item>
-		<item>"La meditación reduce los niveles de estrés y mejora el rendimiento del cerebro."</item>
-		<item>"Un poco de actividad física y una dieta inteligente hará que sea mucho más fácil para usted mantener su cerebro en forma."</item>
-		<item>"El cerebro humano es tres veces más grande que el cerebro de otros mamíferos que son de tamaño corporal similar."</item>
-		<item>"El cerebro humano está protegido por el cráneo, una carcasa protectora formada por 22 huesos que se unen entre sí."</item>
-		<item>"El cerebro está suspendido en el líquido cefalorraquídeo, este líquido actúa como una protección contra impactos físicos y una barrera contra las infecciones."</item>
-		<item>"4 a 6, = el número de minutos que el cerebro puede sobrevivir sin oxígeno antes de que comience a morir."</item>
-		<item>"10 a 23, = el número de vatios de potencia que su cerebro genera cuando está despierto (eso es suficiente para encender una bombilla!)."</item>
-		<item>"El tamaño del cerebro no importa. No hay evidencia de que un cerebro más grande es más inteligente que un cerebro más pequeño."</item>
-		<item>"Hay 100.000 millas de vasos sanguíneos en el cerebro. Eso es suficiente para envolver toda la tierra cuatro veces!"</item>
-		<item>"La velocidad a la que el cerebro procesa la información puede variar de 0,5 metros/segundo (1 mph) a 120 metros/segundo (268 mph)."</item>
-		<item>"Reírse de una broma parece una acción bastante simple, pero requiere de actividad en 5 zonas diferentes de nuestro cerebro!"</item>
-		<item>"Las condiciones de gran altitud hace que el cerebro vea visiones extrañas debido a la reducción del suministro de oxígeno."</item>
-		<item>"Las imágenes que nuestros ojos reciben son en realidad al revés. Nuestro cerebro los corrige, de modo que las vemos al derecho!"</item>
-		<item>"Cuando usted estornuda todas sus funciones corporales se detienen, incluyendo el corazón."</item>
-		<item>"Su nariz puede recordar 50.000 olores diferentes."</item>
-		<item>"Los impulsos nerviosos hacia y desde el cerebro viajes tan rápido como 170 millas por hora."</item>
-		<item>"Nuestro cerebro utiliza el 20 por ciento de nuestra energía corporal y representa sólo el 2 por ciento de nuestro peso corporal."</item>
-		<item>"Mientras más frío haya en la habitación al dormir, mayores serán las posibilidades de que usted tenga un mal sueño."</item>
-		<item>"Después de comer demasiado su capacidad de escuchar es menos nítida"</item>
-		<item>"Las mujeres son más capaces de identificar olores de cítricos, vainilla, canela y café."</item>
-		<item>"La vitamina E protege las células cerebrales del daño causado por el consumo de alcohol"</item>
-		<item>"Los seres humanos son los únicos animales que pueden producir lágrimas emocionales"</item>
-		<item>"Las personas diestras viven, en promedio, nueve años más que las personas zurdas"</item>
-		<item>"Hay alrededor de 1.350.000 neuronas en la médula espinal humana"</item>
-		<item>"El cerebro es mucho más activo durante la noche que durante el día""</item>
-		<item>"La persona promedio puede dormirse en 7 minutos"</item>
-		<item>"El ejercicio regular, una dieta saludable, la estimulación mental, el sueño de calidad, manejo del estrés, y una vida social activa son muy beneficiosas para el cerebro"</item>
-		<item>"La estimulación mental frecuente reduce el riesgo de enfermedad de Alzheimer</item>
-		<item>"Hay un virus que ataca el ADN humano haciendo que la gente sea menos inteligente, perjudicando la actividad cerebral, el aprendizaje y la memoria."</item>
-		<item>"El alcohol no le hace olvidar nada. Cuando se emborracha, el cerebro pierde temporalmente la capacidad de crear recuerdos."</item>
-		<item>"Usted tiene receptores del gusto en el estómago, los intestinos, el páncreas, los pulmones, el ano, los testículos y el cerebro."</item>
-		<item>"El cerebro humano tiene la misma consistencia que el tofu"</item>
-		<item>"El olor del chocolate aumenta las ondas cerebrales, lo que desencadena la relajación"</item>
-        <item>"El olvido es bueno para el cerebro: la eliminación de información innecesaria ayuda al sistema nervioso a mantener su plasticidad."</item>
-        <item>"Un estudio encontró que el uso de un teléfono móvil por un largo tiempo aumenta significativamente el riesgo de tumores cerebrales."</item>
-        <item>"La falta de sueño afecta el cerebro de varias maneras que pueden afectar el juicio y crear reacciones lentas."</item>
-        <item>"Sólo se tarda 6 minutos para que las células cerebrales reaccionen con el alcohol"</item>
+        <item>"01 El cerebro de las mujeres y de los hombres es diferente biológica e intelectualmente."</item>
+        <item>"02 El aburrimiento es más un hábito formado en el cerebro y agudizado por sus decisiones, que una realidad."</item>
+        <item>"03 El Medio Ambiente cuenta, y un entorno saludable ayuda a las personas a transformar problemas en soluciones."</item>
+        <item>"04 Más fuerte, conexiones emocionales más intensas están ligadas a los recuerdos provocados por el olor."</item>
+        <item>"05 Las células cerebrales llamadas dendritas utilizan el mundo exterior y toman forma, o crecen con base a lo que usted hace."</item>
+        <item>"06 La música cambia la velocidad de las ondas cerebrales de manera que afecta los estados de ánimo y altera la productividad."</item>
+        <item>"07 Las conferencias y conversaciones se benefician de la inteligencia del que habla más que de la audiencia."</item>
+        <item>"08 Sólo se tarda 6 minutos para que las células cerebrales reaccionen con el alcohol"</item>
+        <item>"09 Enganche incluso hechos difíciles en una sola cosa que usted conozcas y aumente el aprendizaje en menos tiempo"</item>
+        <item>"10 La inteligencia múltiple es común a todos, utilizada por unos pocos, y pueden ser más desarrollada todos los días."</item>
+        <item>"11 El ser humano libera hormonas de crecimiento durante el sueño"</item>
+        <item>"12 2% de la población no tiene sentido del olfato en absoluto."</item>
+        <item>"13 La plasticidad permite a la gente volver a reescribir el cerebro humano en formas que lo mantienen más joven y más inteligente."</item>
+        <item>"14 El estrés reduce literalmente el cerebro."</item>
+        <item>"15 Inspire la creatividad y la invención a través de la enseñanza a los demás, al mismo tiempo, también se aprende."</item>
+        <item>"16 La falta de sueño afecta el cerebro de varias maneras que pueden afectar el juicio y crear reacciones lentas."</item>
+        <item>"17 El peso del cerebro humano es alrededor de 3 libras."</item>
+        <item>"18 Los estudios demuestran que las ondas cerebrales están más activas durante el sueño que cuando se está despierto."</item>
+        <item>"19 Su cerebro utiliza el 20 por ciento de la sangre y el oxígeno que circula en su cuerpo."</item>
+        <item>"20 Los seres humanos siguen creando nuevas neuronas durante toda la vida en respuesta a la actividad mental."</item>
+        <item>"21 Cada vez que se recuerde una memoria o se tenga un nuevo pensamiento, se está creando una nueva conexión en el cerebro."</item>
+        <item>"22 El cerebro se compone de alrededor de 75 por ciento de agua."</item>
+        <item>"23 8 a 10, = al número de segundos que tiene antes de perder el conocimiento debido a la pérdida de sangre."</item>
+        <item>"24 No se puede hacer cosquillas a sí mismo porque su cerebro distingue entre el tacto externo inesperado y su propio toque."</item>
+        <item>"25 La falta de sueño puede realmente dañar su capacidad para crear nuevos recuerdos."</item>
+        <item>"26 El hecho de que no se acuerde de sus sueños no significa que usted no sueñe. Todo el mundo sueña!"</item>
+        <item>"27 El número promedio de pensamientos que los seres humanos experimentan cada día es 70.000."</item>
+        <item>"28 12 por ciento de la gente sueña solo en blanco y negro, mientras que otros sueñan en color."</item>
+        <item>"29 Mientras usted duerme, la noche puede ser el mejor momento para que su cerebro consolide todos los recuerdos del día."</item>
+        <item>"30 El exceso de estrés ha demostrado que altera las células del cerebro, la estructura cerebral y la función cerebral."</item>
+        <item>"31 Leer en voz alta y hablar con frecuencia a un niño pequeño ayuda a promover el desarrollo del cerebro."</item>
+        <item>"32 No existen receptores de dolor en el cerebro, por lo que el cerebro no puede sentir ningún dolor."</item>
+        <item>"33 El cerebro de un bebé recién nacido crece cerca de tres veces su tamaño en el primer año."</item>
+        <item>"34 Se piensa que un bostezo ayuda a enviar más oxígeno al cerebro, por lo tanto, trabaja para que se enfríe."</item>
+        <item>"35 La memoria está formada por asociaciones, por lo que si se quiere ayudar a recordar cosas, es bueno que cree asociaciones por usted mismo."</item>
+        <item>"36 Si usted está roncando, no está soñando."</item>
+        <item>"37 Las clases de música han demostrado que incrementan considerablemente la organización del cerebro y la capacidad, tanto en niños como en adultos."</item>
+        <item>"38 La mayoría de la gente sueña de 1 a 2 horas por la noche y tienen un promedio de 4 a 7 sueños cada noche."</item>
+        <item>"39 El cerebro continúa enviando ondas cerebrales hasta aproximadamente 37 horas después de la muerte."</item>
+        <item>"40 El viejo adagio de los seres humanos de que sólo se utiliza el 10 por ciento del cerebro no es cierto. Cada parte del cerebro tiene una función conocida."</item>
+        <item>"41 Un estudio encontró que el uso de un teléfono móvil por un largo tiempo aumenta significativamente el riesgo de tumores cerebrales."</item>
+        <item>"42 El cerebro humano es el órgano más gordo del cuerpo y puede estar formado de por lo menos el 60 por ciento de grasa."</item>
+        <item>"43 El cerebro es la parte más grande de la cabeza y corresponde al 85 por ciento de su peso."</item>
+        <item>"44 El cerebro está formado por cerca de 100 mil millones de neuronas."</item>
+        <item>"45 Hay 100.000 millas de vasos sanguíneos en el cerebro."</item>
+        <item>"46 La capacidad de emociones como la alegría, la felicidad, el miedo y la timidez ya están desarrollados al nacer."</item>
+        <item>"47 Usted puede aprender más eficazmente al escribir información a mano, no tecleando."</item>
+        <item>"48 La narración de historias puede ser una buena manera de ejercitar su cerebro."</item>
+        <item>"49 La meditación reduce los niveles de estrés y mejora el rendimiento del cerebro."</item>
+        <item>"50 Un poco de actividad física y una dieta inteligente hará que sea mucho más fácil para usted mantener su cerebro en forma."</item>
+        <item>"51 El cerebro humano es tres veces más grande que el cerebro de otros mamíferos que son de tamaño corporal similar."</item>
+        <item>"52 El cerebro humano está protegido por el cráneo, una carcasa protectora formada por 22 huesos que se unen entre sí."</item>
+        <item>"53 El cerebro está suspendido en el líquido cefalorraquídeo, este líquido actúa como una protección contra impactos físicos y una barrera contra las infecciones."</item>
+        <item>"54 4 a 6, = el número de minutos que el cerebro puede sobrevivir sin oxígeno antes de que comience a morir."</item>
+        <item>"55 10 a 23, = el número de vatios de potencia que su cerebro genera cuando está despierto (eso es suficiente para encender una bombilla!)."</item>
+        <item>"56 El tamaño del cerebro no importa. No hay evidencia de que un cerebro más grande es más inteligente que un cerebro más pequeño."</item>
+        <item>"57 Hay 100.000 millas de vasos sanguíneos en el cerebro. Eso es suficiente para envolver toda la tierra cuatro veces!"</item>
+        <item>"58 La velocidad a la que el cerebro procesa la información puede variar de 0,5 metros/segundo (1 mph) a 120 metros/segundo (268 mph)."</item>
+        <item>"59 Reírse de una broma parece una acción bastante simple, pero requiere de actividad en 5 zonas diferentes de nuestro cerebro!"</item>
+        <item>"60 Las condiciones de gran altitud hace que el cerebro vea visiones extrañas debido a la reducción del suministro de oxígeno."</item>
+        <item>"61 Las imágenes que nuestros ojos reciben son en realidad al revés. Nuestro cerebro los corrige, de modo que las vemos al derecho!"</item>
+        <item>"62 Cuando usted estornuda todas sus funciones corporales se detienen, incluyendo el corazón."</item>
+        <item>"63 Su nariz puede recordar 50.000 olores diferentes."</item>
+        <item>"64 Los impulsos nerviosos hacia y desde el cerebro viajes tan rápido como 170 millas por hora."</item>
+        <item>"65 Nuestro cerebro utiliza el 20 por ciento de nuestra energía corporal y representa sólo el 2 por ciento de nuestro peso corporal."</item>
+        <item>"66 Mientras más frío haya en la habitación al dormir, mayores serán las posibilidades de que usted tenga un mal sueño."</item>
+        <item>"67 Después de comer demasiado su capacidad de escuchar es menos nítida"</item>
+        <item>"68 Las mujeres son más capaces de identificar olores de cítricos, vainilla, canela y café."</item>
+        <item>"69 La vitamina E protege las células cerebrales del daño causado por el consumo de alcohol"</item>
+        <item>"70 Los seres humanos son los únicos animales que pueden producir lágrimas emocionales"</item>
+        <item>"71 Las personas diestras viven, en promedio, nueve años más que las personas zurdas"</item>
+        <item>"72 Hay alrededor de 1.350.000 neuronas en la médula espinal humana"</item>
+        <item>"73 El cerebro es mucho más activo durante la noche que durante el día""</item>
+        <item>"74 La persona promedio puede dormirse en 7 minutos"</item>
+        <item>"75 El ejercicio regular, una dieta saludable, la estimulación mental, el sueño de calidad, manejo del estrés, y una vida social activa son muy beneficiosas para el cerebro"</item>
+        <item>"76 La estimulación mental frecuente reduce el riesgo de enfermedad de Alzheimer</item>
+        <item>"77 El olvido es bueno para el cerebro: la eliminación de información innecesaria ayuda al sistema nervioso a mantener su plasticidad."</item>
+        <item>"78 El alcohol no le hace olvidar nada. Cuando se emborracha, el cerebro pierde temporalmente la capacidad de crear recuerdos."</item>
+        <item>"79 Usted tiene receptores del gusto en el estómago, los intestinos, el páncreas, los pulmones, el ano, los testículos y el cerebro."</item>
+        <item>"80 El cerebro humano tiene la misma consistencia que el tofu"</item>
+        <item>"81 El olor del chocolate aumenta las ondas cerebrales, lo que desencadena la relajación"</item>
 	</string-array>
 </resources>

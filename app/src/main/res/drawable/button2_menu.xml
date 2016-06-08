@@ -2,11 +2,11 @@
 <selector
   xmlns:android="http://schemas.android.com/apk/res/android">
   	<item android:state_enabled="false" 
-     android:drawable="@drawable/bt" />
+     android:drawable="@drawable/bt_light_framed" />
     <item android:state_enabled="true"
-     android:state_focused="true" android:drawable="@drawable/bt" />
+     android:state_focused="true" android:drawable="@drawable/bt_light_framed" />
     <item android:state_enabled="true" 
      android:state_pressed="true" android:drawable="@drawable/bt_pressed" />
     <item android:state_enabled="true"
-     android:drawable="@drawable/bt" />
+     android:drawable="@drawable/bt_light_framed" />
 </selector>

@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TableLayout;
@@ -62,11 +63,11 @@ public class UserActivity extends Activity{
         final TextView info1b = (TextView) findViewById(R.id.textViewInfo1b);
         final TextView info2 = (TextView) findViewById(R.id.textViewInfo2);
         final TextView name = (TextView) findViewById(R.id.textViewTitle);
-        final Button editName = (Button) findViewById(R.id.buttonEditName);
+        final LinearLayout editName = (LinearLayout) findViewById(R.id.layoutEditName);
         final Button done = (Button) findViewById(R.id.buttonInfo);
         final ImageButton share = (ImageButton) findViewById(R.id.buttonShare);
         final EditText nameInput = (EditText) findViewById(R.id.editTextName);
-        final Button viewRank = (Button) findViewById(R.id.buttonViewRank);
+        final ImageButton viewRank = (ImageButton) findViewById(R.id.buttonViewRank);
         final TableLayout topUsers = (TableLayout) findViewById(R.id.tableLayoutTopUsers);
         final FrameLayout stats = (FrameLayout) findViewById(R.id.frameLayoutStats);
         final FrameLayout rankReset = (FrameLayout) findViewById(R.id.frameLayoutRR);
@@ -241,7 +242,7 @@ public class UserActivity extends Activity{
 	        		
 	        		//check if server is online 
 	        		if(rank!=0 && connected){
-	        			info2.setText(getResources().getString(R.string.your_rank)+rank+".");
+	        			info2.setText("#"+rank+"."); //TODO: Remove R.string.your_rank
 	        			listAdapter.notifyDataSetChanged();
 	        			//Retrieve messages
 	    	            newMsg = false;
@@ -287,7 +288,7 @@ public class UserActivity extends Activity{
 		Bundle extras = getIntent().getExtras();
 		if (extras != null) {
 			if (extras.containsKey("view_rank")){
-				viewRank.setText(R.string.loading);
+				//viewRank.setText(R.string.loading);
 				loadBar.setVisibility(View.VISIBLE);
 				mHandler.postDelayed(rankTable, 10);
 				stats.setVisibility(View.GONE);
@@ -305,7 +306,7 @@ public class UserActivity extends Activity{
         viewRank.setOnClickListener (new View.OnClickListener(){
         	@Override
 			public void onClick (View v){
-        		viewRank.setText(R.string.loading);
+        		//viewRank.setText(R.string.loading);
         		loadBar.setVisibility(View.VISIBLE);
         		mHandler.postDelayed(rankTable, 10);
         	}

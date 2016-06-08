@@ -129,7 +129,7 @@ public class TapJoyLauncher extends Activity implements View.OnClickListener, Ta
 		
 		//relativeLayout = (RelativeLayout)findViewById(R.id.RelativeLayout01);
 		adLinearLayout = (LinearLayout)findViewById(R.id.AdLinearLayout);
-		// This button launches the offers page when clicked.
+		// This bt_white launches the offers page when clicked.
 		Button offers = (Button) findViewById(R.id.OffersButton);
 		offers.setOnClickListener(this);
 		
@@ -137,7 +137,7 @@ public class TapJoyLauncher extends Activity implements View.OnClickListener, Ta
 		Button closeScreen = (Button) findViewById(R.id.buttonClose);
 		closeScreen.setOnClickListener(this);
 		
-//		// This button retrieves the virtual currency info from the server.
+//		// This bt_white retrieves the virtual currency info from the server.
 //		Button getPoints = (Button) findViewById(R.id.GetPointsButton);
 //		getPoints.setOnClickListener(this);
 //		
@@ -149,15 +149,15 @@ public class TapJoyLauncher extends Activity implements View.OnClickListener, Ta
 //		Button awardPoints = (Button) findViewById(R.id.AwardPointsButton);
 //		awardPoints.setOnClickListener(this);
 		
-//		// This button displays the full screen ad when clicked.
+//		// This bt_white displays the full screen ad when clicked.
 //		Button getFeaturedApp = (Button) findViewById(R.id.GetFeaturedApp);
 //		getFeaturedApp.setOnClickListener(this);
 //		
-//		// This button displays the Daily Reward ad when clicked.
+//		// This bt_white displays the Daily Reward ad when clicked.
 //		Button getDailyReward = (Button) findViewById(R.id.GetDailyReward);
 //		getDailyReward.setOnClickListener(this);
 //		
-		// This button displays the Display ad when clicked.
+		// This bt_white displays the Display ad when clicked.
 		//Button displayAd = (Button) findViewById(R.id.DisplayAD);
 		//displayAd.setOnClickListener(this);
 		

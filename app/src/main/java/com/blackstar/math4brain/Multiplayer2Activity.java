@@ -162,7 +162,6 @@ public class Multiplayer2Activity extends Activity{
 		        final TextView showIn = (TextView) findViewById(R.id.textViewInput);
 		        final TextView result = (TextView) findViewById(R.id.textViewResult);
 		        final TextView clock = (TextView) findViewById(R.id.textViewTimer);
-		        final LinearLayout timer = (LinearLayout) findViewById(R.id.linearLayoutTimer);
 		        final ImageView backgroundImg = (ImageView) findViewById(R.id.imageViewEqnBackground);
 		        final ImageButton b0 = (ImageButton) findViewById(R.id.button0);
 		        final ImageButton b1 = (ImageButton) findViewById(R.id.button1);
@@ -181,8 +180,8 @@ public class Multiplayer2Activity extends Activity{
 		        final Vibrator vb = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE); 
 		        final ProgressBar progress1 = (ProgressBar) findViewById(R.id.progressBarBlue);
 		        final ProgressBar progress2 = (ProgressBar) findViewById(R.id.progressBarRed);
-		        final Button next = (Button) findViewById(R.id.buttonNext);
-		        final Button back = (Button) findViewById(R.id.buttonBack);
+		        final ImageButton next = (ImageButton) findViewById(R.id.buttonNext);
+		        final ImageButton back = (ImageButton) findViewById(R.id.buttonBack);
 		        final FrameLayout numPad = (FrameLayout) findViewById(R.id.frameLayoutNumPad);
 		        final ImageView winImg = (ImageView) findViewById(R.id.ImageView05);
 		        final ImageView loseImg = (ImageView) findViewById(R.id.ImageView01);
@@ -232,7 +231,6 @@ public class Multiplayer2Activity extends Activity{
 		        showEq.setText(eqnArry[index][0]);
 		        showIn.setText("");
 		        clock.setText("");
-		        timer.setVisibility(View.INVISIBLE);
 		        progress1.setVisibility(View.VISIBLE);
 		        progress2.setVisibility(View.VISIBLE);
 		        gSettings.sound = Integer.parseInt(arry[3]);
@@ -292,7 +290,6 @@ public class Multiplayer2Activity extends Activity{
 		        				showEq.setText(R.string.you_lose);
 		        				loseImg.setVisibility(View.VISIBLE);
 		        			}
-		        			next.setText(R.string.play_again);
 		            		next.setVisibility(View.VISIBLE);
 		            		back.setVisibility(View.VISIBLE);
 		        			numPad.setVisibility(View.GONE);

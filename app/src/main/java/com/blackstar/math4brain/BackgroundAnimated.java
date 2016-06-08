@@ -39,7 +39,7 @@ public class BackgroundAnimated extends View{
         width = getMeasuredWidth();
         height = getMeasuredHeight();
 
-        //Display random flashing symbols
+        /*//Display random flashing symbols
         square.setStyle(Paint.Style.FILL);
         int xpos = (int)(Math.random()*width);
         int ypos = (int)(Math.random()*height);
@@ -48,7 +48,7 @@ public class BackgroundAnimated extends View{
         else if(xpos%5==0) canvas.drawText("%", xpos, ypos, square); //show at rand times
         else if(xpos%6==0) canvas.drawText("X", xpos, ypos, square); //show at rand times
         else if(xpos%7==0) canvas.drawText("=", xpos, ypos, square); //show at rand times
-        else if(xpos%9==0) canvas.drawText("/", xpos, ypos, square); //show at rand times
+        else if(xpos%9==0) canvas.drawText("/", xpos, ypos, square); //show at rand times*/
 
         //display touch trail
         square.setColor(Color.rgb((int) (Math.random()*255), 100, (int) (Math.random()*255)));//random color
@@ -58,9 +58,9 @@ public class BackgroundAnimated extends View{
             int size = 20 * (10 - i);
             square.setTextSize(size);
             square.setAlpha(100 - (i * 5)); //Diminishing alpha
-            double rand = 7 * Math.random();
-            data[i][1] += (rand - 2); //random vertical movement
-            data[i][0] += (rand - 3); //random horizontal movement
+            double rand = 5 * Math.random();
+            data[i][1] += (rand - 1); //random vertical movement
+            data[i][0] += (rand - 2); //random horizontal movement
             if (data[i][0] == 0) data[i][0] = 10000; //start off screen
             canvas.drawText("" + data[i][2], data[i][0], data[i][1], square); //Diminishing size
         }
