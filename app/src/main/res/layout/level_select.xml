@@ -14,7 +14,7 @@
 
         <ImageButton
             android:layout_width="fill_parent"
-            android:layout_height="55dp"
+            android:layout_height="45dp"
             android:id="@+id/buttonLeft"
             android:layout_weight="1"
             android:background="@drawable/button_menu"
@@ -24,7 +24,7 @@
 
         <ImageButton
             android:layout_width="fill_parent"
-            android:layout_height="55dp"
+            android:layout_height="45dp"
             android:id="@+id/buttonRight"
             android:layout_weight="1"
             android:background="@drawable/button_menu"
@@ -63,11 +63,11 @@
             android:gravity="center">
 
             <Button
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:id="@+id/button_lv1"
                 android:layout_column="0"
-                android:layout_margin="6dp"
+                android:layout_margin="5dp"
                 android:text="1"
                 android:textSize="25sp"
                 android:layout_gravity="top"
@@ -75,11 +75,11 @@
                 android:background="@drawable/button3_menu" />
 
             <Button
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:id="@+id/button_lv2"
                 android:layout_column="1"
-                android:layout_margin="6dp"
+                android:layout_margin="5dp"
                 android:text="2"
                 android:textSize="25sp"
                 android:layout_gravity="top"
@@ -87,11 +87,11 @@
                 android:background="@drawable/button3_menu" />
 
             <Button
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:id="@+id/button_lv3"
                 android:layout_column="2"
-                android:layout_margin="6dp"
+                android:layout_margin="5dp"
                 android:text="3"
                 android:textSize="25sp"
                 android:layout_gravity="top"
@@ -106,11 +106,11 @@
             android:gravity="center">
 
             <Button
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:id="@+id/button_lv4"
                 android:layout_column="0"
-                android:layout_margin="6dp"
+                android:layout_margin="5dp"
                 android:text="4"
                 android:textSize="25sp"
                 android:layout_gravity="top"
@@ -118,11 +118,11 @@
                 android:background="@drawable/button3_menu" />
 
             <Button
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:id="@+id/button_lv5"
                 android:layout_column="1"
-                android:layout_margin="6dp"
+                android:layout_margin="5dp"
                 android:text="5"
                 android:textSize="25sp"
                 android:layout_gravity="top"
@@ -130,11 +130,11 @@
                 android:background="@drawable/button3_menu" />
 
             <Button
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:id="@+id/button_lv6"
                 android:layout_column="2"
-                android:layout_margin="6dp"
+                android:layout_margin="5dp"
                 android:text="6"
                 android:textSize="25sp"
                 android:layout_gravity="top"
@@ -149,11 +149,11 @@
             android:gravity="center">
 
             <Button
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:id="@+id/button_lv7"
                 android:layout_column="0"
-                android:layout_margin="6dp"
+                android:layout_margin="5dp"
                 android:text="7"
                 android:textSize="25sp"
                 android:layout_gravity="top"
@@ -161,11 +161,11 @@
                 android:background="@drawable/button3_menu" />
 
             <Button
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:id="@+id/button_lv8"
                 android:layout_column="1"
-                android:layout_margin="6dp"
+                android:layout_margin="5dp"
                 android:text="8"
                 android:textSize="25sp"
                 android:layout_gravity="top"
@@ -173,11 +173,11 @@
                 android:background="@drawable/button3_menu" />
 
             <Button
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:id="@+id/button_lv9"
                 android:layout_column="2"
-                android:layout_margin="6dp"
+                android:layout_margin="5dp"
                 android:text="9"
                 android:textSize="25sp"
                 android:layout_gravity="top"
@@ -192,11 +192,11 @@
             android:gravity="center">
 
             <Button
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:id="@+id/button_lv10"
                 android:layout_column="0"
-                android:layout_margin="6dp"
+                android:layout_margin="5dp"
                 android:text="10"
                 android:textSize="25sp"
                 android:layout_gravity="top"
@@ -204,11 +204,11 @@
                 android:background="@drawable/button3_menu" />
 
             <Button
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:id="@+id/button_lv11"
                 android:layout_column="1"
-                android:layout_margin="6dp"
+                android:layout_margin="5dp"
                 android:text="-"
                 android:textSize="25sp"
                 android:layout_gravity="top"
@@ -217,11 +217,11 @@
                 android:background="@drawable/button3_menu" />
 
             <Button
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:id="@+id/button_lv12"
                 android:layout_column="2"
-                android:layout_margin="6dp"
+                android:layout_margin="5dp"
                 android:text="-"
                 android:textSize="25sp"
                 android:layout_gravity="top"

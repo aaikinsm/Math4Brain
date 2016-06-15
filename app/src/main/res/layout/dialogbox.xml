@@ -52,7 +52,8 @@
 	            android:background="@drawable/button_menu"
 	            android:text="Button"
 	            android:visibility="gone"
-				android:layout_gravity="center" />
+				android:layout_gravity="center"
+				android:textColor="#000000" />
 	
 	        <Button
 	            android:id="@+id/button2"
@@ -63,7 +64,8 @@
 	            android:background="@drawable/button_menu"
 	            android:text="Button"
 	            android:visibility="gone"
-				android:layout_gravity="center" />
+				android:layout_gravity="center"
+				android:textColor="#000000" />
 	
 	        <Button
 	            android:id="@+id/button3"
@@ -74,7 +76,8 @@
 	            android:background="@drawable/button_menu"
 	            android:text="1"
 	            android:visibility="gone"
-				android:layout_gravity="center" />
+				android:layout_gravity="center"
+				android:textColor="#000000" />
 	
 	        <ImageButton
 	            android:id="@+id/imageButton1"
