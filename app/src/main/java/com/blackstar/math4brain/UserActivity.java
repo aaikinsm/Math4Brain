@@ -43,7 +43,7 @@ public class UserActivity extends Activity{
 	
 	int level=0, average =0, DISPLAYMAX=20, rank, minPointsPro= 5000, FILESIZE = 25;
 	int[] aScores;
-    String UName = "", VERSION, IPADRS="blackstar.herobo.com", msgs=null, FILEMSG = "m4bfileMsg", 
+    String UName = "", VERSION, IPADRS="amensah.com/kokotoa/sqlphp", msgs=null, FILEMSG = "m4bfileMsg",
     		FILETRACK = "m4bfileTrack", locale=Locale.getDefault().getLanguage();
     String[] arry;
     List<String[]> uList = new ArrayList<>();
@@ -320,10 +320,10 @@ public class UserActivity extends Activity{
     	String id = arry[12];
     	
     	// url to update product
-        private  String url_update_user = "http://"+IPADRS+"/sqlphp/update_users.php";
-        private  String url_get_rank = "http://"+IPADRS+"/sqlphp/get_rank.php";
-        private  String url_get_users = "http://"+IPADRS+"/sqlphp/get_users.php";
-        private  String url_get_version = "http://"+IPADRS+"/sqlphp/get_version.php";
+        private  String url_update_user = "http://"+IPADRS+"/update_users.php";
+        private  String url_get_rank = "http://"+IPADRS+"/get_rank.php";
+        private  String url_get_users = "http://"+IPADRS+"/get_users.php";
+        private  String url_get_version = "http://"+IPADRS+"/get_version.php";
      
     	// JSON Node names
         private static final String TAG_SUCCESS = "success";

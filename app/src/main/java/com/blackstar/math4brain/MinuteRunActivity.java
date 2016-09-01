@@ -52,7 +52,7 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
 	
 	Handler mHandler;
 	Runnable mUpdateTimer, gotInput, breakTimer;
-	MediaPlayer mp3Tick;
+	MediaPlayer mp3Tick, mp3Payout;
 	double startTime = 0, nextTime=0, time=0;
 	int count = 0, combo = 0, minPointsPro = 5000, displaySecs, hintSleep, FILESIZE=25;
 	boolean update_display_ad=false, blackberry = false, amazon = false, pro = false, colorful=false, connection =true;
@@ -113,7 +113,7 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
         final ImageView backgroundImg = (ImageView) findViewById(R.id.imageViewEqnBackground);
         final MediaPlayer mp3Correct = MediaPlayer.create(this, R.raw.correct);
         final MediaPlayer mp3Timeup = MediaPlayer.create(this, R.raw.wrong);
-        final MediaPlayer mp3Payout = MediaPlayer.create(this, R.raw.payout);
+        mp3Payout = MediaPlayer.create(this, R.raw.payout);
         mp3Tick = MediaPlayer.create(this, R.raw.ticktok);
         final GameSettings gSettings = new GameSettings();       
         final Vibrator vb = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE); 
@@ -656,7 +656,7 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
         next.setOnClickListener (new View.OnClickListener(){
         	@Override
 			public void onClick (View v){
-        		startActivity(new Intent("android.intent.action.MINUTERUN"));
+        		startActivity(new Intent(getApplicationContext(), MinuteRunActivity.class));
         		finish();
         	}
         });
@@ -913,14 +913,15 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
         mHandler.removeCallbacks(mUpdateTimer);
         //Quick fix
         try{
-        mp3Tick.stop();
+        	mp3Tick.stop();
+			mp3Payout.stop();
         }catch(Exception E){E.printStackTrace();}
 
 		int rn = (int) (Math.random()*(15)) ;
-		if(!pro && rn==1 && Integer.parseInt(gFile[9])>1000 && mInterstitialAd.isLoaded()){
+		if(!pro && rn==1 && Integer.parseInt(gFile[9])>300 && mInterstitialAd.isLoaded()){
 			mInterstitialAd.show();
 		}
-		else if(!pro && rn==3 && Integer.parseInt(gFile[9])>1500){
+		else if(!pro && rn==3 && Integer.parseInt(gFile[9])>1000){
 			TapjoyConnect.getTapjoyConnectInstance().getFullScreenAd(fullAdNotif);
 			FlurryAgent.logEvent("Video_Ad");
 		}

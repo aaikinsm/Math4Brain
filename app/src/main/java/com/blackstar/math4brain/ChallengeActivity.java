@@ -543,7 +543,7 @@ public class ChallengeActivity extends Activity{
         next.setOnClickListener (new View.OnClickListener(){
         	@Override
 			public void onClick (View v){
-        		startActivity(new Intent("android.intent.action.CHALLENGE"));
+        		startActivity(new Intent(getApplicationContext(), ChallengeActivity.class));
         		finish();
         	}
         });

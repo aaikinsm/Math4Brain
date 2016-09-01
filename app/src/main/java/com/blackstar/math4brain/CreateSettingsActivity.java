@@ -507,7 +507,7 @@ public class CreateSettingsActivity extends Activity{
 		        			out.close();        			
 		            	} catch (IOException e) {e.printStackTrace(); }
 					}
-					startActivity(new Intent("android.intent.action.SETTINGS"));
+					startActivity(new Intent(getApplicationContext(), CreateSettingsActivity.class));
         			finish();
 				}
 	        });

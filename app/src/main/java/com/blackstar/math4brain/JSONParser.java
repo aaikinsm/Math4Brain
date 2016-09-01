@@ -37,10 +37,10 @@ public class JSONParser {
     // by making HTTP POST or GET mehtod
     public JSONObject makeHttpRequest(String url, String method,
             List<NameValuePair> params) {
- 
+
         // Making HTTP request
         try {
- 
+
             // check for request method
             if(method == "POST"){
                 // request method is POST

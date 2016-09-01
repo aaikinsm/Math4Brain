@@ -28,7 +28,7 @@ import java.util.List;
 public class SyncDataActivity extends Activity {
 
     String[] gFile = new String[20];
-    String syncURL = "http://blackstar.herobo.com/sqlphp/sync.php";
+    String syncURL = "http://amensah.com/kokotoa/sqlphp/sync.php";
     String userdata = "", FILENAME = "m4bfile1";
     boolean backup = true;
     short status, animFrame;

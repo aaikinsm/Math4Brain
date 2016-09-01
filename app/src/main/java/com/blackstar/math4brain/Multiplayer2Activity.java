@@ -25,7 +25,6 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -48,7 +47,7 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class Multiplayer2Activity extends Activity{
-	String IPADRS = "blackstar.herobo.com", FILENAME = "m4bfile1", FILEMULT = "m4bfileMul", FILEPRO = "m4bfilePro1",
+	String IPADRS = "amensah.com/kokotoa/sqlphp", FILENAME = "m4bfile1", FILEMULT = "m4bfileMul", FILEPRO = "m4bfilePro1",
 			name = "", id = "", message="", equations="", output="";
 	int myScr = 0, displaySecs, numEqn =30, index=0, p1Scr=0, p2Scr=0, anim=0, waitTimer=0, FILESIZE=25;
 	boolean player1= true, connected=false, gameOver = false, win = false, pro = false, stopSearch = false;
@@ -147,7 +146,7 @@ public class Multiplayer2Activity extends Activity{
         refresh.setOnClickListener (new View.OnClickListener(){
         	@Override
 			public void onClick (View v){
-        		startActivity(new Intent("android.intent.action.MULTIPLAYER2"));
+        		startActivity(new Intent(getApplicationContext(), Multiplayer2Activity.class));
         		finish();
         	}
         });
@@ -407,7 +406,7 @@ public class Multiplayer2Activity extends Activity{
 		        next.setOnClickListener (new View.OnClickListener(){
 		        	@Override
 					public void onClick (View v){
-		        		startActivity(new Intent("android.intent.action.MULTIPLAYER2"));
+		        		startActivity(new Intent(getApplicationContext(), Multiplayer2Activity.class));
 		        		finish();
 		        	}
 		        });
@@ -447,11 +446,11 @@ public class Multiplayer2Activity extends Activity{
 	class UpdateDatabase extends AsyncTask<String, String, String> {
     	
     	// url to update product
-        private  String create_session = "http://"+IPADRS+"/sqlphp/m_create_session.php";
-        private  String join_session = "http://"+IPADRS+"/sqlphp/m_join_session.php";
-        private  String is_connected = "http://"+IPADRS+"/sqlphp/m_is_connected.php";
-        private  String update_scores = "http://"+IPADRS+"/sqlphp/m_update_scores.php";
-        private  String close_session = "http://"+IPADRS+"/sqlphp/m_close_sesssion.php";
+        private  String create_session = "http://"+IPADRS+"/m_create_session.php";
+        private  String join_session = "http://"+IPADRS+"/m_join_session.php";
+        private  String is_connected = "http://"+IPADRS+"/m_is_connected.php";
+        private  String update_scores = "http://"+IPADRS+"/m_update_scores.php";
+        private  String close_session = "http://"+IPADRS+"/m_close_sesssion.php";
     	// JSON Node names
         private static final String TAG_SUCCESS = "success";
         private static final String TAG_MESSAGE = "message";
@@ -488,9 +487,10 @@ public class Multiplayer2Activity extends Activity{
 			            p1b.add(new BasicNameValuePair(TAG_UID, id));
 		            	//wait for opponent to connect and receive info
 		            	output = getResources().getString(R.string.waiting_for_opponent);
+						JSONObject json3;
 		            	while(!connected && !stopSearch){
 		            		//if ( isCancelled()) break;				            
-				            JSONObject json3 = jsonParser.makeHttpRequest(is_connected,"POST", p1b);
+				            json3 = jsonParser.makeHttpRequest(is_connected,"POST", p1b);
 				            if (json3.getInt(TAG_SUCCESS)== 1){
 				            	output = getResources().getString(R.string.connected);
 				            	output =(json3.getString(TAG_NAME)+" "+getResources().getString(R.string.vs)+" "+name);	 
@@ -504,13 +504,14 @@ public class Multiplayer2Activity extends Activity{
 		            	//continue to retrieve scores for p1 till game is over
 
 							List<NameValuePair> pScores = new ArrayList<NameValuePair>();
+							JSONObject json4;
 			            	while(connected && !gameOver){
 			            		//if ( isCancelled()) break;
 								pScores.clear();
 								int p1scr = p1Scr;
 								pScores.add(new BasicNameValuePair(TAG_UID, id));
 								pScores.add(new BasicNameValuePair(TAG_P1, p1scr+""));
-					            JSONObject json4 = jsonParser.makeHttpRequest(update_scores,"POST", pScores);
+					            json4 = jsonParser.makeHttpRequest(update_scores,"POST", pScores);
 					            if (json4.getInt(TAG_SUCCESS)== 1){
 					            	p2Scr =(json4.getInt(TAG_P2));
 					            	if (p2Scr == numEqn/2){
@@ -527,12 +528,17 @@ public class Multiplayer2Activity extends Activity{
 					            	Toast.makeText(getApplicationContext(), R.string.disconnected,Toast.LENGTH_SHORT).show();
 				            		finish();
 					            }
+								this.wait(200);
 			            	}
 		            	}catch(JSONException e){
 		            		Log.d("Error","Error:"+e);
 		            		Toast.makeText(getApplicationContext(), R.string.disconnected,Toast.LENGTH_SHORT).show();
 		            		finish();
-		            	}
+		            	}catch(InterruptedException i){
+							Log.d("Error","Error:"+i);
+							Toast.makeText(getApplicationContext(), R.string.disconnected,Toast.LENGTH_SHORT).show();
+							finish();
+						}
 		            }
 		            else  Toast.makeText(getApplicationContext(), R.string.disconnected,Toast.LENGTH_SHORT).show();
 	            }
@@ -574,13 +580,14 @@ public class Multiplayer2Activity extends Activity{
 		            try{
 		            //continue to retrieve scores till game is over
 						List<NameValuePair> pScores = new ArrayList<>();
+						JSONObject json5;
 		            	while(connected && !gameOver){
 		            		//if ( isCancelled()) break;
 		            		int p2scr = p2Scr;
 							pScores.clear();
 							pScores.add(new BasicNameValuePair(TAG_UID, id));
 		            		pScores.add(new BasicNameValuePair(TAG_P2, p2Scr+""));
-				            JSONObject json5 = jsonParser.makeHttpRequest(update_scores,"POST", pScores);
+				            json5 = jsonParser.makeHttpRequest(update_scores,"POST", pScores);
 				            if (json5.getInt(TAG_SUCCESS)== 1){
 				            	p1Scr =(json5.getInt(TAG_P1));
 				            	if (p1Scr == numEqn/2){

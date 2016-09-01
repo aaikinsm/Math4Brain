@@ -38,7 +38,7 @@ public class SplashActivity extends Activity{
             		}
             		else{
             			logo.setVisibility(View.INVISIBLE);
-						startActivity(new Intent("android.intent.action.MENU"));
+						startActivity(new Intent(getApplicationContext(), MainMenu.class));
 						finish();
             		}
             	}
@@ -53,7 +53,7 @@ public class SplashActivity extends Activity{
             	@Override
 				public void onClick (View v){
             		//start flurry analytics
-            		startActivity(new Intent("android.intent.action.MENU"));
+            		startActivity(new Intent(getApplicationContext(), MainMenu.class));
             		mHandler.removeCallbacks(mStopSplash);
             		finish();
             	}

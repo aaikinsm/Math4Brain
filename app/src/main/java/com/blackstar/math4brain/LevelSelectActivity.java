@@ -7,13 +7,10 @@ import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.DecelerateInterpolator;
-import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TableLayout;
-
-import com.blackstar.math4brain.R;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -26,7 +23,7 @@ import java.util.Scanner;
  * Created by Albert Jr on 2016-05-24.
  */
 public class LevelSelectActivity extends Activity {
-    int curPage = 0, currLevel = 20, FILESIZE=25;
+    int curPage = 0, curLevel = 20, FILESIZE=25;
     ArrayList<Button> buttons;
     TableLayout levelsTable;
     String FILENAME = "m4bfile1";
@@ -56,10 +53,11 @@ public class LevelSelectActivity extends Activity {
         Button resumeBtn = (Button) findViewById(R.id.buttonResume);
 
         reload();
-        currLevel = Integer.parseInt(gFile[7]);
+        curLevel = Integer.parseInt(gFile[7]);
+        curPage = curLevel/12;
         loadPage();
 
-        if(currLevel<12){
+        if(curLevel <12){
             next.setVisibility(View.GONE);
             prev.setVisibility(View.GONE);
         }
@@ -76,7 +74,7 @@ public class LevelSelectActivity extends Activity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(curPage<(currLevel/12)) {
+                if(curPage<(curLevel /12)) {
                     curPage++;
                     Animation newAnimation = new TranslateAnimation(0, -500, 0, 0);
                     newAnimation.setInterpolator(new AccelerateInterpolator());
@@ -152,7 +150,7 @@ public class LevelSelectActivity extends Activity {
         int value;
         for(int i = 0; i<buttons.size(); i++){
             value = (curPage*12)+i+1;
-            if(value<=currLevel){
+            if(value<= curLevel){
                 buttons.get(i).setText(""+value);
                 buttons.get(i).setEnabled(true);
             }

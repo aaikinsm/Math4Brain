@@ -41,6 +41,16 @@ public class Tips {
 			case 37 :return R.drawable.t37;
 			case 39 :return R.drawable.t39;
 			case 40 :return R.drawable.t40;
+			case 41 :return R.drawable.t41;
+			case 44 :return R.drawable.t44;
+			case 45 :return R.drawable.t19;
+			case 48 :return R.drawable.t31;
+			case 49 :return R.drawable.t49;
+			case 52 :return R.drawable.t52;
+			case 54 :return R.drawable.t54;
+			case 56 :return R.drawable.t17;
+			case 58 :return R.drawable.t58;
+			case 59 :return R.drawable.t59;
 			default:
 				return R.drawable.tip;
 		}

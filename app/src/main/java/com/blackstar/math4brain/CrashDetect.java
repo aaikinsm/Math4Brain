@@ -8,7 +8,7 @@ import org.acra.ReportingInteractionMode;
 import org.acra.annotation.ReportsCrashes;
 
 
-@ReportsCrashes(formKey = "", formUri = "http://blackstar.herobo.com/sqlphp/m4b_crash_report.php",
+@ReportsCrashes(formKey = "", formUri = "http://amensah.com/kokotoa/sqlphp/m4b_crash_report.php",
 	mode = ReportingInteractionMode.TOAST,                 
 	forceCloseDialogAfterToast = false, // optional, default false                 
 	resToastText = R.string.crash_toast_text)  

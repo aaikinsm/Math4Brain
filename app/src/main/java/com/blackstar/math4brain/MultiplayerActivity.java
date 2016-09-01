@@ -177,7 +177,7 @@ public class MultiplayerActivity extends Activity{
     		finish();
     	}
     	else if (answer.equals(this.getString(R.string.play_again))){
-    		startActivity(new Intent("android.intent.action.MULTIPLAYER"));
+    		startActivity(new Intent(getApplicationContext(), MultiplayerActivity.class));
     		finish();
     	}
     	else if (!answer.equals("")){
