@@ -290,7 +290,7 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
 		minRun.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				//FlurryAgent.logEvent("Minute_Run", userParams);
+				FlurryAgent.logEvent("Minute_Run", userParams);
 				animateTransition(MinuteRunActivity.class);
 			}
 		});
@@ -298,7 +298,7 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
 		challenge.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				//FlurryAgent.logEvent("Challenge");
+				FlurryAgent.logEvent("Challenge");
 				if (resumable) animateTransition(LevelSelectActivity.class);
 				else animateTransition(ChallengeActivity.class);
 			}
@@ -308,14 +308,14 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
 			@Override
 			public void onClick(View v) {
 				multiplayerDialog();
-				//FlurryAgent.logEvent("Multiplayer");
+				FlurryAgent.logEvent("Multiplayer");
 			}
 		});
 
 		settings.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				//FlurryAgent.logEvent("Settings");
+				FlurryAgent.logEvent("Settings");
 				startActivity(new Intent(getApplicationContext(), CreateSettingsActivity.class));
 			}
 		});
@@ -323,7 +323,7 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
 		userInfo.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				//FlurryAgent.logEvent("User_info");
+				FlurryAgent.logEvent("User_info");
 				startActivity(new Intent(getApplicationContext(), UserActivity.class));
 			}
 		});

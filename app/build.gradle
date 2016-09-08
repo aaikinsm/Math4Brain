@@ -5,7 +5,7 @@ android {
     buildToolsVersion '23.0.3'
     defaultConfig {
         applicationId "com.blackstar.math4brain"
-        minSdkVersion 11
+        minSdkVersion 9
         targetSdkVersion 23
     }
     buildTypes {

@@ -289,7 +289,7 @@ public class Multiplayer2Activity extends Activity{
 		        				showEq.setText(R.string.you_lose);
 		        				loseImg.setVisibility(View.VISIBLE);
 		        			}
-		            		next.setVisibility(View.VISIBLE);
+		            		//next.setVisibility(View.VISIBLE); TODO: leave hidden until it really works
 		            		back.setVisibility(View.VISIBLE);
 		        			numPad.setVisibility(View.GONE);
 		        			showEq.startAnimation(newAnimation);
@@ -528,17 +528,12 @@ public class Multiplayer2Activity extends Activity{
 					            	Toast.makeText(getApplicationContext(), R.string.disconnected,Toast.LENGTH_SHORT).show();
 				            		finish();
 					            }
-								this.wait(200);
 			            	}
 		            	}catch(JSONException e){
 		            		Log.d("Error","Error:"+e);
 		            		Toast.makeText(getApplicationContext(), R.string.disconnected,Toast.LENGTH_SHORT).show();
 		            		finish();
-		            	}catch(InterruptedException i){
-							Log.d("Error","Error:"+i);
-							Toast.makeText(getApplicationContext(), R.string.disconnected,Toast.LENGTH_SHORT).show();
-							finish();
-						}
+		            	}
 		            }
 		            else  Toast.makeText(getApplicationContext(), R.string.disconnected,Toast.LENGTH_SHORT).show();
 	            }
