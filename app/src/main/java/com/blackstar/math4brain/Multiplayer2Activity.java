@@ -68,6 +68,7 @@ public class Multiplayer2Activity extends Activity{
         final Button refresh = (Button) findViewById(R.id.buttonRefresh);
         final Button enter = (Button) findViewById(R.id.buttonEnterID);
         final EditText input = (EditText) findViewById(R.id.editTextInput);
+		final ImageButton share = (ImageButton) findViewById(R.id.buttonShare2);
         info = (TextView) findViewById(R.id.textViewInform); 
         text = (TextView) findViewById(R.id.textViewOut); 
         arry = new String[FILESIZE]; 
@@ -150,6 +151,17 @@ public class Multiplayer2Activity extends Activity{
         		finish();
         	}
         });
+
+		share.setOnClickListener (new View.OnClickListener(){
+			@Override
+			public void onClick (View v){
+				Intent i = new Intent(getApplicationContext(), UserActivity.class);
+				i.putExtra("share", true);
+				startActivity(i);
+				finish();
+			}
+		});
+
 
       
         final Runnable startMatch = new Runnable(){

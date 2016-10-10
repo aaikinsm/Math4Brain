@@ -48,7 +48,7 @@ public class UserActivity extends Activity{
     List<String[]> uList = new ArrayList<>();
     UserListAdapter listAdapter;
     boolean connected = false, newMsg = false, ready = false, amazon = false, blackberry = false;
-	boolean initial=false, isVisible=false, nameUpdateOnly=false;
+	boolean initial=false, isVisible=false, nameUpdateOnly=false, shareMode=false;
     Runnable rankTable;
     Handler mHandler = new Handler();
     
@@ -163,12 +163,7 @@ public class UserActivity extends Activity{
         share.setOnClickListener (new View.OnClickListener(){
         	@Override
 			public void onClick (View v){
-        		Intent shareIntent = new Intent(Intent.ACTION_SEND);
-        		shareIntent.setType("text/plain");
-        		if(blackberry) shareIntent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.i_rank)+rank+getResources().getString(R.string.share_msg)+getResources().getString(R.string.bb_link));
-        		else if(amazon)shareIntent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.i_rank)+rank+getResources().getString(R.string.share_msg)+getResources().getString(R.string.amazon_link));
-        		else shareIntent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.i_rank)+rank+getResources().getString(R.string.share_msg)+getResources().getString(R.string.google_link));
-        		startActivity(Intent.createChooser(shareIntent, getResources().getString(R.string.share_using)));
+        		shareAction();
         	}
         });
         
@@ -241,7 +236,7 @@ public class UserActivity extends Activity{
 	        		
 	        		//check if server is online 
 	        		if(rank!=0 && connected){
-	        			info2.setText("#"+rank+"."); //TODO: Remove R.string.your_rank
+	        			info2.setText("#"+rank+".");
 	        			listAdapter.notifyDataSetChanged();
 	        			//Retrieve messages
 	    	            newMsg = false;
@@ -287,7 +282,6 @@ public class UserActivity extends Activity{
 		Bundle extras = getIntent().getExtras();
 		if (extras != null) {
 			if (extras.containsKey("view_rank")){
-				//viewRank.setText(R.string.loading);
 				loadBar.setVisibility(View.VISIBLE);
 				mHandler.postDelayed(rankTable, 10);
 				stats.setVisibility(View.GONE);
@@ -299,13 +293,18 @@ public class UserActivity extends Activity{
 				isVisible=true;
 				editName.setVisibility(View.GONE);
 				initial = true;
+			} else if(extras.containsKey("share")){
+				loadBar.setVisibility(View.VISIBLE);
+				stats.setVisibility(View.GONE);
+				editName.setVisibility(View.GONE);
+				viewRank.setVisibility(View.GONE);
+				shareMode = true;
 			}
 		}
         
         viewRank.setOnClickListener (new View.OnClickListener(){
         	@Override
 			public void onClick (View v){
-        		//viewRank.setText(R.string.loading);
         		loadBar.setVisibility(View.VISIBLE);
         		mHandler.postDelayed(rankTable, 10);
         	}
@@ -376,8 +375,9 @@ public class UserActivity extends Activity{
 							connected = true;
 							System.out.print("Database rank Successful");
 							rank = (int) Double.parseDouble(json2.getString(TAG_MESSAGE));
+							if(shareMode) shareAction();
 						} else {
-							// failed to update product
+							// failed to update
 							System.out.print("Database rank NOT Successful");
 							connected = false;
 						}
@@ -492,5 +492,15 @@ public class UserActivity extends Activity{
 			}
 		});
 		dialog.show();
+	}
+
+	public void shareAction(){
+		Intent shareIntent = new Intent(Intent.ACTION_SEND);
+		shareIntent.setType("text/plain");
+		if(blackberry) shareIntent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.i_rank)+rank+getResources().getString(R.string.share_msg)+getResources().getString(R.string.bb_link));
+		else if(amazon)shareIntent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.i_rank)+rank+getResources().getString(R.string.share_msg)+getResources().getString(R.string.amazon_link));
+		else shareIntent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.i_rank)+rank+getResources().getString(R.string.share_msg)+getResources().getString(R.string.google_link));
+		startActivity(Intent.createChooser(shareIntent, getResources().getString(R.string.share_using)));
+		finish();
 	}
 }

@@ -125,7 +125,7 @@ Average Score:
 Total Points:"</string>
     <string name="reminder_change_name">Reminder: Change default user name</string>
     <string name="i_rank">I rank #</string>
-    <string name="share_msg">" (worldwide) in Kokotoa (Math For The Brain). Get this android app and check your world rank! "</string>
+    <string name="share_msg">" (worldwide) in Kokotoa (Math For The Brain). Can you beat my rank? Get this android app and check your world rank! "</string>
     <string name="bb_link">"http://appworld.blackberry.com/webstore/content/20484402/"</string>
     <string name="google_link">"https://play.google.com/store/apps/details?id=com.blackstar.math4brain"</string>
     <string name="amazon_link">"http://www.amazon.ca/Blackstar-Math-For-The-Brain/dp/B00DR7TK6I"</string>
@@ -171,6 +171,7 @@ Total Points:"</string>
     <string name="backup_restore">Backup/Restore</string>
     <string name="press_to_clear">If you make a mistake, quickly remove your answer by pressing:</string>
     <string name="press_to_skip">If you do not know the answer, skip the question by pressing:</string>
+    <string name="facebook_app_id">876571145821017</string>
     
     <!--  Tips -->
     <string-array name="tips">

@@ -27,12 +27,12 @@ public class GameSettings{
 	}
 	
 	public String getPointCalculation(Context cntx){
-		String ca = "\n_________________________________\n";
+		String ca = "\n________________________________\n";
 		int diff = (int)((0.5 + (difficulty*0.5)) * score), total=(diff-wrong), allBonus = (int)(total*1.1);
 		ca += score+" "+cntx.getString(R.string.correct)+" x "+(0.5 + (difficulty*0.5))+" ("+cntx.getString(R.string.difficulty)+") = "+diff+"\n"
 				+diff+" - "+wrong+" ("+cntx.getString(R.string.wrong)+") = "+total;
 		if (equationType == 1234) ca += "\n"+total+"  +"+(allBonus-total)+" ("+cntx.getString(R.string.all_bonus)+") = "+allBonus;
-		ca += "\n_________________________________\n";
+		ca += "\n________________________________\n";
 		return ca;
 	}
 

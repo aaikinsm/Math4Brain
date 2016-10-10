@@ -40,6 +40,8 @@ import com.blackstar.math4brain.util.Purchase;
 import com.flurry.android.FlurryAgent;
 import com.tapjoy.TapjoyConnect;
 import com.tapjoy.TapjoyNotifier;
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -93,6 +95,10 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
 		tv = (TextView) findViewById(R.id.textViewTip);
 		ImageView tipImg = (ImageView) findViewById(R.id.imageViewTip);
 		myTypeface = Typeface.createFromAsset(getAssets(), "fawn.ttf");
+
+		// Initialize the Facebook SDK,
+		FacebookSdk.sdkInitialize(getApplicationContext());
+		AppEventsLogger.activateApp(getApplication());
 
 		if ((int) (Math.random() * 4) == 0) mp3Bg = MediaPlayer.create(this, R.raw.main_bg_music2);
 		else mp3Bg = MediaPlayer.create(this, R.raw.main_bg_music);
@@ -363,6 +369,11 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
 				Intent s = new Intent(getApplicationContext(), SyncDataActivity.class);
 				s.putExtra("userData", gFile);
 				startActivity(s);
+				return true;
+			case R.id.share:
+				Intent j = new Intent(getApplicationContext(), UserActivity.class);
+				j.putExtra("share", true);
+				startActivity(j);
 				return true;
 			default:
 				return super.onOptionsItemSelected(item);

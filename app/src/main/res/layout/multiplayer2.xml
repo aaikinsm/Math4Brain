@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -12,7 +14,7 @@
         android:gravity="center"
         android:textStyle="bold"
         android:padding="5dp"
-        android:textSize="30dp" />
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/buttonP1"
@@ -22,7 +24,17 @@
         android:layout_weight="1"
         android:background="@drawable/bg_player1"
         android:text="@string/player1"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_black"
+        android:elevation="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/buttonShare2"
+        android:src="@drawable/abc_ic_menu_share_mtrl_alpha" />
 
     <Button
         android:id="@+id/buttonP2"
@@ -32,7 +44,7 @@
         android:layout_weight="1"
         android:background="@drawable/bg_player2"
         android:text="@string/player2"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,7 +58,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="4"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:inputType="" />
 
         <Button
             android:id="@+id/buttonEnterID"
