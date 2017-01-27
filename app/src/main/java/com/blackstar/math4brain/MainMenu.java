@@ -97,8 +97,8 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
 		myTypeface = Typeface.createFromAsset(getAssets(), "fawn.ttf");
 
 		// Initialize the Facebook SDK,
-		FacebookSdk.sdkInitialize(getApplicationContext());
-		AppEventsLogger.activateApp(getApplication());
+		//FacebookSdk.sdkInitialize(getApplicationContext());
+		//AppEventsLogger.activateApp(getApplication());
 
 		if ((int) (Math.random() * 4) == 0) mp3Bg = MediaPlayer.create(this, R.raw.main_bg_music2);
 		else mp3Bg = MediaPlayer.create(this, R.raw.main_bg_music);
@@ -322,7 +322,7 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
 			@Override
 			public void onClick(View v) {
 				FlurryAgent.logEvent("Settings");
-				startActivity(new Intent(getApplicationContext(), CreateSettingsActivity.class));
+				animateTransition(CreateSettingsActivity.class);
 			}
 		});
 
@@ -330,7 +330,7 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
 			@Override
 			public void onClick(View v) {
 				FlurryAgent.logEvent("User_info");
-				startActivity(new Intent(getApplicationContext(), UserActivity.class));
+				animateTransition(UserActivity.class);
 			}
 		});
 	}

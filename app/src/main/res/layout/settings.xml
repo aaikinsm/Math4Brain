@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/lines_bg_lr"
@@ -12,20 +13,29 @@
     <LinearLayout android:orientation="vertical" android:id="@+id/settingsPage1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
         <TableLayout android:id="@+id/equationType" android:background="@drawable/border" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.1">
             <LinearLayout android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
-                <CheckBox android:textColor="#ff000000" android:gravity="center_vertical" android:id="@+id/checkBoxAS" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="false" />
-                <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eq_add_subt" android:scaleType="fitStart" android:layout_weight="1.0" />
-                <CheckBox android:textColor="#ff000000" android:id="@+id/checkBoxMD" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" />
-                <ImageView android:id="@+id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eq_mult_div" android:scaleType="fitStart" android:layout_weight="1.0" />
+
+                <ImageView android:id="@+id/imageViewAS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eq_add_subt_false" android:scaleType="fitCenter" android:layout_weight="1.0" />
+
+                <ImageView android:id="@+id/imageViewMD" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eq_mult_div_false" android:scaleType="fitCenter" android:layout_weight="1.0" />
             </LinearLayout>
             <LinearLayout android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
-                <CheckBox android:textColor="#ff000000" android:id="@+id/checkBoxExponent" android:layout_width="wrap_content" android:layout_height="fill_parent" />
-                <ImageView android:id="@+id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eq_powr" android:scaleType="fitStart" android:layout_weight="1.0" />
-                <CheckBox android:textColor="#ff000000" android:id="@+id/checkBoxPercent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" />
-                <ImageView android:id="@+id/imageView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eq_pcnt" android:scaleType="fitStart" android:layout_weight="1.0" />
+
+                <ImageView android:id="@+id/imageViewExponent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eq_powr_false" android:scaleType="fitCenter" android:layout_weight="1.0" />
+
+                <ImageView android:id="@+id/imageViewPercent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eq_pcnt_false" android:scaleType="fitCenter" android:layout_weight="1.0" />
             </LinearLayout>
             <LinearLayout android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
-                <CheckBox android:textColor="#ff000000" android:id="@+id/checkBoxAll" android:layout_width="wrap_content" android:layout_height="fill_parent" />
-                <ImageView android:id="@+id/imageView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eq_all" android:scaleType="fitStart" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/eq_frac_false"
+                    android:id="@+id/imageViewFraction"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter" />
+
+                <ImageView android:id="@+id/imageViewAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eq_all_false" android:scaleType="fitCenter"
+                    android:layout_weight="1" />
             </LinearLayout>
         </TableLayout>
         <LinearLayout android:gravity="center" android:id="@+id/linearLayoutSnd" android:background="@drawable/border" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.4">

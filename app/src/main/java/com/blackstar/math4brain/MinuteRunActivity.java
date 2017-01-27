@@ -115,10 +115,10 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
         final MediaPlayer mp3Timeup = MediaPlayer.create(this, R.raw.wrong);
         mp3Payout = MediaPlayer.create(this, R.raw.payout);
         mp3Tick = MediaPlayer.create(this, R.raw.ticktok);
-        final GameSettings gSettings = new GameSettings();       
+        final GameSettings gSettings = new GameSettings();
         final Vibrator vb = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE); 
         mHandler = new Handler();
-        final String FILENAME = "m4bfile1", FILEPRO = "m4bfilePro1";
+        final String FILENAME = "m4bfile1", FILEPRO = "m4bfilePro1", FILEEASYE = "m4bfileEasy";
         final int[] aScores = new int [3];
         Tips tp = new Tips();
         Typeface myTypeface = Typeface.createFromAsset(getAssets(), "digital.ttf");
@@ -241,6 +241,16 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
 		}
 		
         final Equation eq = new Equation(gSettings.equationType, gSettings.difficulty, this);
+		try{
+			FileInputStream fip2 = openFileInput (FILEEASYE);
+			Scanner inp = new Scanner(fip2);
+			if(inp.hasNext()){
+				eq.avoidEquations(inp.nextLine());
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+
         final double setTime = gSettings.clock;
         //Initial brain fact dialog
         final Dialog dialog = new Dialog(this);
@@ -368,7 +378,8 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
             		}
             		
             		try {
-            			String content="";
+            			//save score data
+						String content="";
             			FileInputStream fi = openFileInput(FILENAME);
             			Scanner in = new Scanner(fi);
             			for (int i= 0; i<8; i++){
@@ -381,7 +392,17 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
             			}
             			OutputStreamWriter out = new OutputStreamWriter(openFileOutput(FILENAME,0)); 
             			out.write(content);
-            			out.close();    
+            			out.close();
+
+						//store easy equations to avoid in the future
+						OutputStreamWriter out2 = new OutputStreamWriter(openFileOutput(FILEEASYE,0));
+						if(eq.easyEqns.length()>100){
+							out2.write(eq.easyEqns.substring(80,99) + eq.fastestEquation);
+
+						}else{
+							out2.write(eq.easyEqns + eq.fastestEquation);
+						}
+						out2.close();
             		} catch (IOException e) {
             			e.printStackTrace();
             		}
@@ -436,13 +457,14 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
         			}
         		}else{
 	        		gSettings.inputTimer -= 1;
-	        		if(eq.getAnswer().length()<2) gSettings.inputTimer -= 1; //shorter wait time for multi-digit answers
+	        		if(eq.getAnswer().length()<2) gSettings.inputTimer -= 1; //shorter wait time for single-digit answers
 	        		if(showIn.getText().equals(eq.getAnswer())){
 	        			//Correct
+                        eq.isFastestTime();
 	        			try{
 	        			if(gSettings.sound==1) mp3Correct.start();
 	        			}catch(Exception E){ E.printStackTrace();}
-	        			gSettings.score +=1;	        			
+	        			gSettings.score +=1;
 	        			result.setText("");
 	        			eq.createNew();
 	        			hintSleep = 0;
@@ -481,6 +503,7 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
 	        			}
 	        			if(correct){
 	        				//Correct
+							eq.isFastestTime();
 		        			try{
 		        			if(gSettings.sound==1) mp3Correct.start();
 		        			}catch(Exception E){ E.printStackTrace();}

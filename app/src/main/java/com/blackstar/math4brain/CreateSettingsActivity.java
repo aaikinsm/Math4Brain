@@ -14,7 +14,6 @@ import android.provider.MediaStore;
 import android.provider.MediaStore.MediaColumns;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -29,9 +28,10 @@ import java.util.Scanner;
 
 public class CreateSettingsActivity extends Activity{
 	boolean firstPage = true, imageChosen = false, sound = false, vibrate = false, music = false, microphone = false;
+	boolean addSubOn, mulDivOn, exponentOn, percentOn, fractionOn, allOn;
 	String selectedBg;
 	int REQUEST_MEDIA = 1, difficulty=0, FILESIZE=25;
-	ImageView d1, d2, d3, d4 ,d5;
+	ImageView d1, d2, d3, d4 ,d5, addSub, mulDiv, exponent, percent, fraction, all;
 	Bitmap myImage;
 	Runnable mCheckImageChosen;
 	Handler mHandler;
@@ -40,12 +40,7 @@ public class CreateSettingsActivity extends Activity{
 	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
-        final String [] arry = new String[FILESIZE]; 
-        final CheckBox addSub = (CheckBox) findViewById(R.id.checkBoxAS);
-        final CheckBox mulDiv = (CheckBox) findViewById(R.id.checkBoxMD);
-        final CheckBox exponent = (CheckBox) findViewById(R.id.checkBoxExponent);
-        final CheckBox percent = (CheckBox) findViewById(R.id.checkBoxPercent);
-        final CheckBox all = (CheckBox) findViewById(R.id.checkBoxAll);
+        final String [] arry = new String[FILESIZE];
         final Button done = (Button) findViewById(R.id.buttonDone);
         final Button userSelect = (Button) findViewById(R.id.buttonSelectUser);
         final Button sPage = (Button) findViewById(R.id.buttonSwitchPage);
@@ -66,6 +61,12 @@ public class CreateSettingsActivity extends Activity{
         this.d3 = ((ImageView)findViewById(R.id.d3));
         this.d4 = ((ImageView)findViewById(R.id.d4));
         this.d5 = ((ImageView)findViewById(R.id.d5));
+		addSub = (ImageView) findViewById(R.id.imageViewAS);
+		mulDiv = (ImageView) findViewById(R.id.imageViewMD);
+		exponent = (ImageView) findViewById(R.id.imageViewExponent);
+		percent = (ImageView) findViewById(R.id.imageViewPercent);
+		fraction = (ImageView) findViewById(R.id.imageViewFraction);
+		all = (ImageView) findViewById(R.id.imageViewAll);
         mHandler = new Handler();
         
         //retrieve saved data
@@ -107,10 +108,26 @@ public class CreateSettingsActivity extends Activity{
 			
 			String eq = arry[1];
 			for(int i = 0; i < eq.length(); i++){
-				if (eq.charAt(i)-48 == 1) addSub.setChecked(true);
-				else if (eq.charAt(i)-48 ==2) mulDiv.setChecked(true); 
-				else if (eq.charAt(i)-48 ==3) exponent.setChecked(true);
-				else if (eq.charAt(i)-48 ==4) percent.setChecked(true); 
+				if (eq.charAt(i)-48 == 1){
+					addSubOn=true;
+					addSub.setImageResource(R.drawable.eq_add_subt_true);
+				}
+				else if (eq.charAt(i)-48 ==2) {
+					mulDivOn = true;
+					mulDiv.setImageResource(R.drawable.eq_mult_div_true);
+				}
+				else if (eq.charAt(i)-48 ==3) {
+					exponentOn=true;
+					exponent.setImageResource(R.drawable.eq_powr_true);
+				}
+				else if (eq.charAt(i)-48 ==4){
+					percentOn=true;
+					percent.setImageResource(R.drawable.eq_pcnt_true);
+				}
+				else if (eq.charAt(i)-48 ==5){
+					fractionOn=true;
+					fraction.setImageResource(R.drawable.eq_frac_true);
+				}
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -238,20 +255,101 @@ public class CreateSettingsActivity extends Activity{
             showDifficulty();
           }
         });
-        
+
+		addSub.setOnClickListener(new View.OnClickListener(){
+			@Override
+			public void onClick(View v){
+				if(addSubOn){
+					addSubOn = false;
+					addSub.setImageResource(R.drawable.eq_add_subt_false);
+				}else{
+					addSubOn = true;
+					addSub.setImageResource(R.drawable.eq_add_subt_true);
+				}
+			}
+		});
+
+		mulDiv.setOnClickListener(new View.OnClickListener(){
+			@Override
+			public void onClick(View v){
+				if(mulDivOn){
+					mulDivOn = false;
+					mulDiv.setImageResource(R.drawable.eq_mult_div_false);
+				}else{
+					mulDivOn = true;
+					mulDiv.setImageResource(R.drawable.eq_mult_div_true);
+				}
+			}
+		});
+
+		exponent.setOnClickListener(new View.OnClickListener(){
+			@Override
+			public void onClick(View v){
+				if(exponentOn){
+					exponentOn = false;
+					exponent.setImageResource(R.drawable.eq_powr_false);
+				}else{
+					exponentOn = true;
+					exponent.setImageResource(R.drawable.eq_powr_true);
+				}
+			}
+		});
+
+		percent.setOnClickListener(new View.OnClickListener(){
+			@Override
+			public void onClick(View v){
+				if(percentOn){
+					percentOn = false;
+					percent.setImageResource(R.drawable.eq_pcnt_false);
+				}else{
+					percentOn = true;
+					percent.setImageResource(R.drawable.eq_pcnt_true);
+				}
+			}
+		});
+
+		fraction.setOnClickListener(new View.OnClickListener(){
+			@Override
+			public void onClick(View v){
+				if(fractionOn){
+					fractionOn = false;
+					fraction.setImageResource(R.drawable.eq_frac_false);
+				}else{
+					fractionOn = true;
+					fraction.setImageResource(R.drawable.eq_frac_true);
+				}
+			}
+		});
+
         all.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				if(all.isChecked()){
-					addSub.setChecked(true);
-					mulDiv.setChecked(true);
-					exponent.setChecked(true);
-					percent.setChecked(true);
+				if(!allOn){
+					addSubOn = true;
+					addSub.setImageResource(R.drawable.eq_add_subt_true);
+					mulDivOn = true;
+					mulDiv.setImageResource(R.drawable.eq_mult_div_true);
+					exponentOn = true;
+					exponent.setImageResource(R.drawable.eq_powr_true);
+					percentOn = true;
+					percent.setImageResource(R.drawable.eq_pcnt_true);
+					fractionOn = true;
+					fraction.setImageResource(R.drawable.eq_frac_true);
+					allOn = true;
+					all.setImageResource(R.drawable.eq_all_true);
 				}else{
-					addSub.setChecked(false);
-					mulDiv.setChecked(false);
-					exponent.setChecked(false);
-					percent.setChecked(false);
+					addSubOn = false;
+					addSub.setImageResource(R.drawable.eq_add_subt_false);
+					mulDivOn = false;
+					mulDiv.setImageResource(R.drawable.eq_mult_div_false);
+					exponentOn = false;
+					exponent.setImageResource(R.drawable.eq_powr_false);
+					percentOn = false;
+					percent.setImageResource(R.drawable.eq_pcnt_false);
+					fractionOn = false;
+					fraction.setImageResource(R.drawable.eq_frac_false);
+					allOn = false;
+					all.setImageResource(R.drawable.eq_all_false);
 				}
 				
 			}
@@ -263,10 +361,11 @@ public class CreateSettingsActivity extends Activity{
         		String eq = "", snd="0", msc="0", vib="0", mic="0";
         		
         		//equation
-        		if (addSub.isChecked()) eq+= "1";       		
-        		if (mulDiv.isChecked()) eq += "2";       		
-        		if (exponent.isChecked()) eq += "3";
-        		if (percent.isChecked()) eq += "4";
+        		if (addSubOn) eq+= "1";
+        		if (mulDivOn) eq += "2";
+        		if (exponentOn) eq += "3";
+        		if (percentOn) eq += "4";
+				if (fractionOn) eq += "5";
         		if (eq.equals("")){
         			eq = "1";
         			Toast.makeText(getApplicationContext(), R.string.eqn_set_to_default,Toast.LENGTH_SHORT).show();
@@ -560,4 +659,5 @@ public class CreateSettingsActivity extends Activity{
 	      this.d5.setImageResource(R.drawable.mi5);
 	    }
 	  }
+
 }

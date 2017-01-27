@@ -132,7 +132,7 @@ public class ChallengeActivity extends Activity{
 			else if (num1<=7)
 				gSettings.equationType = 12;
 			else 
-				gSettings.equationType = 123;
+				gSettings.equationType = 125;
 			if(gFile[21]!=null && !gFile[21].equals("null")){
 				gSettings.microphone= Integer.parseInt(gFile[21]);
 			}

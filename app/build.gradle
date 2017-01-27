@@ -6,7 +6,7 @@ android {
     defaultConfig {
         applicationId "com.blackstar.math4brain"
         minSdkVersion 15
-        targetSdkVersion 15
+        targetSdkVersion 23
     }
     buildTypes {
         release {

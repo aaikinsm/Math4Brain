@@ -32,10 +32,10 @@ public class InitialEvaluationActivity extends Activity{
 	Runnable mUpdateTimer, gotInput;
 	MediaPlayer mp3Tick;
 	GameSettings gSettings;
-	int displaySecs, FILESIZE =25, e1=0,e2=0,e3=0,e4=0,hintSleep, diff=2, numEqn=0;
+	int displaySecs, FILESIZE =25, e5=0,e2=0,e3=0,e4=0,hintSleep, diff=2, numEqn=0;
 	double startTime = 0, nextTime=0, time=0, setTime=90;
 	Equation eq;
-	boolean e1a=true, e2a=true,e3a=true,e4a=true;
+	boolean e1a=true, e2a=true,e3a=true,e4a=true, e5a=true;
     ProgressBar progress;
 
 	@Override
@@ -137,6 +137,7 @@ public class InitialEvaluationActivity extends Activity{
 				dialogT.dismiss();
 			}
 		});
+		dialogT.setCancelable(false);
  
         
         //Decrement game timer and check if time is up
@@ -201,8 +202,9 @@ public class InitialEvaluationActivity extends Activity{
 					//modify
 					gFile[1]="1";
 					if(e2a&&diff>=3)gFile[1]+="2";
-					if(e3a&&diff>=5)gFile[1]+="3";
-					if(e4a&&diff>=5)gFile[1]+="4";
+					if(e3a&&diff>=4 && e3>=1)gFile[1]+="3";
+					if(e4a&&diff>=4 && e4>=1)gFile[1]+="4";
+					if(e5a&&diff>=4 && e5>=1)gFile[1]+="5";
 					gFile[5]=""+(gSettings.difficulty);
 
 					//write
@@ -403,10 +405,12 @@ public class InitialEvaluationActivity extends Activity{
 			if(gSettings.equationType==2)e2++;
 			else if(gSettings.equationType==3)e3++;
 			else if(gSettings.equationType==4)e4++;
+			else if(gSettings.equationType==5)e5++;
 		}else{
 			if(gSettings.equationType==2)e2--;
 			else if(gSettings.equationType==3)e3--;
 			else if(gSettings.equationType==4)e4--;
+			else if(gSettings.equationType==5)e5--;
 		}
 
 		if(numEqn %5==0){
@@ -418,11 +422,12 @@ public class InitialEvaluationActivity extends Activity{
 			if (e2 < -1) e2a = false;
 			if (e3 < -1) e3a = false;
 			if (e4 < -1) e4a = false;
+			if (e5 < -1) e5a = false;
 		}
 
 		boolean proceed = false;
 		while(!proceed) {
-			if (gSettings.equationType == 4) {
+			if (gSettings.equationType == 5) {
 				gSettings.equationType = 1;
 				proceed = e1a;
 			} else if (gSettings.equationType == 1) {
@@ -436,6 +441,10 @@ public class InitialEvaluationActivity extends Activity{
 			} else if (gSettings.equationType == 3) {
 				gSettings.equationType++;
 				proceed = e4a;
+				if(diff<5) proceed=false;
+			} else if (gSettings.equationType == 4) {
+				gSettings.equationType++;
+				proceed = e5a;
 				if(diff<5) proceed=false;
 			}
 		}
