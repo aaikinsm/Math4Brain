@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="hello">Hello World, MathMentorActivity!</string>
     <string name="app_name">Kokotoa (De)</string>
-    <string name="filename">m4bfile</string>
     <string name="crash_toast_text">Ooooops ! Es tut uns leid! Es gab ein Problem, aber ein Bericht zu meinem Entwickler geschickt worden, um das Problem zu beheben!</string>
     <string name="feedback">Kennen Sie diese App so weit zu genießen? Bitte fühlen Sie sich frei, einen Kommentar oder einen Vorschlag zu verlassen. Ihr reaktion wird geschätzt dank</string>
-    <string name="multiplayer_feedback">Haben Sie Multiplayer-Modus ausprobiert? Bitte fühlen Sie sich frei, einen Kommentar oder einen Vorschlag zu verlassen. Ihr reaktion wird geschätzt dank</string>
     <string name="view_free_offers">Kostenlose Angebote anzeigen</string>
     <string name="collected">Gesammelt</string>
     <string name="total">Gesamt</string>
@@ -32,7 +29,6 @@
     <string name="score">Wertung</string>
     <string name="try_again">versuchen Sie es erneut</string>
     <string name="complete">vollständig</string>
-    <string name="next">fortsetzen</string>
     <string name="too_many_mistakes">Zu viele Fehler</string>
     <string name="not_enough_points">Sie haben nicht genug points haben</string>
     <string name="you_need_a_min_of">Sie benötigen ein Minimum an</string>
@@ -78,8 +74,6 @@
     <string name="multiplayer">Multiplayer</string>
     <string name="settings">Rahmen</string>
     <string name="user_info">Benutzer-Info.</string>
-    <string name="exit">beenden</string>
-    <string name="welcome_back">Willkommen zurück</string>
     <string name="welcome_to_m4b">Willkommen in Kokotoa (Mathematik für das Gehirn)</string>
     <string name="file_is_corrupt">Die Datei ist beschädigt: Rücksetzen von Benutzerdaten!</string>
     <string name="leave_feedback">geben Kommentar</string>
@@ -94,21 +88,14 @@ Unbegrenzte Online-Gameplay
 Mehr Gehirn-Fakten"</string>
     <string name="resume_saved">Voulez-vous poursuivre les progrès déjà enregistré?</string>
     <string name="resume">fortsetzen</string>
-    <string name="restart">Neustart</string>
     <string name="one_or_two_devices">Sind Sie im Wettbewerb auf 1 oder 2 Geräte?</string>
-    <string name="one_device">Einzelgerät</string>
-    <string name="two_devices">Zwei Geräte</string>
     <string name="pro_version_unlocked">Die Pro-Version ist freigeschaltet!</string>
     <string name="email_subject">Kokotoa (Mathe für das Gehirn) Reaktion</string>
     <string name="send_email_using">Senden Sie E-Mails mit ..</string>
     <string name="no_email_client">Es gibt keine E-Mail-Clients installiert.</string>
-    <string name="edit_user_name">Benutzernamen ändern</string>
     <string name="enter_your_name">Geben Sie Ihren Namen</string>
     <string name="share">andere informieren</string>
-    <string name="get_more_points">Holen Sie mehr Points</string>
-    <string name="reset">rücksetzen</string>
     <string name="view_rank">Sehen Sie Ihre Weltrang</string>
-    <string name="top_ranked_users">Nutzer-Urteil</string>
     <string name="name">Name</string>
     <string name="average_score">mittlere</string>
     <string name="user_stats">"Aktuelle Niveau: 
@@ -124,12 +111,8 @@ Gesamtpunkte:"</string>
     <string name="share_using">andere informieren Sie mit ..</string>
     <string name="no_name_entered">Namen nicht eingegeben</string>
     <string name="user_name_changed">Benutzernamen geändert wurde</string>
-    <string name="your_rank">Ihr Rang: #</string>
     <string name="unable_to_connect">Kann nicht mit dem Netzwerk verbinden</string>
     <string name="loading">Verladung..</string>
-    <string name="reset_msg">"Zurücksetzen werden alle Benutzerdaten zu löschen 
-Sind Sie sicher, dass Sie zurücksetzen wollen?"</string>
-    <string name="user_data_erased">Benutzerdaten gelöscht wurde</string>
     <string name="version_outdated">Diese Version ist veraltet. Bitte aktualisiere auf v</string>
     <string name="new_message">Sie haben eine Nachricht erhalten</string>
     <string name="default_name">kein Name</string>
@@ -157,11 +140,9 @@ Sind Sie sicher, dass Sie zurücksetzen wollen?"</string>
     <string name="try_challenge">Versuchen Herausforderung-Modus</string>
     <string name="evaluation">Auswertung</string>
     <string name="evaluation_msg">Hey, wir werden ein individuelles Profil für Sie zu erstellen. Lasst uns anfangen</string>
-    <string name="enter_valid_email">Bitte geben Sie eine gültige E-Mail-Adresse ein</string>
-    <string name="email">E-Mail</string>
-    <string name="backup">Sichern Sie Ihre Daten</string>
-    <string name="restore">Daten wiederherstellen</string>
-    <string name="backup_restore">Sichern/wiederherstellen</string>
+    <string name="sign_in">Anmelden</string>
+    <string name="sign_out">Ausloggen</string>
+    <string name="skip">übergehen</string>
     <string name="press_to_clear">Wenn Sie einen Fehler machen, entfernen Sie schnell Ihre Antwort, indem Sie:</string>
     <string name="press_to_skip">Wenn Sie die Antwort nicht wissen, lassen Sie die Frage durch Drücken von:</string>
     

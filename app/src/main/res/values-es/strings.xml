@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hola mundo</string>
     <string name="app_name">Kokotoa (Es)</string>
-    <string name="filename">m4bfile</string>
     <string name="crash_toast_text">Ooooops! El programa ha fallado, pero un informe se ha enviado a mi desarrollador para ayudar a solucionar el problema!</string>
     <string name="feedback">¿Le gusta esta aplicación hasta el momento? Por favor, siéntase libre de dejar un comentario o sugerencia. Su retroalimentación es importante para nosotros, gracias</string>
-    <string name="multiplayer_feedback">¿Has probado el modo multijugador? No dude en dejar un comentario o sugerencia por favor. Gracias</string>
     <string name="view_free_offers">Ver ofertas gratuitas</string>
     <string name="collected">Coleccionado</string>
     <string name="total">Total</string>
@@ -32,7 +29,6 @@
     <string name="score">Puntuación</string>
     <string name="try_again">Inténtelo de nuevo</string>
     <string name="complete">Completo</string>
-    <string name="next">Continuar</string>
     <string name="too_many_mistakes">Demasiados errores</string>
     <string name="not_enough_points">Usted no tiene suficientes puntos</string>
     <string name="you_need_a_min_of">Se necesita un mínimo de</string>
@@ -78,8 +74,6 @@
     <string name="multiplayer">Dos jugadores</string>
     <string name="settings">Ajustes</string>
     <string name="user_info">Información de usuario</string>
-    <string name="exit">Salida</string>
-    <string name="welcome_back">Bienvenido de vuelta</string>
     <string name="welcome_to_m4b">Bienvenido a Kokotoa</string>
     <string name="file_is_corrupt">El archivo está dañado: Restablecer datos de usuario!</string>
     <string name="leave_feedback">Dar opinión</string>
@@ -95,21 +89,14 @@
  Más Datos cerebrales"</string>
     <string name="resume_saved">¿Quieres reanudar el progreso anterior guardado?</string>
     <string name="resume">Continuar</string>
-    <string name="restart">Reanudar</string>
     <string name="one_or_two_devices">¿Está compitiendo en 1 o 2 dispositivos?</string>
-    <string name="one_device">Dispositivo Individualo</string>
-    <string name="two_devices">Dos Dispositivos</string>
     <string name="pro_version_unlocked">La versión Pro ha sido desbloqueada!</string>
     <string name="email_subject">Retroalimentación Kokotoa (Es)</string>
     <string name="send_email_using">Enviar correo electrónico utilizando..</string>
     <string name="no_email_client">No hay clientes de correo instalados.</string>
-    <string name="edit_user_name">Editar Nombre de usuario</string>
     <string name="enter_your_name">Introduzca su nombre</string>
     <string name="share">compartir</string>
-    <string name="get_more_points">Conseguir más puntos</string>
-    <string name="reset">Reiniciar</string>
     <string name="view_rank">Ver Su Clasificación mundial</string>
-    <string name="top_ranked_users">Clasificación de Usuarios</string>
     <string name="name">Nombre</string>
     <string name="average_score">Puntuación Promedio</string>
     <string name="user_stats">"Nivel actual: 
@@ -125,12 +112,8 @@ Puntos totales:"</string>
     <string name="share_using">Compartir utilizando..</string>
     <string name="no_name_entered">No se especificó nombre</string>
     <string name="user_name_changed">Nombre de usuario se ha cambiado</string>
-    <string name="your_rank">Su posición: #</string>
     <string name="unable_to_connect">No se puede conectar a la red</string>
     <string name="loading">Cargando..</string>
-    <string name="reset_msg">"Restablecer borrará todos los datos del usuario 
- ¿Está seguro de que desea restablecer?"</string>
-    <string name="user_data_erased">Los datos del usuario se ha borrado</string>
     <string name="version_outdated">Ésta versión es antigua. Por favor, actualice a v</string>
     <string name="new_message">Ha recibido un mensaje</string>
     <string name="default_name">sin nombre</string>
@@ -158,11 +141,9 @@ Puntos totales:"</string>
     <string name="try_challenge">Pruebe el modo desafío</string>
     <string name="evaluation">Evaluación</string>
     <string name="evaluation_msg">Vamos a crear un perfil personalizado para usted. Empecemos</string>
-    <string name="enter_valid_email">Por favor, introduce una dirección de correo electrónico válida</string>
-    <string name="email">correo electrónico</string>
-    <string name="backup">Copia de seguridad de sus datos</string>
-    <string name="restore">Restaurar los datos</string>
-    <string name="backup_restore">Copia/Restaurar</string>
+    <string name="sign_in">Registrarse</string>
+    <string name="sign_out">Desconectar</string>
+    <string name="skip">Omitir</string>
     <string name="press_to_clear">Si comete un error, eliminar rápidamente su respuesta pulsando:</string>
     <string name="press_to_skip">Si no sabe la respuesta, no tome la pregunta pulsando:</string>
 

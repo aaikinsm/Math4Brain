@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, MathMentorActivity!</string>
     <string name="app_name">Kokotoa (Id)</string>
-    <string name="filename">m4bfile</string>
     <string name="crash_toast_text">Ooooops! Saya tergagalkan, tapi sebuah laporan telah terkirim ke pengembang untuk membantu perbaiki masalah ini!</string>
     <string name="feedback"> Sejauh ini apakah Anda suka dengan aplikasi ini? Silahkan tinggalkan komentar atau saran. Umpan balik Anda akan sangat dihargai. </string>
-    <string name="multiplayer_feedback"> Sejauh ini apakah Anda suka dengan aplikasi ini? Silahkan tinggalkan komentar atau saran. Umpan balik Anda akan sangat dihargai. </string>
     <!--  tapjoy -->
     <string name="view_free_offers">Lihat Penawaran Gratis</string>
     <string name="collected">Terkoleksi</string>
@@ -35,7 +32,6 @@
     <string name="score">Skor</string>
     <string name="try_again">Coba Lagi</string>
     <string name="complete">Lengkapi</string>
-    <string name="next">Lanjutkan</string>
     <string name="too_many_mistakes">Terlalu Banyak Kesalahan</string>
     <string name="not_enough_points">Anda tidak punya cukup poin</string>
     <string name="you_need_a_min_of">Anda perlu minimal</string>
@@ -84,8 +80,6 @@
     <string name="multiplayer">Multi Pemain</string>
     <string name="settings">Pengaturan</string>
     <string name="user_info">Info Pengguna</string>
-    <string name="exit">Keluar</string>
-    <string name="welcome_back">Selamat Datang Kembali</string>
     <string name="welcome_to_m4b">Selamat Datang di Kokotoa</string>
     <string name="file_is_corrupt">File Rusak: Reset Data Pengguna!</string>
     <string name="leave_feedback">Berikan Umpan Balik</string>
@@ -101,22 +95,15 @@ Gameplay Online Tak Terbatas
 Lebih Banyak Fakta Otak"</string>
     <string name="resume_saved">Anda ingin lanjutkan permainan sebelumnya yang tersimpan?</string>
     <string name="resume">Lanjutkan</string>
-    <string name="restart">Mulai Ulang</string>
     <string name="one_or_two_devices">Anda berkompetisi dengan 1 atau 2 perangkat?</string>
-    <string name="one_device">Satu Perangkat </string>
-    <string name="two_devices">Dua Perangkat </string>
     <string name="pro_version_unlocked">Versi Pro telah dibuka!</string>
     <string name="email_subject">Umpan balik Kokotoa (Id)</string>
     <string name="send_email_using">Kirim email menggunakan</string>
     <string name="no_email_client">Tidak ada email klien yang terinstal</string>
     <!--  user info -->
-    <string name="edit_user_name">Edit Nama Pengguna</string>
     <string name="enter_your_name">Masukkan Nama Anda</string>
     <string name="share">Bagikan</string>
-    <string name="get_more_points">Dapatkan Lebih Banyak Poin</string>
-    <string name="reset">Reset</string>
     <string name="view_rank">Lihat Peringkat Dunia Anda</string>
-    <string name="top_ranked_users">Peringkat Pengguna</string>
     <string name="name">Nama</string>
     <string name="average_score">Skor Rata-Rata</string>
     <string name="user_stats">"Level Saat ini:
@@ -132,7 +119,6 @@ Jumlah Poin:"</string>
     <string name="share_using">Bagikan menggunakan..</string>
     <string name="no_name_entered">Tidak ada nama yang dimasukkan</string>
     <string name="user_name_changed">Nama pengguna telah diubah</string>
-    <string name="your_rank">Peringkat Anda: #</string>
     <string name="unable_to_connect">Tidak dapat tersambung dengan jaringan</string>
     <string name="loading">Sedang memuat..</string>
     <string name="version_outdated">Versi ini sudah kadaluarsa. Silahkan upgrade ke v</string>
@@ -163,11 +149,9 @@ Jumlah Poin:"</string>
     <string name="try_challenge">Coba Tantangan</string>
     <string name="evaluation">Evaluasi</string>
     <string name="evaluation_msg">Kita akan membuat profil disesuaikan untuk Anda. Mari kita mulai</string>
-    <string name="enter_valid_email">silakan isi alamat email</string>
-    <string name="email">e-mail</string>
-    <string name="backup">Backup data Anda</string>
-    <string name="restore">Mengembalikan data</string>
-    <string name="backup_restore">Backup/Mengembalikan</string>
+    <string name="sign_in">Masuk</string>
+    <string name="sign_out">Keluar</string>
+    <string name="skip">Melewati</string>
     <string name="press_to_clear">Jika Anda membuat kesalahan, cepat menghapus jawaban Anda dengan menekan:</string>
     <string name="press_to_skip">Jika Anda tidak tahu jawabannya, lewati pertanyaan dengan menekan:</string>
     

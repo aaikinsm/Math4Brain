@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World!</string>
     <string name="app_name">Kokotoa (Fr)</string>
-    <string name="filename">m4bfile</string>
     <string name="crash_toast_text">Ooooops! Je suis tombé, pourtant, un rapport a été envoyé à mon développeur pour aider à résoudre le problème!</string>
     <string name="feedback">"Aimez-vous cette application aujourd’hui? S'il vous plaît sentez-vous libre de laisser un commentaire ou suggestion. Vos commentaires sont bien appréciés "</string>
-    <string name="multiplayer_feedback">"Avez-vous essayé le mode multijoueur? N'hésitez pas à laisser un commentaire ou suggestion s'il vous plaît. Vos commentaires sont appréciés grâce"</string>
     <string name="view_free_offers">Voir les offres gratuites</string>
     <string name="collected">Collectés</string>
     <string name="total">Total</string>
@@ -32,7 +29,6 @@
     <string name="score">Score</string>
     <string name="try_again">Essayer encore</string>
     <string name="complete">compléte</string>
-    <string name="next">Continuer</string>
     <string name="too_many_mistakes">"Trop d'erreurs"</string>
     <string name="not_enough_points">"Vous ne disposez pas de suffisamment de points"</string>
     <string name="you_need_a_min_of">"Vous avez besoin d'un minimum de"</string>
@@ -78,8 +74,6 @@
     <string name="multiplayer">Multi-joueur</string>
     <string name="settings">Paramètres</string>
     <string name="user_info">"Info d'utilisateur"</string>
-    <string name="exit">Sortir</string>
-    <string name="welcome_back">Re-bonjour</string>
     <string name="welcome_to_m4b">Bienvenue a Kokotoa (maths pour le cerveau)</string>
     <string name="file_is_corrupt">"Le fichier est corrompu: Réinitialiser les données de l'utilisateur!"</string>
     <string name="leave_feedback">Donner un compte-rendu</string>
@@ -95,21 +89,14 @@ PEGI En ligne Illimité
 Plus de cerveau en bref"</string>
     <string name="resume_saved">Voulez-vous reprendre le progrès enregistré précédent?</string>
     <string name="resume">Continuer</string>
-    <string name="restart">Reprendre</string>
     <string name="one_or_two_devices">Êtes-vous concurrencé avec le périphérique 1 ou 2?</string>
-    <string name="one_device">Un Seul Périphérique</string>
-    <string name="two_devices">Deux Périphériques</string>
     <string name="pro_version_unlocked">La version Pro a été déverrouillé!</string>
     <string name="email_subject">(Kokotoa FR) Réaction</string>
     <string name="send_email_using">"Envoyer un e-mail à l'aide.."</string>
     <string name="no_email_client">"Il n'y a pas les clients de messagerie installés."</string>
-    <string name="edit_user_name">"Modifier le nom de l'utilisateur"</string>
     <string name="enter_your_name">Entrez votre nom</string>
     <string name="share">Partager</string>
-    <string name="get_more_points">Obtenir plus de points</string>
-    <string name="reset">Réinitialiser</string>
     <string name="view_rank">Voir votre rang mondial</string>
-    <string name="top_ranked_users">"Note de l'utilisateur"</string>
     <string name="name">Nom</string>
     <string name="average_score">Score Moyen</string>
     <string name="user_stats">"Niveau actuel: 
@@ -125,11 +112,8 @@ Points totaux:"</string>
     <string name="share_using">"Partagez à l’aide..."</string>
     <string name="no_name_entered">Aucun nom entre</string>
     <string name="user_name_changed">"Le Nom d'utilisateur a été changé"</string>
-    <string name="your_rank">Votre Rang est: #</string>
     <string name="unable_to_connect">Impossible de se connecter au réseau</string>
     <string name="loading">Chargement..</string>
-    <string name="reset_msg">La réinitialisation efface toutes les données utilisateur nEtes-vous sûr que vous souhaitez réinitialiser?</string>
-    <string name="user_data_erased">Les données utilisateur ont été effacées</string>
     <string name="version_outdated">"Cette version est obsolète. S'il vous plaît mettez à jour vers v"</string>
     <string name="new_message">Vous avez reçu un message</string>
     <string name="default_name">sans nom</string>
@@ -157,11 +141,9 @@ Points totaux:"</string>
     <string name="try_challenge">Essayez le mode Challenge</string>
     <string name="evaluation">Évaluation</string>
     <string name="evaluation_msg">Hey, nous allons créer un profil personnalisé pour vous. Commençons</string>
-    <string name="enter_valid_email">"S'il vous plaît, mettez une adresse email valide"</string>
-    <string name="email">e-mail</string>
-    <string name="backup">Sauvegardez vos données</string>
-    <string name="restore">Restaurer des données</string>
-    <string name="backup_restore">Sauvegardez/Restaurer</string>
+    <string name="sign_in">Se connecter</string>
+    <string name="sign_out">Déconnexion</string>
+    <string name="skip">Passer</string>
     <string name="press_to_clear">Si vous faites une erreur, retirez rapidement votre réponse en appuyant sur:</string>
     <string name="press_to_skip">Si vous ne connaissez pas la réponse, passez à la question en appuyant sur:</string>
     

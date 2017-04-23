@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, MathMentorActivity!</string>
     <string name="app_name">Kokotoa</string>
-    <string name="filename">m4bfile</string>
     <string name="crash_toast_text">Ooooops ! I crashed, but a report has been sent to my developer to help fix the issue !</string>
     <string name="feedback">Do you like this app so far? Please feel free to leave a comment or suggestion. Your feedback is appreciated thanks</string>
-    <string name="multiplayer_feedback">Have you tried multiplayer mode? Please feel free to leave a comment or suggestion. Your feedback is appreciated thanks</string>
     <!--  tapjoy -->
     <string name="view_free_offers">View Free Offers</string>
     <string name="collected">Collected</string>
@@ -35,7 +32,6 @@
     <string name="score">Score</string>
     <string name="try_again">Try Again</string>
     <string name="complete">Complete</string>
-    <string name="next">Continue</string>
     <string name="too_many_mistakes">Too Many Mistakes</string>
     <string name="not_enough_points">You do not have enough points</string>
     <string name="you_need_a_min_of">You need a minimum of</string>
@@ -84,8 +80,6 @@
     <string name="multiplayer">Multiplayer</string>
     <string name="settings">Settings</string>
     <string name="user_info">User Info.</string>
-    <string name="exit">Exit</string>
-    <string name="welcome_back">Welcome Back</string>
     <string name="welcome_to_m4b">Welcome to Kokotoa (math for the brain)</string>
     <string name="file_is_corrupt">File is Corrupt: Re-install the application!</string>
     <string name="leave_feedback">Give Feedback</string>
@@ -101,22 +95,15 @@ Unlimited Online Gameplay
 More Brain Facts"</string>
     <string name="resume_saved">Do you want to resume previous saved progress?</string>
     <string name="resume">Resume</string>
-    <string name="restart">Restart</string>
     <string name="one_or_two_devices">Are you competing on 1 or 2 devices?</string>
-    <string name="one_device">Single Device</string>
-    <string name="two_devices">Two Devices</string>
     <string name="pro_version_unlocked">The Pro version has been unlocked!</string>
     <string name="email_subject">Kokotoa (Math for the brain) feedback</string>
     <string name="send_email_using">Send email using..</string>
     <string name="no_email_client">There are no email clients installed.</string>
     <!--  user info -->
-    <string name="edit_user_name">Edit User Name</string>
     <string name="enter_your_name">Enter Your Name</string>
     <string name="share">Share</string>
-    <string name="get_more_points">Get More Points</string>
-    <string name="reset">Reset</string>
     <string name="view_rank">View Your World Rank</string>
-    <string name="top_ranked_users">User Rating</string>
     <string name="name">Name</string>
     <string name="average_score">Avg. Score</string>
     <string name="user_stats">"Current Level: 
@@ -132,7 +119,6 @@ Total Points:"</string>
     <string name="share_using">Share using..</string>
     <string name="no_name_entered">No name entered</string>
     <string name="user_name_changed">User name has been changed</string>
-    <string name="your_rank">Your Rank: #</string>
     <string name="unable_to_connect">Unable to connect to the network</string>
     <string name="loading">Loading..</string>
     <string name="version_outdated">This version is outdated. Please upgrade to v</string>
@@ -164,11 +150,9 @@ Total Points:"</string>
     <string name="try_challenge">Try Challenge Mode</string>
     <string name="evaluation">Evaluation</string>
     <string name="evaluation_msg">Hey, we are going to create a customized profile for you. Lets get started</string>
-    <string name="enter_valid_email">Please enter a valid email address</string>
-    <string name="email">email address</string>
-    <string name="backup">Backup data online</string>
-    <string name="restore">Restore data</string>
-    <string name="backup_restore">Backup/Restore</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_out">Sign out</string>
+    <string name="skip">Skip</string>
     <string name="press_to_clear">If you make a mistake, quickly remove your answer by pressing:</string>
     <string name="press_to_skip">If you do not know the answer, skip the question by pressing:</string>
     <string name="facebook_app_id">876571145821017</string>

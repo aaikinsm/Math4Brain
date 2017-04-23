@@ -1,61 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:facebook="http://schemas.android.com/tools"
     android:background="#dde2ea">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center_vertical|center_horizontal">
 
         <TextView
+            android:id="@+id/syncInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/syncInfo"
             android:layout_above="@+id/emailText"
-            android:layout_alignLeft="@+id/emailText"
-            android:layout_alignStart="@+id/emailText"
-            android:layout_alignRight="@+id/emailText"
             android:layout_alignEnd="@+id/emailText"
-            android:gravity="center_horizontal"
+            android:layout_alignLeft="@+id/emailText"
+            android:layout_alignRight="@+id/emailText"
+            android:layout_alignStart="@+id/emailText"
             android:layout_margin="10dp"
-            android:text="." />
-
-        <EditText
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:ems="10"
-            android:id="@+id/emailText"
-            android:layout_above="@+id/syncImage"
-            android:layout_centerHorizontal="true"
-            android:hint="@string/email" />
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
             android:id="@+id/syncImage"
-            android:src="@drawable/sync"
-            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_centerHorizontal="true"
-            android:layout_margin="20dp" />
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/sync" />
 
-        <Button
-            android:layout_width="200dp"
+        <com.facebook.login.widget.ProfilePictureView
+            android:id="@+id/friendProfilePicture"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/backup"
-            android:id="@+id/backupButton"
-            android:layout_below="@+id/syncImage"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            facebook:preset_size="small" />
 
-        <Button
-            android:layout_width="200dp"
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+
+        <TextView
+            android:id="@+id/textViewSkip"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/restore"
-            android:id="@+id/restoreButton"
-            android:layout_gravity="center_horizontal" />
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/skip"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
 
     </LinearLayout>
 </RelativeLayout>
