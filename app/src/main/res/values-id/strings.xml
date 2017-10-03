@@ -9,8 +9,7 @@
     <string name="total">Jumlah</string>
     <string name="close">Tutup</string>
     <string name="total_points">Jumlah Poin</string>
-    <string name="you_are">Anda memerlukan</string>
-    <string name="pts_away_from_unlock">poin untuk membuka ‘Kokotoa PRO’</string>
+    <string name="pts_away_from_unlock">Anda memerlukan %1$d poin untuk membuka \‘Kokotoa PRO\’</string>
     <string name="unable_to_get_pts">Tidak dapat mengambil poin dari server.</string>
     <string name="you_just_earned">Anda barus aja mendapatkan poin</string>
     <!--  settings -->
@@ -154,7 +153,18 @@ Jumlah Poin:"</string>
     <string name="skip">Melewati</string>
     <string name="press_to_clear">Jika Anda membuat kesalahan, cepat menghapus jawaban Anda dengan menekan:</string>
     <string name="press_to_skip">Jika Anda tidak tahu jawabannya, lewati pertanyaan dengan menekan:</string>
-    
+
+    <string name="searching">Pencarian</string>
+    <string name="friend_added">Teman ditambahkan</string>
+    <string name="invalid_uid">Anda telah memasukkan uID yang tidak benar</string>
+    <string name="delete_person">Apakah kamu ingin menghapus %1$s?</string>
+    <string name="delete">Menghapus</string>
+    <string name="enter_uid">Masukkan uID temanmu</string>
+    <string name="change">Perubahan</string>
+    <string name="remove">Menghapus</string>
+    <string name="friends">Teman</string>
+
+
     <!--  Tips -->
     <string-array name="tips">
         <item>"01 Otak perempuan dan laki-laki berbeda secara biologis dan intelektual."</item>

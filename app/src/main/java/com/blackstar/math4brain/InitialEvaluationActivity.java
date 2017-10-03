@@ -224,6 +224,7 @@ public class InitialEvaluationActivity extends Activity {
                     //next
                     Intent i = new Intent(getApplicationContext(), LoginActivity.class);
                     i.putExtra("initial", true);
+                    i.putExtra("userData", gFile);
                     startActivity(i);
                     finish();
                 } else {

@@ -337,8 +337,7 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
                                 update_display_ad = false;
                             } else {
                                 ad.setVisibility(View.VISIBLE);
-                                ad.setText(getString(R.string.you_are) + " " + (minPointsPro - aScores[0] - gSettings.getPoints()) + " "
-                                        + getString(R.string.pts_away_from_unlock));
+                                ad.setText(String.format(getString(R.string.pts_away_from_unlock),(minPointsPro - aScores[0] - gSettings.getPoints())));
                             }
                         }
                     }

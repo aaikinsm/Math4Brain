@@ -3,10 +3,11 @@ package com.blackstar.math4brain;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
-import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -28,8 +29,12 @@ import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -38,9 +43,10 @@ import java.util.List;
  * Created by Asus on 2/5/2016.
  */
 public class LoginActivity extends Activity {
-
-    String[] gFile = new String[20];
-    String syncURL = "http://amensah.com/kokotoa/sqlphp/sync.php", FILENAME = "m4bfile1";
+    int FILESIZE =25;
+    String[] gFile = new String[FILESIZE];
+    String syncURL = "http://amensah.com/kokotoa/sqlphp/sync.php", FILENAME = "m4bfile1",
+            FILEDP = "displayPicture.png";
     int status, animFrame;
     String facebookUserId, deviceID;
     TextView output;
@@ -94,7 +100,6 @@ public class LoginActivity extends Activity {
                     mHandler.postDelayed(this, 2000);
                 } else {
                     if (initial)
-                        if (initial)
                             Toast.makeText(getApplicationContext(), R.string.try_challenge, Toast.LENGTH_LONG).show();
                     finish();
                 }
@@ -123,9 +128,8 @@ public class LoginActivity extends Activity {
             public void onSuccess(LoginResult loginResult) {
                 // App code
                 facebookUserId = loginResult.getAccessToken().getUserId();
-                //output.setText(loginResult.getAccessToken().getToken());
 
-                profilePictureView.setProfileId(loginResult.getAccessToken().getUserId());
+                profilePictureView.setProfileId(facebookUserId);
 
                 GraphRequest request = GraphRequest.newMeRequest(
                         loginResult.getAccessToken(),
@@ -136,7 +140,7 @@ public class LoginActivity extends Activity {
 
                                 try {
                                     gFile[22] = object.getString("email");
-                                    if (gFile[13].equals("User:_no_name"))
+                                    if (gFile[13] == null || gFile[13].equals("User:_no_name"))
                                         gFile[13] = object.getString("name").replace(" ", "_");
 
                                     output.setText(R.string.loading);
@@ -154,8 +158,6 @@ public class LoginActivity extends Activity {
                 parameters.putString("fields", "id,name,email,gender");
                 request.setParameters(parameters);
                 request.executeAsync();
-
-
             }
 
             @Override
@@ -171,6 +173,7 @@ public class LoginActivity extends Activity {
             }
         });
 
+
         skipLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -181,9 +184,11 @@ public class LoginActivity extends Activity {
             }
         });
 
+
 //////////////////////////////////////////////////////////
 
     }
+
 
     class SyncDb extends AsyncTask<String, String, String> {
         @Override
@@ -206,27 +211,47 @@ public class LoginActivity extends Activity {
                 JSONObject json = jsonParser.makeHttpRequest(syncURL, "POST", params2);
                 try {
                     int success = json.getInt("success");
-                    if (success == 1 && json.has("data")) {
-                        String data = json.getString("data");
-                        if (data.length() > 30) {
-                            try {
-                                OutputStreamWriter out = new OutputStreamWriter(openFileOutput(FILENAME, 0));
-                                out.write(data);
-                                out.close();
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            }
-                            status = 1;
-                        } else
+                    if (success == 1){
+                        if(json.has("data")) {
+                            String data = json.getString("data");
+                            if (data.length() > 30) {
+                                try {
+                                    OutputStreamWriter out = new OutputStreamWriter(openFileOutput(FILENAME, 0));
+                                    out.write(data);
+                                    out.close();
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                                status = 1;
+                            } else
+                                status = 2;
+                        }else
                             status = 2;
+                            Log.d("DatabaseResponse:", json.getString("message"));
                     } else {
                         status = success;
+                        Log.d("DatabaseResponse:", json.getString("message"));
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
             } catch (NullPointerException e) {
                 e.printStackTrace();
+            }
+
+            //save FB photo
+            URL imageURL;
+            try {
+                imageURL = new URL("https://graph.facebook.com/" + facebookUserId + "/picture?type=large");
+                String filePath = getFilesDir().getPath() + "/"+FILEDP;
+                File f = new File(filePath);
+                FileOutputStream out = new FileOutputStream(f);
+                Bitmap bmp = BitmapFactory.decodeStream(imageURL.openConnection().getInputStream());
+                bmp.compress(Bitmap.CompressFormat.PNG, 100, out);
+                out.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+                Log.d("progress","error occured");
             }
             return null;
         }

@@ -13,7 +13,13 @@
 		android:visibility="gone"/>
     
     <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <ImageView android:id="@+id/imageViewEqnBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg2" android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/imageViewEqnBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg3" />
 
         <RelativeLayout
             android:layout_width="fill_parent"

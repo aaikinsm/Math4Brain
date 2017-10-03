@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.AsyncTask;
+import android.util.Log;
 
 import com.facebook.AccessToken;
 
@@ -25,11 +26,11 @@ import java.util.Locale;
 public class SyncDatabase extends AsyncTask<String, String, String> {
 
     String[] gFile;
-    int[] aScores = new int[3];
+    private int[] aScores = new int[3];
     Context context;
 
-    final String IPADRS = "amensah.com/kokotoa/sqlphp", FILENAME = "m4bfile1";
-    String VERSION, locale;
+    private final String IPADRS = "amensah.com/kokotoa/sqlphp", FILENAME = "m4bfile1";
+    private String VERSION, locale;
 
     private String url_update_user = "http://" + IPADRS + "/update_users.php";
     private String syncURL = "http://" + IPADRS + "/sync.php";
@@ -57,6 +58,8 @@ public class SyncDatabase extends AsyncTask<String, String, String> {
         if (aScores[0] != 0 && aScores[1] != 0) {
             average = aScores[0] / aScores[1];
         }
+        if(gFile[23] == null || gFile[23].equals("null"))
+            gFile[23] = "NoImageURL";
 
 
         JSONParser jsonParser = new JSONParser();
@@ -74,6 +77,11 @@ public class SyncDatabase extends AsyncTask<String, String, String> {
         params.add(new BasicNameValuePair("gscore", myGameScore + ""));
         params.add(new BasicNameValuePair("version", VERSION));
         params.add(new BasicNameValuePair("locale", locale));
+        if (gFile[23].equals("NoImageURL"))
+            params.add(new BasicNameValuePair("picture", "none"));
+        else
+            params.add(new BasicNameValuePair("picture", gFile[23]));
+
 
         jsonParser.makeHttpRequest(url_update_user, "POST", params);
 
@@ -83,8 +91,8 @@ public class SyncDatabase extends AsyncTask<String, String, String> {
             String facebookUserId = accessToken.getUserId();
             String deviceID = android.os.Build.DEVICE;
             String userdata = "";
-            for (int i = 0; i < gFile.length; i++) {
-                userdata += gFile[i] + " ";
+            for (String dat : gFile) {
+                userdata += dat + " ";
             }
             try {
                 List<NameValuePair> params2 = new ArrayList<>();

@@ -377,6 +377,11 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
                 j.putExtra("share", true);
                 startActivity(j);
                 return true;
+            case R.id.friends:
+                Intent ki = new Intent(getApplicationContext(), FriendActivity.class);
+                ki.putExtra("id",gFile[12]);
+                startActivity(ki);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -534,7 +539,7 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
         }
 
 
-        if ((fb == 8 || fb == 9) && !blackberry && points > 0 && connection && !pro && !billUsed) {
+        if ((fb == 8) && !blackberry && points > 0 && connection && !pro && !billUsed) {
             //open dialog for purchase request
             final Dialog dialog = new Dialog(this);
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);

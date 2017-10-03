@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">मस्तिष्क के लिए गणित - Kokotoa</string>
+    <string name="crash_toast_text">ओह! मैं टूट चूका हूँ, लेकिन इस मुद्दे को ठीक करने में मदद करने के लिए एक रिपोर्ट मेरे डेवलपर को भेज दी गई है!</string>
+    <string name="feedback">क्या आप अब तक आपने इस ऐप को पसंद किया? कृपया कोई टिप्पणी या सुझाव छोड़ने के लिए अपने आप को स्वतंत्र महसूस करे। आपकी प्रतिक्रिया की सराहना की जाएगी। धन्यवाद</string>
+    <!--  tapjoy -->
+    <string name="view_free_offers">नि: शुल्क ऑफ़र देखें</string>
+    <string name="collected">संग्रहित</string>
+    <string name="total">टोटल</string>
+    <string name="close">बंद करे</string>
+    <string name="total_points">कुल अंक </string>
+    <string name="pts_away_from_unlock">आप \'कोको प्रो\' ताला खोलने से %1$d अंक दूर हैं</string>
+    <string name="unable_to_get_pts">सर्वर से टेप अंक प्राप्त करने में असमर्थ</string>
+    <string name="you_just_earned">अपने अभी कमाए है</string>
+    <!--  settings -->
+    <string name="get_pro_version">प्रो वर्ज़न पाए</string>
+    <string name="personalize">निजीकृत करे</string>
+    <string name="user_profiles">यूजर प्रोफाइल्स</string>
+    <string name="difficulty">कठिनाई</string>
+    <string name="browse">ब्राउज़</string>
+    <string name="save">सेव करे</string>
+    <string name="eqn_set_to_default">समीकरण प्रकार को डिफ़ॉल्ट सेट किया गया है</string>
+    <string name="game_settings">खेल सेटिंग्स</string>
+    <string name="current">वर्तमान</string>
+    <string name="select_user_profile">यूज़र प्रोफ़ाइल चुने</string>
+    <!--  challenge mode -->
+    <string name="level">लेवल</string>
+    <string name="completed_equations">पूर्ण किए हुए समीकरण</string>
+    <string name="number_of_inc_alwd">अनुमत गलतियों की संख्या</string>
+    <string name="time_is_up">समय सम्पूर्ण</string>
+    <string name="score">स्कोर</string>
+    <string name="try_again">पुनः प्रयास करे</string>
+    <string name="complete">सम्पूर्ण</string>
+    <string name="too_many_mistakes">बहुत सारी गलतिया</string>
+    <string name="not_enough_points">आपके पास पर्याप्त अंक नहीं हैं</string>
+    <string name="you_need_a_min_of">आगे बढ़ने के लिए आपको कम से कम</string>
+    <string name="points_to_proceed">अंक की आवश्यकता है</string>
+    <string name="you_currently_have">आपके पास अभी</string>
+    <string name="points">अंक है</string>
+    <string name="you_can_earn_more">आप एक मिनट मोड के लिए जाकर अधिक अंक अर्जित कर सकते हैं</string>
+    <string name="ok">ठीक है</string>
+    <string name="eqn_with_no_inc_alwd">गलती पूर्ण समीकरण अनुमत नहीं है</string>
+    <string name="eqn_with_max_of">अधिकतम गलतियों के साथ</string>
+    <string name="incorrects_allowed">समीकरण स्वीकृत</string>
+    <string name="you_have_to_complete">आपको पूर्ण करना है</string>
+    <string name="you_have">इस लेवल को पूरा करने के लिए आपके पास</string>
+    <string name="secs_to_complete_lvl">सेकंड है</string>
+    <string name="start">स्टार्ट</string>
+    <string name="press_start_to_begin">शुरू करने के लिए स्टार्ट बटन दबाए</string>
+    <!--  multiplayer mode -->
+    <string name="player1">प्लेयर १</string>
+    <string name="player2">प्लेयर २</string>
+    <string name="enter">प्रवेश करे</string>
+    <string name="refresh">रीलोड करे</string>
+    <string name="no_internet_connection">इंटरनेट कनेक्शन उपलब्ध नहीं है</string>
+    <string name="your_id_is">आपकी आईडी है</string>
+    <string name="enter_opponent_id">अपने प्रतिस्पर्धी की आईडी दर्ज करें</string>
+    <string name="you_win">आप जित गए!</string>
+    <string name="you_lose">आप हार गए</string>
+    <string name="play_again">फिर से खेले</string>
+    <string name="connected">जुड़ गए</string>
+    <string name="waiting_for_opponent">प्रतिस्पर्धी के लिए प्रतीक्षा कर रहे है</string>
+    <string name="waiting">प्रतीक्षा</string>
+    <string name="vs">बनाम</string>
+    <string name="disconnected">माफ़ करें, आप डिस्कनेक्ट हो चुके हैं</string>
+    <string name="go">शुरू करे!</string>
+    <string name="menu">मेनू</string>
+    <!--  Minute Run -->
+    <string name="brain_fact">दिमागी तथ्य</string>
+    <string name="your_avg_score_is">आपका औसत स्कोर है</string>
+    <string name="new_highscore">नया उच्च स्कोर</string>
+    <string name="review">समीक्षा</string>
+    <string name="you_earned">आपने अर्जित किए</string>
+    <string name="combo">कॉम्बो</string>
+    <!--  menu -->
+    <string name="practice">प्रैक्टिस</string>
+    <string name="minute_run">मिनट</string>
+    <string name="challenge">चुनौती</string>
+    <string name="multiplayer">मल्टीप्लेयर</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="user_info">यूजर जानकारी</string>
+    <string name="welcome_to_m4b">कोकोटो में स्वागत है</string>
+    <string name="file_is_corrupt">फ़ाइल करप्ट है</string>
+    <string name="leave_feedback">प्रतिक्रिया दें</string>
+    <string name="perhaps_later">शायद बाद में</string>
+    <string name="get_free_points">निःशुल्क अंक पाए!</string>
+    <string name="yes">हाँ</string>
+    <string name="no">ना</string>
+    <string name="pro_features">"विशेषताएं:
+निजीकृत बॅकग्राउंडस
+३ उपयोगकर्ता प्रोफाइल तक सेव करे
+विज्ञापन नहीं
+असीमित ऑनलाइन गेमप्ले
+अधिक दिमागी तथ्य
+"</string>
+    <string name="resume_saved">क्या आप पिछली सेव की गई प्रगति को फिर से शुरू करना चाहते हैं</string>
+    <string name="resume">पुनः वही से शुरू करे</string>
+    <string name="one_or_two_devices">आप १ या २ उपकरणों से खेल रहे है</string>
+    <string name="pro_version_unlocked">प्रो वर्ज़न खुल चूका है</string>
+    <string name="email_subject">प्रतिक्रिया</string>
+    <string name="send_email_using">की मदद से ईमेल भेजे</string>
+    <string name="no_email_client">कोई ईमेल क्लाइंट इंस्टॉल नहीं है</string>
+    <!--  user info -->
+    <string name="enter_your_name">अपना नाम दाखिल करे</string>
+    <string name="share">साझा करे</string>
+    <string name="view_rank">अपना वर्ल्ड रेंक देखे</string>
+    <string name="name">नाम</string>
+    <string name="average_score">औसत अंक</string>
+    <string name="user_stats">"मौजूदा स्तर:
+उच्च स्कोर:
+औसत अंक:
+कुल अंक:"</string>
+    <string name="reminder_change_name">रिमाइंडर: डिफ़ॉल्ट यूजर नाम बदलें</string>
+    <string name="i_rank">में कोकोटो में</string>
+    <string name="share_msg">" (विश्वभरमे) रेंक पर हूँ। इस एंड्रॉइड ऐप को पाए और अपना वर्ल्ड रेंक जांचे "</string>
+    <string name="bb_link">"http://appworld.blackberry.com/webstore/content/20484402/"</string>
+    <string name="google_link">"https://play.google.com/store/apps/details?id=com.blackstar.math4brain"</string>
+    <string name="amazon_link">"http://www.amazon.ca/Blackstar-Math-For-The-Brain/dp/B00DR7TK6I"</string>
+    <string name="share_using">का उपयोग करके शेर करे..</string>
+    <string name="no_name_entered">कोई नाम दाखिल नहीं हुआ</string>
+    <string name="user_name_changed">यूजर नाम बदल चूका है</string>
+    <string name="unable_to_connect">नेटवर्क से जुड़ने में असमर्थ</string>
+    <string name="loading">लोड हो रहा है…</string>
+    <string name="version_outdated">यह संस्करण पुरानी हो चुका है। कृपया में अपग्रेड करें</string>
+    <string name="new_message">आपको एक संदेश मिला है</string>
+    <string name="default_name">कोई नाम नहीं</string>
+    
+    <string name="percent_sign">"%"</string>
+    <string name="correct">सही</string>
+    <string name="wrong">गलत</string>
+    <string name="all_bonus">सभी समीकरण</string>
+    <string name="notification_msg">अपने दिमाग को तेज रखें, दिमागी कसरत करे</string>
+    <string name="games_avail">आज के लिए उपलब्ध खेल</string>
+    <string name="last_game">यह आपके लिए आज का आखरी खेल है</string>
+    <string name="no_more_games">आज आपके लिए और कोई गेम उपलब्ध नहीं है। असीमित गेमप्ले के लिए प्रो वर्ज़न प्राप्त करें</string>
+    <string name="initial_try">सर्वर की गति बनाए रखने के लिए, एक दिन में आपके लिए खेलने के लिए ऑनलाइन गेम की संख्या सीमित है। असीमित गेमप्ले के लिए प्रो वर्ज़न प्राप्त करें</string>
+    <string name="wrong_id">आपको आपके प्रतिस्पर्धी का आईडी दाखिल करना है, अपना नहीं।</string>
+    <string name="p1_not_ready">प्रतिस्पर्धी तैयार नहीं है</string>
+    <string name="p1_not_found">प्रतिस्पर्धी नहीं मिला</string>
+    <string name="p1_not_joined">जुड़े नहीं हैं</string>
+    <string name="rate_msg">यदि आपको कोकोटो अच्छा लगता हैं, तो क्या आप कृपया मुझे ५ स्टार रेट करने के लिए एक क्षण देंगे? आपके समर्थन के लिए धन्यवाद</string>
+    <string name="rate">मुझे रेट करे</string>
+    <string name="no_thanks">जी नहीं, धन्यवाद</string>
+    <string name="breakMsg">अपने दिमाग को थोड़ा विराम दें, बाद में वापस आएं</string>
+    <string name="too_easy">उच्च कठिनाई सूचित है</string>
+    <string name="too_difficult">कम कठिनाई सूचित है</string>
+    <string name="days">दिन</string>
+    <string name="prog_chart">आपकी प्रगति चार्ट</string>
+
+    <string name="try_challenge">चुनौती का प्रयास करें</string>
+    <string name="evaluation">मूल्यांकन</string>
+    <string name="evaluation_msg">हेय, हम आपके लिए एक अनुकूलित प्रोफ़ाइल बनाने जा रहे हैं। चलो शुरू करें</string>
+    <string name="sign_in">साइन इन</string>
+    <string name="sign_out">साइन आउट</string>
+    <string name="skip">छोड़ जाना</string>
+    <string name="press_to_clear">यदि आप कोई गलती करते हैं, तो तुरंत दबाकर अपना उत्तर हटा दें:</string>
+    <string name="press_to_skip">यदि आपको जवाब नहीं पता है, तो दबाकर सवाल छोड़ दें:</string>
+    <string name="facebook_app_id">876571145821017</string>
+
+    <!--  New -->
+    <string name="searching">खोज रहे है</string>
+    <string name="friend_added">दोस्त जोड़ दिया</string>
+    <string name="invalid_uid">आपने गलत यूआईडी दर्ज किया है</string>
+    <string name="delete_person">क्या आप %1$s को हटाना चाहते है</string>
+    <string name="delete">हटाए</string>
+    <string name="enter_uid">आपने दोस्त का यूआईडी दाखिल करे</string>
+    <string name="change">बदले</string>
+    <string name="remove">हटाए</string>
+    <string name="friends">दोस्तों</string>
+    <string name="uid">यूआईडी</string>
+
+
+
+    <!--  Tips -->
+    <string-array name="tips">
+        <item>"01 महिलाएं और पुरुषों का दिमाग जैविक और बौद्धिक रूप से अलग होता हैं।"</item>
+		<item>"02 नीरसता अधिकतम दिमाग में पैदा होती एक आदत है, जो वास्तविकता से ज्यादा आपकी पसंद से होती है।"</item>
+		<item>"03 पर्यावरण महत्वपूर्ण है, एक स्वस्थ सेटिंग लोगों को समस्याओं में समस्याओं को बदलने में मदद करता है"</item>
+        <item>"04 अधिक मजबूत, अधिक तीव्र भावनात्मक कनेक्शन खुशबू से प्रेरित यादों से जुड़े हुए हैं।"</item>
+        <item>"05 डेंड्राइट मस्तिष्क कोशिकाएं बाहर की दुनिया का उपयोग करती हैं और आकार लेती हैं, या आप जो करते हैं उसके आधार पर विकसित होती हैं।"</item>
+        <item>"06 संगीत दिमाग के तरंग गति को इस तरह से बदलता है, जो मूड को प्रभावित करता है और उत्पादकता में बदलाव लाता है।"</item>
+        <item>"07 व्याख्यान और वार्तालाप दर्शकों की तुलना में वक्ता की बौद्धिकता को अधिक लाभ पहुंचाते हैं।"</item>
+        <item>"08 मस्तिष्क कोशिकाओं को प्रतिक्रिया करने में केवल ६ मिनट लगते हैं"</item>
+        <!-- <item>"09 * एक बात जो आप जानते हैं उन्हें जोड़े और सीखना बहुत कम समय में बढ़ सकता है"</item> -->
+        <item>"10 विभिन्न बुद्धिमत्ता सभी के लिए आम हैं, कुछ के द्वारा उपयोग किया जाता है, और इसे दैनिक रूप से अधिक विकसित किया जा सकता है।"</item>
+        <item>"11 मनुष्य नींद के दौरान विकास हार्मोन जारी करते है"</item>
+        <item>"12 जनसंख्या के २% को गंध की बिल्कुल समझ नहीं है।"</item>
+        <item>"13 प्लास्टिसिटी लोगों को मानव दिमाग को उन तरीकों से फिर से लगाने में सक्षम बनाता है जो इसे युवा और चालाक रखती हैं।"</item>
+        <item>"14 तनाव सचमुच दिमाग को सिकुड़ देता है।"</item>
+        <item>"15 दूसरों को सिखाने के ज़रिये रचनात्मकता और आविष्कार को प्रेरित करे, साथ ही आप भी सीखते हैं।"</item>
+        <item>"16 नींद की कमी मस्तिष्क को कई तरीको से प्रभावित करती है जो निर्णय-शक्ति और प्रतिक्रिया को ख़राब असर कर सकती है।"</item>
+        <item>"17 मानव मस्तिष्क का वजन लगभग ३ पाउंड है।"</item>
+        <!-- <item>"18 * अध्ययन बताते हैं कि दिमाग की लहरें जब आप जाग रहे हैं उससे अधिक सक्रिय सपने देखते समय होते हैं।"</item> -->
+        <item>"19 आपका मस्तिष्क आपके शरीर में घूमते रक्त और ऑक्सीजन का २० प्रतिशत हिस्सा उपयोग करता है।"</item>
+        <item>"20 मनुष्य मानसिक गतिविधि की प्रतिक्रिया में नए न्यूरॉन्स पूरे जीवनभर बनाता रहता हैं।"</item>
+        <item>"21 हर बार जब आप किसी चीज़ को याद करते हैं या एक नया विचार प्राप्त करते हैं, तो आप अपने मस्तिष्क में एक नया कनेक्शन बनाते हैं।"</item>
+        <item>"22 दिमाग लगभग ७५ प्रतिशत पानी से बना है।"</item>
+        <item>"23 ८ से १०, = रक्त की हानि के कारण चेतना को खोने से पहले आपके पास उपलब्ध सेकंड की संख्या।"</item>
+        <item>"24 आप अपने आप को गुदगुदी नहीं कर सकते क्योंकि आपका दिमाग अनअपेक्षित बाहरी स्पर्श और आपने स्वयं के स्पर्श का भेद समझता है।"</item>
+        <item>"25 नींद की कमी वास्तव में नई यादों को बनाने की आपकी क्षमता को नुकसान पहुँचा सकती है।"</item>
+        <item>"26 आप अपने सपनों को याद नहीं रखते इसका मतलब यह नहीं है कि आप सपने नहीं देखते हैं। हर कोई सपना देखता है!"</item>
+        <item>"27 प्रत्येक दिन मनुष्यों को आते विचारो की औसत संख्या ७०,००० है।"</item>
+        <item>"28 १२ प्रतिशत लोग केवल काले और सफेद रंग में सपने देखते हैं जबकि अन्य रंगों में सपने देखते हैं।"</item>
+        <item>"29 जब आप रात में सोते हैं, तो वह दिनभर की आपकी सभी यादों को मजबूत करने के लिए आपके मस्तिष्क का सबसे अच्छा समय हो सकता है।"</item>
+        <item>"30 अत्यधिक तनाव मस्तिष्क कोशिकाओं, मस्तिष्क संरचना और मस्तिष्क के कार्य को बदलते हुए देखा गया है।"</item>
+        <item>"31 जोर से पढ़ना और युवा बच्चे से अक्सर बात करना मस्तिष्क के विकास को बढ़ावा देता है।"</item>
+        <item>"32 मस्तिष्क में कोई दर्द अभिग्राहक नहीं हैं, इसलिए दिमाग को कोई दर्द महसूस नहीं हो सकता है।"</item>
+        <item>"33 एक नवजात शिशु का मस्तिष्क पहले वर्ष में आपने आकार से लगभग तीन गुना बढ़ता है।"</item>
+        <item>"34 यह माना जाता है कि जम्हाई मस्तिष्क को अधिक ऑक्सीजन भेजने के लिए काम करता है, इसलिए यस उसे ठंडा करने का काम करता है।"</item>
+        <!-- <item>"35 * यादें संगति द्वारा बनाई जाती है, इसलिए यदि आप चीजों को याद रखने में मदद चाहते हैं, तो अपने लिए संगति बनाए।"</item> -->
+        <item>"36 यदि आप खर्राटे ले रहे हैं, तो आप सपना नहीं देख रहे हैं।"</item>
+        <item>"37 संगीत शिक्षा से बच्चों और वयस्कों दोनों में मस्तिष्क संगठन और क्षमता को काफी बढ़ते हुए देखा गया है।"</item>
+        <item>"38 ज्यादातर लोग रात के करीब १ से २ घंटे का सपना देखते हैं और हर रात औसतन ४ से ७ सपने देखते हैं।"</item>
+        <item>"39 मस्तिष्क मौत के बाद करीब ३७ घंटों तक दिमागी तरंगों को भेजना जारी रखता है।"</item>
+        <item>"40 पुराणी उक्ति - मनुष्य केवल उनके मस्तिष्क के १० प्रतिशत का उपयोग करते है वह सही नहीं है। मस्तिष्क के प्रत्येक भाग का एक ज्ञात कार्य है।"</item>
+        <item>"41 एक अध्ययन में पाया गया कि लंबे समय तक मोबाइल फोन का उपयोग करने से ब्रेन ट्यूमर का खतरा बढ़ जाता है।"</item>
+        <item>"42 मानव मस्तिष्क शरीर का सबसे चरबीदार अंग होता है और इसमें कम से कम ६० प्रतिशत चरबी होती है।"</item>
+        <item>"43 मस्तिष्क का सबसे बड़ा हिस्सा सेरेब्रम होता है और मस्तिष्क के वजन का ८५ प्रतिशत वजन उनका होता है।"</item>
+        <item>"44 आपके मस्तिष्क में लगभग १०० अरब न्यूरॉन्स होते हैं।"</item>
+        <item>"45 मस्तिष्क में १००,००० मील की रक्त वाहिकाएँ हैं।"</item>
+        <item>"46 खुशी, प्रसन्नता, डर और शर्म जैसी भावनाओं की क्षमता जन्म के वक्त ही विकसित हो जाती है।"</item>
+        <item>"47 आप जानकारी लिखकर अधिक प्रभावी ढंग से सीख सकते हैं, टाइपिंग द्वारा नहीं।"</item>
+        <item>"48 कहानी कहना आपके दिमाग के लिए व्यायाम करने का एक अच्छा तरीका बन सकती है।"</item>
+        <item>"49 ध्यान आपके तनाव के स्तर को कम करता है और दिमागी प्रदर्शन में सुधार करता है।"</item>
+        <item>"50 थोड़ी शारीरिक गतिविधि और एक योग्य आहार आपके लिए अपने मस्तिष्क को शीर्ष आकार में रखने के लिए बहुत आसान बना देगा।"</item>
+        <item>"51 मानव मस्तिष्क अन्य समान आकार के सस्तन प्राणियों के मस्तिष्क की तुलना में तीन गुना बड़ा है।"</item>
+        <item>"52 मानव मस्तिष्क खोपड़ी द्वारा संरक्षित है, जो २२ हड्डियों से बना एक साथमें जुड़ा सुरक्षात्मक आवरण हैं।"</item>
+        <item>"53 मस्तिष्कमेरु द्रव में मस्तिष्क को निलंबित कर दिया जाता है, यह तरल शारीरिक प्रभाव के लिए एक तकिये के रूप में और संक्रमण के लिए एक बाधा के रूप में कार्य करता है।"</item>
+        <item>"54 ४ से ६, = मिनटों की संख्या जब आपका मस्तिष्क ऑक्सीजन के बिना जीवित रह सकता है, इससे पहले कि वह मरने लगे।"</item>
+        <!-- <item>"55 * १० से २३, = आपका दिमाग इतने वोट की शक्ति पैदा कर सकता है जब आप जागते हैं, (जो कि एक लाइट बल्ब को चालू करने के लिए पर्याप्त है!)।"</item> -->
+        <item>"56 दिमाग में कद कोई मायने नहीं रखता। ऐसा कोई प्रमाण नहीं है कि एक बड़ा दिमाग छोटे छोटे दिमाग की तुलना में चालाक है।"</item>
+        <item>"57 मस्तिष्क में १००,००० मील की रक्त वाहिकाएँ हैं। यह चार बार पृथ्वी की आस-पास घूमने के लिए पर्याप्त है!"</item>
+        <item>"58 आपका दिमाग ०.५ मीटर / सेकंड (१ MPH) से १२० मीटर / सेकेंड (२६८ मील प्रति घंटे) तक की गति से जानकारी को प्रोसेस कर सकता है।"</item>
+        <item>"59 चुटकुले पर हँसना एक सरल पर्याप्त कार्रवाई की तरह लगता है, लेकिन इसमें हमारे दिमाग के ५ अलग-अलग क्षेत्रों में गतिविधि जरुरी होती है!"</item>
+        <item>"60 ऑक्सीजन की कम आपूर्ति के कारण अधिक ऊंचाई की स्थिति मस्तिष्क को अजीब दृश्य दिखाती है।"</item>
+        <item>"61 हमारी आंखों को प्राप्त होने वाली छवि वास्तव में ऊपर से नीचे की ओर होती हैं। हमारा दिमाग उन्हें ठीक करता है, जिससे कि हम उन्हें सही साइड से ऊपर की ओर देखते हैं!"</item>
+        <item>"62 जब आप छींक मारते है तो आपके आपके दिल सहित, सभी शारीरिक कार्य रुक जाते है।"</item>
+        <item>"63 आपकी नाक ५०,००० अलग-अलग खुशबु को याद रख सकते हैं।"</item>
+        <item>"64 आपकी तंत्रिका आवेग मस्तिष्क से और मष्तिष्क की ओर की यात्रा एक घंटे में १७० मील प्रति घंटे की तेजी से करते हैं।"</item>
+        <item>"65 हमारा मस्तिष्क हमारे शरीर की ऊर्जा का २० प्रतिशत उपयोग करता है और उसका वजन हमारे शरीर के वजन का केवल २ प्रतिशत है।"</item>
+        <item>"66 जिस कमरे में आप सोते हैं, वह जितना ज्यादा ठंडा है उतना ही आपको बुरा सपना आनेकी सम्भावना ज्यादा।"</item>
+        <!-- <item>"67 * बहुत अधिक खाने के बाद आपकी श्रवण शक्ति कम तेज़ होगी"</item> -->
+        <item>"68 महिलाए नींबू, वेनिला, दालचीनी और कॉफी की खुशबु की पहचान करने में अधिक सक्षम थे।"</item>
+        <item>"69 विटामिन ई शराब के सेवन से होने वाली क्षति से मस्तिष्क की कोशिकाओं को बचाता है"</item>
+        <item>"70 केवल मनुष्य ही भावनात्मक आँसू पैदा करने वाले प्राणी हैं"</item>
+        <item>"71 दाँए हाथ से काम करने वाले लोग, बाँये हाथ से काम करने वालो से औसतन नौ साल अधिक जीवित रहते हैं"</item>
+        <item>"72 मानव रीढ़ की हड्डी में लगभग १३५०००० न्यूरॉन्स हैं"</item>
+        <item>"73 दिन की तुलना में रात के दौरान दिमाग अधिक सक्रिय रहता है"</item>
+        <item>"74 औसत व्यक्ति ७ मिनट में सो सकते हैं"</item>
+        <item>"75 नियमित व्यायाम, स्वस्थ आहार, मानसिक उत्तेजना, गुणवत्ता-युक्त नींद, तनाव प्रबंधन, और एक सक्रिय सामाजिक जीवन आपके दिमाग के लिए महान हैं"</item>
+        <item>"76 लगातार मानसिक उत्तेजना अल्जाइमर रोग के जोखिम को कम कर देगी"</item>
+        <item>"77 भूलना दिमाग के लिए अच्छा है: अनावश्यक जानकारी को हटाने से तंत्रिका-तंत्र को अपनी प्लास्टिसिटी बनाए रखने में मदद मिलती है।"</item>
+        <item>"78 शराब आपको कुछ भी भुलवाती नहीं है। जब आप बहुत पि लेते हो, तो दिमाग में अस्थायी रूप से यादें पैदा करने की क्षमता बंद हो जाती है।"</item>
+        <item>"79 आपके पेट, आंतों, अग्न्याशय, फेफड़े, गुदा, अंडकोष और मस्तिष्क में स्वाद अभिग्राहक होते हैं।"</item>
+        <item>"80 मानव मस्तिष्क में टोफू के समान संगति है"</item>
+        <item>"81 चॉकलेट की खुशबु मस्तिष्क तरंगों को बढाती है, जो रहत प्रदान करती है"</item>
+    </string-array>
+    	
+</resources>

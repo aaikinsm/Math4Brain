@@ -337,8 +337,7 @@ public class TapJoyLauncher extends Activity implements View.OnClickListener, Ta
 			displayText = this.getString(R.string.collected)+" "+currencyName + ": " + pointTotal;
 		}
 		displayPoints = this.getString(R.string.total_points)+": "+(GAMEPOINTS+pointTotal);
-		if ((GAMEPOINTS+pointTotal)<minPointsPro) displayPoints += "\n"+this.getString(R.string.you_are)+" "
-		+(minPointsPro-GAMEPOINTS-pointTotal)+" "+this.getString(R.string.pts_away_from_unlock);
+		if ((GAMEPOINTS+pointTotal)<minPointsPro) displayPoints += "\n"+String.format(getString(R.string.pts_away_from_unlock),minPointsPro-GAMEPOINTS-pointTotal);
 		
 		// We must use a handler since we cannot update UI elements from a different thread.
 		mHandler.post(mUpdateResults);

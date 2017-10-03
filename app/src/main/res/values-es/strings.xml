@@ -8,8 +8,7 @@
     <string name="total">Total</string>
     <string name="close">Cerca</string>
     <string name="total_points">Puntos totales</string>
-    <string name="you_are">Usted está a</string>
-    <string name="pts_away_from_unlock">puntos de distancia para desbloquear Kokotoa PRO</string>
+    <string name="pts_away_from_unlock">Usted está a %1$d puntos de distancia para desbloquear Kokotoa PRO</string>
     <string name="unable_to_get_pts">No se pueden recuperar puntos desde el servidor..</string>
     <string name="you_just_earned">Sólo has ganado</string>
     <string name="get_pro_version">Obtener la versión Pro</string>
@@ -146,6 +145,17 @@ Puntos totales:"</string>
     <string name="skip">Omitir</string>
     <string name="press_to_clear">Si comete un error, eliminar rápidamente su respuesta pulsando:</string>
     <string name="press_to_skip">Si no sabe la respuesta, no tome la pregunta pulsando:</string>
+
+    <string name="searching">Buscando</string>
+    <string name="friend_added">Amigo agregado</string>
+    <string name="invalid_uid">Ha introducido un uID no válido</string>
+    <string name="delete_person">¿Quieres eliminar %1$s!?</string>
+    <string name="delete">Borrar</string>
+    <string name="enter_uid">Ingrese los uID de su amigo</string>
+    <string name="change">Cambio</string>
+    <string name="remove">Retirar</string>
+    <string name="friends">Amigos</string>
+
 
     
 	<string-array name = "tips">

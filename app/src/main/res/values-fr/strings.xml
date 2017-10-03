@@ -8,8 +8,7 @@
     <string name="total">Total</string>
     <string name="close">Fermer</string>
     <string name="total_points">Points totaux</string>
-    <string name="you_are">Il vous reste</string>
-    <string name="pts_away_from_unlock">"points pour déverrouiller le 'Kokotoa PRO'"</string>
+    <string name="pts_away_from_unlock">Il vous reste %1$d points pour déverrouiller le \'Kokotoa PRO\'</string>
     <string name="unable_to_get_pts">Impossible de récupérer les points à partir du serveur.</string>
     <string name="you_just_earned">Vous venez de gagner</string>
     <string name="get_pro_version">Obtenir la version Pro</string>
@@ -146,6 +145,16 @@ Points totaux:"</string>
     <string name="skip">Passer</string>
     <string name="press_to_clear">Si vous faites une erreur, retirez rapidement votre réponse en appuyant sur:</string>
     <string name="press_to_skip">Si vous ne connaissez pas la réponse, passez à la question en appuyant sur:</string>
+
+    <string name="searching">Recherche</string>
+    <string name="friend_added">Ami ajouté</string>
+    <string name="invalid_uid">Vous avez entré un uID invalide</string>
+    <string name="delete_person">Voulez-vous supprimer %1$s?</string>
+    <string name="delete">Effacer</string>
+    <string name="enter_uid">Entrez l\'uID de votre ami</string>
+    <string name="change">Changement</string>
+    <string name="remove">Retirer</string>
+    <string name="friends">Mes amies</string>
     
 	<string-array name="tips">
         <item>"01 Le cerveau des femmes et des hommes sont différents biologiquement et intellectuellement."</item>

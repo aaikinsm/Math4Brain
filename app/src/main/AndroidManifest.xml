@@ -2,8 +2,8 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.blackstar.math4brain"
-    android:versionCode="71"
-    android:versionName="6.4" >
+    android:versionCode="73"
+    android:versionName="6.6" >
 
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -162,6 +162,24 @@
             android:name=".InitialEvaluationActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FriendActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ProfilePictureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

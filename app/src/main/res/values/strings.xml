@@ -9,8 +9,7 @@
     <string name="total">Total</string>
     <string name="close">Close</string>
     <string name="total_points">Total Points</string>
-    <string name="you_are">You are</string>
-    <string name="pts_away_from_unlock">points away from unlocking Kokotoa PRO (Math for The Brain)</string>
+    <string name="pts_away_from_unlock">You are %1$d points away from unlocking Kokotoa PRO (Math for The Brain)</string>
     <string name="unable_to_get_pts">Unable to retrieve tap points from server.</string>
     <string name="you_just_earned">"You've just earned"</string>
     <!--  settings -->
@@ -146,22 +145,37 @@ Total Points:"</string>
     <string name="too_difficult">Lower difficulty recommended</string>
     <string name="days">days</string>
     <string name="prog_chart">Your Progress Chart</string>
-    <!--  New -->
+
     <string name="try_challenge">Try Challenge Mode</string>
     <string name="evaluation">Evaluation</string>
-    <string name="evaluation_msg">Hey, we are going to create a customized profile for you. Lets get started</string>
+    <string name="evaluation_msg">Hey, we are going to create a customized profile for you. Let\'s get started</string>
     <string name="sign_in">Sign in</string>
     <string name="sign_out">Sign out</string>
     <string name="skip">Skip</string>
     <string name="press_to_clear">If you make a mistake, quickly remove your answer by pressing:</string>
     <string name="press_to_skip">If you do not know the answer, skip the question by pressing:</string>
     <string name="facebook_app_id">876571145821017</string>
-    
+
+    <!--  New -->
+    <string name="searching">Searching</string>
+    <string name="friend_added">Friend added</string>
+    <string name="invalid_uid">You have entered an invalid uID</string>
+    <string name="delete_person">Do you want to delete %1$s?</string>
+    <string name="delete">Delete</string>
+    <string name="enter_uid">Enter your friend\'s uID</string>
+    <string name="change">Change</string>
+    <string name="remove">Remove</string>
+    <string name="friends">Friends</string>
+    <string name="uid">uID</string>
+
+
+
+
     <!--  Tips -->
     <string-array name="tips">
         <item>"01 Women’s and men’s brain are different biologically and intellectually."</item>
 		<item>"02 Boredom is more a habit formed in brains, and shaped by your choices, than a reality."</item>
-		<item>"03 Environment counts, and a healthy setting helps people transform problems into solutions."</item>
+		<item>"03 Environment is important, a healthy setting helps people transform problems into solutions."</item>
         <item>"04 Stronger, more intense emotional connections are linked to memories prompted by scent."</item>
         <item>"05 Dendrite brain cells use the outside world and take shape, or grow based on what you do."</item>
         <item>"06 Music changes brain wave speeds in ways that impact moods and alter productivity."</item>

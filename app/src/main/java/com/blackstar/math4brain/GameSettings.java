@@ -22,7 +22,7 @@ public class GameSettings{
 	
 	public int getPoints(){
 		int sc = (int)((0.5 + (difficulty*0.5)) *score)-wrong;
-		if (equationType==1234) sc = (int)(sc*1.1);
+		if (equationType==12345) sc = (int)(sc*1.1);
 		return sc;
 	}
 	
@@ -31,7 +31,7 @@ public class GameSettings{
 		int diff = (int)((0.5 + (difficulty*0.5)) * score), total=(diff-wrong), allBonus = (int)(total*1.1);
 		ca += score+" "+cntx.getString(R.string.correct)+" x "+(0.5 + (difficulty*0.5))+" ("+cntx.getString(R.string.difficulty)+") = "+diff+"\n"
 				+diff+" - "+wrong+" ("+cntx.getString(R.string.wrong)+") = "+total;
-		if (equationType == 1234) ca += "\n"+total+"  +"+(allBonus-total)+" ("+cntx.getString(R.string.all_bonus)+") = "+allBonus;
+		if (equationType == 12345) ca += "\n"+total+"  +"+(allBonus-total)+" ("+cntx.getString(R.string.all_bonus)+") = "+allBonus;
 		ca += "\n________________________________\n";
 		return ca;
 	}

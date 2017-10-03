@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/shadow_banner"
@@ -10,32 +11,38 @@
         android:id="@+id/imageViewDp"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:layout_weight="1"
-        android:src="@drawable/com_facebook_profile_picture_blank_square"
-        android:visibility="gone" />
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/com_facebook_profile_picture_blank_square" />
 
     <TextView
         android:id="@+id/textViewRnk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight=".9"
+        android:gravity="center_vertical"
+        android:padding="3dp"
         android:text="#1"
         android:textColor="#000000"
-        android:textStyle="italic" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewNam"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.75"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="0.7"
+        android:gravity="center_vertical"
         android:text="my_name"
-        android:textColor="#000000"
-        android:textStyle="bold" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
         android:layout_marginLeft="2dp"
         android:layout_marginRight="7dp"
         android:src="@android:drawable/status_bar_item_app_background" />
@@ -43,15 +50,19 @@
     <TextView
         android:id="@+id/textViewLvl"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
         android:layout_weight="1"
+        android:elevation="0dp"
+        android:gravity="center_vertical"
         android:text="00"
         android:textColor="#000000" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
         android:layout_marginLeft="2dp"
         android:layout_marginRight="7dp"
         android:src="@android:drawable/status_bar_item_app_background" />
@@ -59,15 +70,19 @@
     <TextView
         android:id="@+id/textViewAvg"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight=".97"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight=".95"
+        android:elevation="0dp"
+        android:gravity="center_vertical"
         android:text="000"
         android:textColor="#000000" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
         android:layout_marginLeft="2dp"
         android:layout_marginRight="7dp"
         android:src="@android:drawable/status_bar_item_app_background" />
@@ -75,8 +90,11 @@
     <TextView
         android:id="@+id/textViewTotal"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight=".95"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight=".9"
+        android:elevation="0dp"
+        android:gravity="center_vertical"
         android:text="0000"
         android:textColor="#000000" />
 

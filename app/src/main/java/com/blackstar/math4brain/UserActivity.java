@@ -5,6 +5,8 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -16,6 +18,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ProgressBar;
@@ -29,10 +32,13 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -43,14 +49,16 @@ public class UserActivity extends Activity{
 	int level=0, average =0, DISPLAYMAX=20, rank, minPointsPro= 5000, FILESIZE = 25;
 	int[] aScores;
     String UName = "", VERSION, IPADRS="amensah.com/kokotoa/sqlphp", msgs=null, FILEMSG = "m4bfileMsg",
-    		FILETRACK = "m4bfileTrack", locale=Locale.getDefault().getLanguage();
+    		FILETRACK = "m4bfileTrack", FILEDP = "displayPicture.png", locale=Locale.getDefault().getLanguage();
     String[] arry;
     List<String[]> uList = new ArrayList<>();
     UserListAdapter listAdapter;
     boolean connected = false, newMsg = false, ready = false, amazon = false, blackberry = false;
-	boolean initial=false, isVisible=false, nameUpdateOnly=false, shareMode=false;
-    Runnable rankTable;
-    Handler mHandler = new Handler();
+	boolean initial=false, isVisible=false, nameUpdateOnly=false, shareMode=false, noPicture = false;
+	Handler mHandler = new Handler();
+    Runnable rankTable, getPicture;
+	Bitmap bitmap;
+	ImageView displayPic;
     
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -62,18 +70,22 @@ public class UserActivity extends Activity{
         final TextView info1b = (TextView) findViewById(R.id.textViewInfo1b);
         final TextView info2 = (TextView) findViewById(R.id.textViewInfo2);
         final TextView name = (TextView) findViewById(R.id.textViewTitle);
+		final TextView userId = (TextView) findViewById(R.id.textViewUID);
         final LinearLayout editName = (LinearLayout) findViewById(R.id.layoutEditName);
         final Button done = (Button) findViewById(R.id.buttonInfo);
         final ImageButton share = (ImageButton) findViewById(R.id.buttonShare);
-        final EditText nameInput = (EditText) findViewById(R.id.editTextName);
+		final ImageButton share2 = (ImageButton) findViewById(R.id.buttonShare2);
+		final ImageButton friend = (ImageButton) findViewById(R.id.buttonFriend);
+		final EditText nameInput = (EditText) findViewById(R.id.editTextName);
         final ImageButton viewRank = (ImageButton) findViewById(R.id.buttonViewRank);
         final TableLayout topUsers = (TableLayout) findViewById(R.id.tableLayoutTopUsers);
         final FrameLayout stats = (FrameLayout) findViewById(R.id.frameLayoutStats);
         final FrameLayout rankReset = (FrameLayout) findViewById(R.id.frameLayoutRR);
         final ProgressBar loadBar = (ProgressBar) findViewById(R.id.progressBarLoading);
         final TrackProgressView progChart = (TrackProgressView) findViewById(R.id.trackProgressView1);
+		displayPic = (ImageView) findViewById(R.id.imageViewDp);
         ListView userList = (ListView) findViewById(R.id.listViewUsers);
-        listAdapter = new UserListAdapter(this, R.layout.users_row, uList);
+        listAdapter = new UserListAdapter(this, R.layout.users_row, uList, 1);
         userList.setAdapter(listAdapter);
         final String FILENAME = "m4bfile1";
         Typeface myTypeface = Typeface.createFromAsset(getAssets(), "fawn.ttf");
@@ -132,6 +144,7 @@ public class UserActivity extends Activity{
 			
 			UName = (arry[13]);
 			name.setText(UName.replace("_", " "));
+			userId.setText(getString(R.string.uid)+": "+arry[12]);
 			
 			int highScore = aScores[2], total = aScores[0];
 			if (aScores[0]!=0 && aScores[1]!=0){
@@ -159,13 +172,39 @@ public class UserActivity extends Activity{
         		editName.setVisibility(View.GONE);
         	}
         });
-        
+
+		friend.setOnClickListener (new View.OnClickListener(){
+			@Override
+			public void onClick (View v){
+				Intent i = new Intent(getApplicationContext(), FriendActivity.class);
+				i.putExtra("id",arry[12]);
+				startActivity(i);
+				finish();
+			}
+		});
+
         share.setOnClickListener (new View.OnClickListener(){
         	@Override
 			public void onClick (View v){
         		shareAction();
         	}
         });
+
+		share2.setOnClickListener (new View.OnClickListener(){
+			@Override
+			public void onClick (View v){
+				shareAction();
+			}
+		});
+
+		displayPic.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(getApplicationContext(), ProfilePictureActivity.class);
+				i.putExtra("data",arry);
+				startActivity(i);
+			}
+		});
         
         done.setOnClickListener (new View.OnClickListener(){
         	@Override
@@ -279,6 +318,8 @@ public class UserActivity extends Activity{
         	}
         };
 
+
+
 		Bundle extras = getIntent().getExtras();
 		if (extras != null) {
 			if (extras.containsKey("view_rank")){
@@ -312,6 +353,23 @@ public class UserActivity extends Activity{
 		
         //update database class
         new UpdateDatabase().execute();    
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		getDisplayPicture();
+	}
+
+	public void getDisplayPicture(){
+		String filePath = getFilesDir().getPath() + "/"+FILEDP;
+		File f = new File(filePath);
+		if(f.exists()) {
+			bitmap = BitmapFactory.decodeFile(filePath);
+			displayPic.setImageBitmap(bitmap);
+		}else{
+			displayPic.setImageResource(R.drawable.com_facebook_profile_picture_blank_square);
+		}
 	}
 	
 	class UpdateDatabase extends AsyncTask<String, String, String> {
@@ -471,6 +529,7 @@ public class UserActivity extends Activity{
         }
         
     }
+
 	
 	private void displayMessage(String msg){
 		final Dialog dialog = new Dialog(this);

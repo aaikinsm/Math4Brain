@@ -8,8 +8,7 @@
     <string name="total">Gesamt</string>
     <string name="close">Schließen</string>
     <string name="total_points">Gesamtpoints</string>
-    <string name="you_are">Sie sind</string>
-    <string name="pts_away_from_unlock">Points weg von Entriegeln Kokotoa PRO </string>
+    <string name="pts_away_from_unlock">Sie sind %1$d Points weg von Entriegeln Kokotoa PRO </string>
     <string name="unable_to_get_pts">Unfähig, points vom Server abrufen.</string>
     <string name="you_just_earned">Sie haben gerade verdient</string>
     <string name="get_pro_version">Holen Sie sich die Pro-Version</string>
@@ -145,74 +144,84 @@ Gesamtpunkte:"</string>
     <string name="skip">übergehen</string>
     <string name="press_to_clear">Wenn Sie einen Fehler machen, entfernen Sie schnell Ihre Antwort, indem Sie:</string>
     <string name="press_to_skip">Wenn Sie die Antwort nicht wissen, lassen Sie die Frage durch Drücken von:</string>
+
+    <string name="searching">Suchen</string>
+    <string name="friend_added">Freund hinzugefügt</string>
+    <string name="invalid_uid">Sie haben eine ungültige uID eingegeben</string>
+    <string name="delete_person">Möchten Sie %1$s löschen?</string>
+    <string name="delete">Löschen</string>
+    <string name="enter_uid">Geben Sie die uID Ihres Freundes ein</string>
+    <string name="change">Veränderung</string>
+    <string name="remove">Löschen</string>
+    <string name="friends">Freunde</string>
     
     <string-array name="tips">
-        <item>"Frauen-und Männer-Gehirn gibt verschiedene biologisch und intellektuell."</item>
-		<item>"Langeweile ist mehr eine Gewohnheit, in den Gehirnen gebildet und durch Ihre Entscheidungen geformt."</item>
-		<item>"Umwelt zählt, eine gesunde Umwelt hilft Menschen Probleme in Lösungen zu verwandeln."</item>
-		<item>"Menschen sind die einzigen Tiere, emotionale Tränen produzieren."</item>
-		<item>"Rechtshänder leben im Durchschnitt neun Jahre länger als Linkshänder."</item>
-		<item>"Musik verändert Gehirn Wellengeschwindigkeiten in einer Weise, die Stimmungen beeinflussen und die Produktivität zu verändern."</item>
-		<item>"Vorträge und Gespräche profitieren Intelligenz des Sprechers mehr als die Zuhörer."</item>
-		<item>"Es gibt etwa 1350000 Neuronen im menschlichen Rückenmark."</item>
-		<item>"6 Faktoren einer Gehirn-gesunde Lebensweise sind: Bewegung, gesunde Ernährung, mentale Stimulation, Schlaf, Stress-Management, und ein aktives soziales Leben"</item>
-		<item>"Das menschliche Wachstumshormone freisetzt im Schlaf"</item>
-		<item>"2% der Bevölkerung hat keinen Geruchssinn überhaupt."</item>
-		<item>"Häufige geistige Stimulation das Risiko von Alzheimer zu verringern"</item>
-		<item>"Stress buchstäblich schrumpft das Gehirn"</item>
-		<item>"Stress buchstäblich schrumpft das Gehirn"</item>
-		<item>"Erstellen Sie neue Nervenbahnen, wenn Sie eine Lösung für jedes Problem, das Sie stoßen hinzufügen."</item>
-		<item>"Das Gewicht des menschlichen Gehirns ist ungefähr 3 lbs."</item>
-		<item>"Studien zeigen, dass Gehirnwellen sind aktiver im Traum, als wenn Sie wach sind."</item>
-		<item>"Das Gehirn verbraucht 20 Prozent der zirkulierenden Blut und Sauerstoff in Ihrem Körper."</item>
-		<item>"Menschen weiterhin neue Neuronen während des gesamten Lebens in Reaktion auf die geistige Aktivität zu machen."</item>
-		<item>"Jedes Mal, wenn Sie eine Speicher erinnern oder einen neuen Gedanken, erstellen Sie eine neue Verbindung in Ihrem Gehirn."</item>
-		<item>"Das Gehirn besteht aus etwa 75 Prozent Wasser."</item>
-		<item>"8 bis 10, = die Anzahl der Sekunden, bevor das Bewusstsein zu verlieren aufgrund von Blutverlust."</item>
-		<item>"Sie können nicht selbst kitzeln, weil das Gehirn unterscheiden unerwartete äußere Berührung und Ihre eigene Note."</item>
-		<item>"Mangel an Schlaf kann sogar schaden Ihre Fähigkeit, neue Erinnerungen zu schaffen."</item>
-		<item>"Mangel an Schlaf kann sogar schaden Ihre Fähigkeit, neue Erinnerungen zu schaffen"</item>
-		<item>"Die durchschnittliche Zahl der Gedanken, dass die Menschen geglaubt werden, um jeden Tag zu erleben, ist 70.000."</item>
-		<item>"12 Prozent der Menschen nur träumen in schwarz und weiß, während andere in Farbe träumen."</item>
-		<item>"Während Sie schlafen in der Nacht vielleicht die beste Zeit für Ihr Gehirn, um alle Ihre Erinnerungen an den Tag zu konsolidieren."</item>
-		<item>"Während Sie schlafen in der Nacht vielleicht die beste Zeit für Ihr Gehirn, um alle Ihre Erinnerungen an den Tag zu konsolidieren."</item>
-		<item>"Vorlesen und oft im Gespräch mit einem jungen Kind fördert die Entwicklung des Gehirns."</item>
-		<item>"Es gibt keine Schmerzrezeptoren im Gehirn, so dass das Gehirn keinen Schmerz fühlen."</item>
-		<item>"Ein neugeborenes Baby Gehirn wächst etwa dreiMal so groß im ersten Jahr."</item>
-		<item>"Es wird vermutet, dass ein Gähnen arbeitet, um mehr Sauerstoff an das Gehirn senden, daher arbeiten, um es abzukühlen."</item>
-		<item>"Es wird vermutet, dass ein Gähnen arbeitet, um mehr Sauerstoff an das Gehirn senden, daher arbeiten, um es abzukühlen."</item>
-		<item>"Wenn Sie schnarchen, können Sie nicht träumen."</item>
-		<item>"Wenn Sie schnarchen, können Sie nicht träumen."</item>
-		<item>"Die meisten Menschen träumen von 1 bis 2 Stunden in der Nacht und haben einen Durchschnitt von 4 bis 7 Träume jede Nacht."</item>
-		<item>"Das Gehirn weiter zu senden, Gehirnwellen bis etwa 37 Stunden nach dem Tod."</item>
-		<item>"Das alte Sprichwort von Menschen nur mit 10 Prozent ihres Gehirns ist nicht wahr. Jeder Teil des Gehirns hat eine bekannte Funktion."</item>
-		<item>"Die Großhirnrinde dicker wird, wie Sie lernen, es zu benutzen."</item>
-		<item>"Das menschliche Gehirn ist der dickste Organ im Körper und aus mindestens 60 Prozent Fett besteht."</item>
-		<item>"Das Großhirn ist der größte Teil des Gehirns und macht 85 Prozent des Gewichts des Gehirns."</item>
-		<item>"Das Gehirn besteht aus etwa 100 Milliarden Neuronen."</item>
-		<item>"Es gibt 100.000 Meilen von Blutgefäßen im Gehirn."</item>
-		<item>"Die Kapazität für Emotionen wie Freude, Glück, Angst und Schüchternheit sind bereits bei der Geburt entwickelt."</item>
-		<item>"Sie können besser lernen durch das Schreiben von Informationen handschriftlich, nicht durch Tippen."</item>
-		<item>"Eine Geschichte erzählen kann ein guter Weg, um Ihr Gehirn auszuüben"</item>
-		<item>"Meditation reduziert Ihren Stress und verbessert die Leistungsfähigkeit des Gehirns."</item>
-		<item>"Ein wenig körperliche Aktivität und eine intelligente Ernährung wird es viel einfacher für Sie, um Ihr Gehirn in Top-Form zu halten."</item>
-		<item>"Das menschliche Gehirn ist mehr als dreimal so groß wie das Gehirn von Säugetieren, die von ähnlicher Größe sind Körper."</item>
-		<item>"Das menschliche Gehirn ist durch den Schädel, einem Schutzgehäuse 22 Knochen, die miteinander verbunden sind, geschützt."</item>
-		<item>"Das Gehirn ist im Liquor, dieser Flüssigkeit wirkt wie ein Kissen, um Erschütterungen und eine Barriere für Infektionen ausgesetzt."</item>
-		<item>"4 bis 6, = Anzahl der Minuten Ihr Gehirn ohne Sauerstoff überleben, bevor es beginnt zu sterben."</item>
-		<item>"10 bis 23, = Anzahl der Watt Leistung Ihres Gehirns erzeugt, wenn Sie wach sind (das ist genug, um auf eine Glühbirne zu machen!)."</item>
-		<item>"Größe spielt keine Rolle, im Gehirn. Es gibt keine Hinweise, dass ein größeres Gehirn ist schlauer als ein kleineres Gehirn."</item>
-		<item>"Es gibt 100.000 Meilen von Blutgefäßen im Gehirn. Das reicht, um rund um die ganze Erde vier Mal wickeln!"</item>
-		<item>"Die Rate, mit der das Gehirn Informationen verarbeitet, etwa 0,5 Meter / Sekunde (1 MPH) bis 120 Meter / Sekunde (268 MPH)."</item>
-		<item>"Lachen über einen Witz scheint wie eine einfache genug Action, aber es Aktivität in fünf verschiedenen Bereichen des Gehirns erfordert!"</item>
-		<item>"Höhenbedingungen macht das Gehirn sehen seltsame Visionen aufgrund der reduzierten Zufuhr von Sauerstoff."</item>
-		<item>"Wenn Sie niesen, alle Ihre Körperfunktionen zu stoppen, darunter das Herz."</item>
-		<item>"Ihre Nase kann 50.000 verschiedene Düfte erinnern."</item>
-		<item>"Nervenimpulse zu und von dem Gehirn gelangen so schnell zu 170 Meilen pro Stunde."</item>
-		<item>"Unser Gehirn verbraucht 20 Prozent der Energie im Körper und macht nur zwei Prozent unseres Körpergewichts."</item>
-		<item>"Je kälter das Zimmer Sie schlafen, desto besser sind die Chancen, dass Sie schlecht geträumt haben."</item>
-		<item>"Nach zu viel zu essen Ihr Gehör ist weniger scharf"</item>
-		<item>"Frauen waren besser in der Lage, Zitrus, Vanille, Zimt und Kaffee Gerüche identifizieren."</item>
-		<item>"Vitamin E schützt die die Gehirnzellen vor Schäden durch Alkoholkonsum verursacht"</item>
+        <item>"   Frauen-und Männer-Gehirn gibt verschiedene biologisch und intellektuell."</item>
+		<item>"   Langeweile ist mehr eine Gewohnheit, in den Gehirnen gebildet und durch Ihre Entscheidungen geformt."</item>
+		<item>"   Umwelt zählt, eine gesunde Umwelt hilft Menschen Probleme in Lösungen zu verwandeln."</item>
+		<item>"   Menschen sind die einzigen Tiere, emotionale Tränen produzieren."</item>
+		<item>"   Rechtshänder leben im Durchschnitt neun Jahre länger als Linkshänder."</item>
+		<item>"   Musik verändert Gehirn Wellengeschwindigkeiten in einer Weise, die Stimmungen beeinflussen und die Produktivität zu verändern."</item>
+		<item>"   Vorträge und Gespräche profitieren Intelligenz des Sprechers mehr als die Zuhörer."</item>
+		<item>"   Es gibt etwa 1350000 Neuronen im menschlichen Rückenmark."</item>
+		<item>"   6 Faktoren einer Gehirn-gesunde Lebensweise sind: Bewegung, gesunde Ernährung, mentale Stimulation, Schlaf, Stress-Management, und ein aktives soziales Leben"</item>
+		<item>"   Das menschliche Wachstumshormone freisetzt im Schlaf"</item>
+		<item>"   2% der Bevölkerung hat keinen Geruchssinn überhaupt."</item>
+		<item>"   Häufige geistige Stimulation das Risiko von Alzheimer zu verringern"</item>
+		<item>"   Stress buchstäblich schrumpft das Gehirn"</item>
+		<item>"   Stress buchstäblich schrumpft das Gehirn"</item>
+		<item>"   Erstellen Sie neue Nervenbahnen, wenn Sie eine Lösung für jedes Problem, das Sie stoßen hinzufügen."</item>
+		<item>"   Das Gewicht des menschlichen Gehirns ist ungefähr 3 lbs."</item>
+		<item>"   Studien zeigen, dass Gehirnwellen sind aktiver im Traum, als wenn Sie wach sind."</item>
+		<item>"   Das Gehirn verbraucht 20 Prozent der zirkulierenden Blut und Sauerstoff in Ihrem Körper."</item>
+		<item>"   Menschen weiterhin neue Neuronen während des gesamten Lebens in Reaktion auf die geistige Aktivität zu machen."</item>
+		<item>"   Jedes Mal, wenn Sie eine Speicher erinnern oder einen neuen Gedanken, erstellen Sie eine neue Verbindung in Ihrem Gehirn."</item>
+		<item>"   Das Gehirn besteht aus etwa 75 Prozent Wasser."</item>
+		<item>"   8 bis 10, = die Anzahl der Sekunden, bevor das Bewusstsein zu verlieren aufgrund von Blutverlust."</item>
+		<item>"   Sie können nicht selbst kitzeln, weil das Gehirn unterscheiden unerwartete äußere Berührung und Ihre eigene Note."</item>
+		<item>"   Mangel an Schlaf kann sogar schaden Ihre Fähigkeit, neue Erinnerungen zu schaffen."</item>
+		<item>"   Mangel an Schlaf kann sogar schaden Ihre Fähigkeit, neue Erinnerungen zu schaffen"</item>
+		<item>"   Die durchschnittliche Zahl der Gedanken, dass die Menschen geglaubt werden, um jeden Tag zu erleben, ist 70.000."</item>
+		<item>"   12 Prozent der Menschen nur träumen in schwarz und weiß, während andere in Farbe träumen."</item>
+		<item>"   Während Sie schlafen in der Nacht vielleicht die beste Zeit für Ihr Gehirn, um alle Ihre Erinnerungen an den Tag zu konsolidieren."</item>
+		<item>"   Während Sie schlafen in der Nacht vielleicht die beste Zeit für Ihr Gehirn, um alle Ihre Erinnerungen an den Tag zu konsolidieren."</item>
+		<item>"   Vorlesen und oft im Gespräch mit einem jungen Kind fördert die Entwicklung des Gehirns."</item>
+		<item>"   Es gibt keine Schmerzrezeptoren im Gehirn, so dass das Gehirn keinen Schmerz fühlen."</item>
+		<item>"   Ein neugeborenes Baby Gehirn wächst etwa dreiMal so groß im ersten Jahr."</item>
+		<item>"   Es wird vermutet, dass ein Gähnen arbeitet, um mehr Sauerstoff an das Gehirn senden, daher arbeiten, um es abzukühlen."</item>
+		<item>"   Es wird vermutet, dass ein Gähnen arbeitet, um mehr Sauerstoff an das Gehirn senden, daher arbeiten, um es abzukühlen."</item>
+		<item>"   Wenn Sie schnarchen, können Sie nicht träumen."</item>
+		<item>"   Wenn Sie schnarchen, können Sie nicht träumen."</item>
+		<item>"   Die meisten Menschen träumen von 1 bis 2 Stunden in der Nacht und haben einen Durchschnitt von 4 bis 7 Träume jede Nacht."</item>
+		<item>"   Das Gehirn weiter zu senden, Gehirnwellen bis etwa 37 Stunden nach dem Tod."</item>
+		<item>"   Das alte Sprichwort von Menschen nur mit 10 Prozent ihres Gehirns ist nicht wahr. Jeder Teil des Gehirns hat eine bekannte Funktion."</item>
+		<item>"   Die Großhirnrinde dicker wird, wie Sie lernen, es zu benutzen."</item>
+		<item>"   Das menschliche Gehirn ist der dickste Organ im Körper und aus mindestens 60 Prozent Fett besteht."</item>
+		<item>"   Das Großhirn ist der größte Teil des Gehirns und macht 85 Prozent des Gewichts des Gehirns."</item>
+		<item>"   Das Gehirn besteht aus etwa 100 Milliarden Neuronen."</item>
+		<item>"   Es gibt 100.000 Meilen von Blutgefäßen im Gehirn."</item>
+		<item>"   Die Kapazität für Emotionen wie Freude, Glück, Angst und Schüchternheit sind bereits bei der Geburt entwickelt."</item>
+		<item>"   Sie können besser lernen durch das Schreiben von Informationen handschriftlich, nicht durch Tippen."</item>
+		<item>"   Eine Geschichte erzählen kann ein guter Weg, um Ihr Gehirn auszuüben"</item>
+		<item>"   Meditation reduziert Ihren Stress und verbessert die Leistungsfähigkeit des Gehirns."</item>
+		<item>"   Ein wenig körperliche Aktivität und eine intelligente Ernährung wird es viel einfacher für Sie, um Ihr Gehirn in Top-Form zu halten."</item>
+		<item>"   Das menschliche Gehirn ist mehr als dreimal so groß wie das Gehirn von Säugetieren, die von ähnlicher Größe sind Körper."</item>
+		<item>"   Das menschliche Gehirn ist durch den Schädel, einem Schutzgehäuse 22 Knochen, die miteinander verbunden sind, geschützt."</item>
+		<item>"   Das Gehirn ist im Liquor, dieser Flüssigkeit wirkt wie ein Kissen, um Erschütterungen und eine Barriere für Infektionen ausgesetzt."</item>
+		<item>"   4 bis 6, = Anzahl der Minuten Ihr Gehirn ohne Sauerstoff überleben, bevor es beginnt zu sterben."</item>
+		<item>"   10 bis 23, = Anzahl der Watt Leistung Ihres Gehirns erzeugt, wenn Sie wach sind (das ist genug, um auf eine Glühbirne zu machen!)."</item>
+		<item>"   Größe spielt keine Rolle, im Gehirn. Es gibt keine Hinweise, dass ein größeres Gehirn ist schlauer als ein kleineres Gehirn."</item>
+		<item>"   Es gibt 100.000 Meilen von Blutgefäßen im Gehirn. Das reicht, um rund um die ganze Erde vier Mal wickeln!"</item>
+		<item>"   Die Rate, mit der das Gehirn Informationen verarbeitet, etwa 0,5 Meter / Sekunde (1 MPH) bis 120 Meter / Sekunde (268 MPH)."</item>
+		<item>"   Lachen über einen Witz scheint wie eine einfache genug Action, aber es Aktivität in fünf verschiedenen Bereichen des Gehirns erfordert!"</item>
+		<item>"   Höhenbedingungen macht das Gehirn sehen seltsame Visionen aufgrund der reduzierten Zufuhr von Sauerstoff."</item>
+		<item>"   Wenn Sie niesen, alle Ihre Körperfunktionen zu stoppen, darunter das Herz."</item>
+		<item>"   Ihre Nase kann 50.000 verschiedene Düfte erinnern."</item>
+		<item>"   Nervenimpulse zu und von dem Gehirn gelangen so schnell zu 170 Meilen pro Stunde."</item>
+		<item>"   Unser Gehirn verbraucht 20 Prozent der Energie im Körper und macht nur zwei Prozent unseres Körpergewichts."</item>
+		<item>"   Je kälter das Zimmer Sie schlafen, desto besser sind die Chancen, dass Sie schlecht geträumt haben."</item>
+		<item>"   Nach zu viel zu essen Ihr Gehör ist weniger scharf"</item>
+		<item>"   Frauen waren besser in der Lage, Zitrus, Vanille, Zimt und Kaffee Gerüche identifizieren."</item>
+		<item>"   Vitamin E schützt die die Gehirnzellen vor Schäden durch Alkoholkonsum verursacht"</item>
     </string-array>
 </resources>	
