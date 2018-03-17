@@ -1,6 +1,7 @@
 package com.blackstar.math4brain;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -15,10 +16,12 @@ import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.OvershootInterpolator;
 import android.view.animation.TranslateAnimation;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -26,8 +29,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.InterstitialAd;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -40,6 +48,7 @@ public class PracticeActivity extends Activity{
 	Runnable gotInput;
     Handler mHandler = new Handler();
 	FrameLayout numPad;
+	String[] gFile;
 
 	/** Called when the activity is first created. */
     @Override
@@ -81,7 +90,7 @@ public class PracticeActivity extends Activity{
         
         //get user settings then create equation 
         try {
-        	String[] gFile = new String[FILESIZE];
+        	gFile = new String[FILESIZE];
         	FileInputStream fi = openFileInput(FILENAME);
 			Scanner in = new Scanner(fi);
 			int i = 0;
@@ -114,6 +123,8 @@ public class PracticeActivity extends Activity{
 			e.printStackTrace();
 		}
         final Equation eq = new Equation(gSettings.equationType, gSettings.difficulty, this);
+
+        breakTime();
         
         eq.createNew();
         hintSleep=0;
@@ -330,6 +341,85 @@ public class PracticeActivity extends Activity{
         	}
         });
     }
+
+	long bTime = 0;
+	TextView title;
+	Runnable breakTimer;
+
+	public void breakTime() {
+		String FILEEXTRA = "m4bfileExt";
+		final long TIME = 2400000;
+		int maxPts = 0;
+		final int MAXPTS = 300;
+		//check if user has exceeded number of max points within time
+		try {
+			//read
+			FileInputStream fi = openFileInput(FILEEXTRA);
+			Scanner in = new Scanner(fi);
+			bTime = Long.parseLong(in.next());
+			maxPts = Integer.parseInt(in.next());
+			in.close();
+			if (bTime < System.currentTimeMillis()) {
+				bTime = System.currentTimeMillis() + TIME;
+				maxPts = Integer.parseInt(gFile[9]) + MAXPTS;
+			}
+			breakTimer = new Runnable() {
+				@Override
+				public void run() {
+					int min = (int) (bTime - System.currentTimeMillis()) / 60000;
+					int sec = (int) ((bTime - System.currentTimeMillis()) - (min * 60000)) / 1000;
+					title.setText(min + ":" + sec);
+					if (min == 0 && sec == 0) finish();
+					mHandler.postDelayed(this, 100);
+				}
+			};
+			if (maxPts < Integer.parseInt(gFile[9])) {
+				final Dialog dialog = new Dialog(this);
+				dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+				dialog.setContentView(R.layout.dialogbox);
+				dialog.setCancelable(false);
+				TextView body = (TextView) dialog.findViewById(R.id.textViewMsg);
+				Button dialogButton = (Button) dialog.findViewById(R.id.button1);
+				dialogButton.setVisibility(View.VISIBLE);
+				dialogButton.setText(R.string.close);
+				title = (TextView) dialog.findViewById(R.id.textViewTitle);
+				title.setVisibility(View.VISIBLE);
+				int min = (int) (bTime - System.currentTimeMillis()) / 60000;
+				int sec = (int) ((bTime - System.currentTimeMillis()) - (min * 60000)) / 1000;
+				title.setText(min + ":" + sec);
+				body.setText(R.string.breakMsg);
+				mHandler.postDelayed(breakTimer, 100);
+				dialogButton.setOnClickListener(new View.OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						mHandler.removeCallbacks(breakTimer);
+						finish();
+						dialog.dismiss();
+					}
+				});
+				dialog.show();
+
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			try {
+				OutputStreamWriter out = new OutputStreamWriter(openFileOutput(FILEEXTRA, 0));
+				out.write((System.currentTimeMillis() + TIME) + " " + Integer.parseInt(gFile[9]) + MAXPTS);
+				out.close();
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+		}
+		//write
+		try {
+			OutputStreamWriter out = new OutputStreamWriter(openFileOutput(FILEEXTRA, 0));
+			out.write(bTime + " " + maxPts);
+			out.close();
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+
+	}
 
 	@Override
 	public void onResume(){

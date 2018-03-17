@@ -820,6 +820,12 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
                     int sec = (int) ((bTime - System.currentTimeMillis()) - (min * 60000)) / 1000;
                     title.setText(min + ":" + sec);
                     if (min == 0 && sec == 0) finish();
+
+                    //show Fullscreen add
+                    if (System.currentTimeMillis()%100==0 && mInterstitialAd != null && mInterstitialAd.isLoaded()) {
+                        mInterstitialAd.show();
+                    }
+
                     mHandler.postDelayed(this, 100);
                 }
             };
@@ -848,7 +854,7 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
                     }
                 });
                 if (connection) {
-                    Button dialogButton2 = (Button) dialog.findViewById(R.id.button2);
+                    Button dialogButton2 = dialog.findViewById(R.id.button2);
                     dialogButton2.setVisibility(View.VISIBLE);
                     dialogButton2.setText(R.string.get_free_points);
                     dialogButton2.setOnClickListener(new View.OnClickListener() {
@@ -864,26 +870,19 @@ public class MinuteRunActivity extends Activity implements TapjoyDisplayAdNotifi
                     });
                 }
                 dialog.show();
-                //show Fullscreen add
-                if (System.currentTimeMillis() % 3 == 0 && connection && !pro) {
-                    TapjoyConnect.getTapjoyConnectInstance().getFullScreenAd(fullAdNotif);
-                    FlurryAgent.logEvent("Video_Ad");
-                }
-                //admob interstitial full screen ad
-                /*else if(System.currentTimeMillis() %4==0 && connection && !pro){
+
+                //load admob interstitial full screen ad
+                if(connection){
                     mInterstitialAd = new InterstitialAd(this);
-					mInterstitialAd.setAdUnitId("ca-app-pub-8528343456081396/2957766464");
-					requestNewInterstitial();
-					mInterstitialAd.setAdListener(new AdListener() {
-						@Override
-						public void onAdClosed() {
-							requestNewInterstitial();
-						}
-					});
-					if (mInterstitialAd.isLoaded()) {
-						mInterstitialAd.show();
-					}
-				}*/
+                    mInterstitialAd.setAdUnitId("ca-app-pub-8528343456081396/2957766464");
+                    requestNewInterstitial();
+                    mInterstitialAd.setAdListener(new AdListener() {
+                        @Override
+                        public void onAdClosed() {
+                            //requestNewInterstitial();
+                        }
+                    });
+                }
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();

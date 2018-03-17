@@ -78,21 +78,21 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu);
-        final ImageButton practice = (ImageButton) findViewById(R.id.buttonPractice);
-        final ImageButton minRun = (ImageButton) findViewById(R.id.button60SRun);
-        final ImageButton challenge = (ImageButton) findViewById(R.id.buttonChallenge);
-        final ImageButton faceOff = (ImageButton) findViewById(R.id.buttonFaceOff);
-        final ImageButton settings = (ImageButton) findViewById(R.id.buttonSettings);
-        final ImageButton userInfo = (ImageButton) findViewById(R.id.buttonUserInfo);
-        final ImageView logo = (ImageView) findViewById(R.id.imageViewLogo);
-        final TextView version = (TextView) findViewById(R.id.version);
+        final ImageButton practice = findViewById(R.id.buttonPractice);
+        final ImageButton minRun = findViewById(R.id.button60SRun);
+        final ImageButton challenge = findViewById(R.id.buttonChallenge);
+        final ImageButton faceOff = findViewById(R.id.buttonFaceOff);
+        final ImageButton settings = findViewById(R.id.buttonSettings);
+        final ImageButton userInfo = findViewById(R.id.buttonUserInfo);
+        final ImageView logo = findViewById(R.id.imageViewLogo);
+        final TextView version = findViewById(R.id.version);
 
-        menuSpace = (LinearLayout) findViewById(R.id.linearLayoutMenu);
-        tipLayout = (LinearLayout) findViewById(R.id.linearLayoutTip);
+        menuSpace = findViewById(R.id.linearLayoutMenu);
+        tipLayout = findViewById(R.id.linearLayoutTip);
         mp3Click = MediaPlayer.create(this, R.raw.click);
         gSettings = new GameSettings();
-        tv = (TextView) findViewById(R.id.textViewTip);
-        ImageView tipImg = (ImageView) findViewById(R.id.imageViewTip);
+        tv = findViewById(R.id.textViewTip);
+        ImageView tipImg = findViewById(R.id.imageViewTip);
         myTypeface = Typeface.createFromAsset(getAssets(), "fawn.ttf");
 
         // Initialize the Facebook SDK,
@@ -109,7 +109,7 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
         else if (android.os.Build.MODEL.toLowerCase().contains("kindle")) amazon = true;
 
         Bundle extras = getIntent().getExtras();
-        if (extras != null) {
+        if (extras.containsKey("purchase_dialog")) {
             if (extras.getString("purchase_dialog").equals("true")) openPurchase = true;
         }
 
@@ -437,12 +437,12 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
             final Dialog dialog = new Dialog(this);
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
             dialog.setContentView(R.layout.dialogbox);
-            TextView title = (TextView) dialog.findViewById(R.id.textViewTitle);
+            TextView title = dialog.findViewById(R.id.textViewTitle);
             title.setVisibility(View.VISIBLE);
             title.setText(this.getString(R.string.rate));
-            TextView body = (TextView) dialog.findViewById(R.id.textViewMsg);
+            TextView body =  dialog.findViewById(R.id.textViewMsg);
             body.setText(R.string.rate_msg);
-            Button dialogButton = (Button) dialog.findViewById(R.id.button1);
+            Button dialogButton = dialog.findViewById(R.id.button1);
             dialogButton.setVisibility(View.VISIBLE);
             dialogButton.setText(R.string.rate);
             dialogButton.setOnClickListener(new View.OnClickListener() {
@@ -452,7 +452,7 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
                     dialog.dismiss();
                 }
             });
-            Button dialogButton2 = (Button) dialog.findViewById(R.id.button2);
+            Button dialogButton2 = dialog.findViewById(R.id.button2);
             dialogButton2.setVisibility(View.VISIBLE);
             dialogButton2.setText(R.string.perhaps_later);
             dialogButton2.setOnClickListener(new View.OnClickListener() {
@@ -461,7 +461,7 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
                     dialog.dismiss();
                 }
             });
-            Button dialogButton3 = (Button) dialog.findViewById(R.id.button3);
+            Button dialogButton3 = dialog.findViewById(R.id.button3);
             dialogButton3.setVisibility(View.VISIBLE);
             dialogButton3.setText(R.string.no_thanks);
             dialogButton3.setOnClickListener(new View.OnClickListener() {
@@ -482,12 +482,12 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
             dialog.setContentView(R.layout.dialogbox);
             dialog.setCancelable(false);
-            TextView title = (TextView) dialog.findViewById(R.id.textViewTitle);
+            TextView title = dialog.findViewById(R.id.textViewTitle);
             title.setVisibility(View.VISIBLE);
             title.setText(this.getString(R.string.leave_feedback));
-            TextView body = (TextView) dialog.findViewById(R.id.textViewMsg);
+            TextView body = dialog.findViewById(R.id.textViewMsg);
             body.setText(R.string.feedback);
-            Button dialogButton = (Button) dialog.findViewById(R.id.button1);
+            Button dialogButton = dialog.findViewById(R.id.button1);
             dialogButton.setVisibility(View.VISIBLE);
             dialogButton.setText(R.string.leave_feedback);
             dialogButton.setOnClickListener(new View.OnClickListener() {
@@ -497,7 +497,7 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
                     dialog.dismiss();
                 }
             });
-            Button dialogButton2 = (Button) dialog.findViewById(R.id.button2);
+            Button dialogButton2 = dialog.findViewById(R.id.button2);
             dialogButton2.setVisibility(View.VISIBLE);
             dialogButton2.setText(R.string.perhaps_later);
             dialogButton2.setOnClickListener(new View.OnClickListener() {
@@ -509,14 +509,14 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
             dialog.show();
         }
 
-        if (fb == 7 && !blackberry && points > 0 && connection && !pro) {
+        /*if (fb == 7 && !blackberry && points > 0 && connection && !pro) {
             //open tapjoy dialog
             final Dialog dialog = new Dialog(this);
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
             dialog.setContentView(R.layout.dialogbox);
-            TextView body = (TextView) dialog.findViewById(R.id.textViewMsg);
+            TextView body = dialog.findViewById(R.id.textViewMsg);
             body.setText(this.getString(R.string.get_free_points));
-            Button dialogButton = (Button) dialog.findViewById(R.id.button1);
+            Button dialogButton = dialog.findViewById(R.id.button1);
             dialogButton.setVisibility(View.VISIBLE);
             dialogButton.setText(R.string.yes);
             dialogButton.setOnClickListener(new View.OnClickListener() {
@@ -526,7 +526,7 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
                     dialog.dismiss();
                 }
             });
-            Button dialogButton2 = (Button) dialog.findViewById(R.id.button2);
+            Button dialogButton2 = dialog.findViewById(R.id.button2);
             dialogButton2.setVisibility(View.VISIBLE);
             dialogButton2.setText(R.string.no);
             dialogButton2.setOnClickListener(new View.OnClickListener() {
@@ -536,7 +536,7 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
                 }
             });
             dialog.show();
-        }
+        }*/
 
 
         if ((fb == 8) && !blackberry && points > 0 && connection && !pro && !billUsed) {
@@ -544,16 +544,16 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
             final Dialog dialog = new Dialog(this);
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
             dialog.setContentView(R.layout.dialogbox);
-            TextView title = (TextView) dialog.findViewById(R.id.textViewTitle);
+            TextView title = dialog.findViewById(R.id.textViewTitle);
             title.setVisibility(View.VISIBLE);
             title.setText(this.getString(R.string.get_pro_version));
-            TextView body = (TextView) dialog.findViewById(R.id.textViewMsg);
+            TextView body = dialog.findViewById(R.id.textViewMsg);
             body.setText("");
             if (getResources().getConfiguration().locale.toString().contains("en"))
                 body.setBackgroundResource(R.drawable.pro_ad);
             else
                 body.setText(R.string.pro_features);
-            Button dialogButton = (Button) dialog.findViewById(R.id.button1);
+            Button dialogButton = dialog.findViewById(R.id.button1);
             dialogButton.setVisibility(View.VISIBLE);
             dialogButton.setText(R.string.yes);
             dialogButton.setOnClickListener(new View.OnClickListener() {
@@ -563,7 +563,7 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
                     dialog.dismiss();
                 }
             });
-            Button dialogButton2 = (Button) dialog.findViewById(R.id.button2);
+            Button dialogButton2 = dialog.findViewById(R.id.button2);
             dialogButton2.setVisibility(View.VISIBLE);
             dialogButton2.setText(R.string.no);
             dialogButton2.setOnClickListener(new View.OnClickListener() {
@@ -628,9 +628,9 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
         final Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.dialogbox);
-        TextView body = (TextView) dialog.findViewById(R.id.textViewMsg);
-        ImageButton dialogButton = (ImageButton) dialog.findViewById(R.id.imageButton1);
-        ImageButton dialogButton2 = (ImageButton) dialog.findViewById(R.id.imageButton2);
+        TextView body = dialog.findViewById(R.id.textViewMsg);
+        ImageButton dialogButton = dialog.findViewById(R.id.imageButton1);
+        ImageButton dialogButton2 = dialog.findViewById(R.id.imageButton2);
         dialogButton.setVisibility(View.VISIBLE);
         dialogButton2.setVisibility(View.VISIBLE);
         body.setText(R.string.one_or_two_devices);
@@ -699,8 +699,8 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.dialogbox);
         dialog.setCancelable(false);
-        TextView body = (TextView) dialog.findViewById(R.id.textViewMsg);
-        Button dialogButton = (Button) dialog.findViewById(R.id.button1);
+        TextView body = dialog.findViewById(R.id.textViewMsg);
+        Button dialogButton = dialog.findViewById(R.id.button1);
         dialogButton.setVisibility(View.VISIBLE);
         dialogButton.setText(R.string.ok);
         body.setText(msg);

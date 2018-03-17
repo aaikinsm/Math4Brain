@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
+import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -29,6 +30,12 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.flurry.android.FlurryAgent;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+import com.tapjoy.TapjoyConnect;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -45,15 +52,20 @@ public class ChallengeActivity extends Activity{
 	double startTime = 0, nextTime=0, time=0;
 	ArrayList<String> speechMatches;
 	private SpeechRecognizer sr;
-	boolean speechActive = false;
+	boolean speechActive = false, connection = true;
 	ImageButton micButton;
 	ProgressBar progress;
 	FrameLayout numPad;
+	InterstitialAd mInterstitialAd;
+	String[] gFile;
 
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mathquestion);
+
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+		if (cm.getActiveNetworkInfo() == null) connection = false;
         
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         final TextView showEq = (TextView) findViewById(R.id.textViewEquation);
@@ -87,7 +99,7 @@ public class ChallengeActivity extends Activity{
         final String FILENAME = "m4bfile1", FILEPRO = "m4bfilePro1";
         mHandler = new Handler();
         final Equation eq;
-        final String[] gFile = new String[FILESIZE];
+        gFile = new String[FILESIZE];
         Typeface myTypeface = Typeface.createFromAsset(getAssets(), "digital.ttf");
         Typeface myTypeface2 = Typeface.createFromAsset(getAssets(), "fawn.ttf");
         showEq.setTypeface(myTypeface2);
@@ -103,7 +115,7 @@ public class ChallengeActivity extends Activity{
 		clock.setVisibility(View.VISIBLE);
 		numPad.setVisibility(View.INVISIBLE);
 
-        //get user level and create settings 
+		//get user level and create settings
         try {
         	int num1;
         	//if file not found/not created yet, jump to next catch block
@@ -146,7 +158,9 @@ public class ChallengeActivity extends Activity{
 	        }
         } catch (FileNotFoundException e) {
 			e.printStackTrace();
-		} 
+		}
+
+
         //set user selected background if PRO
 		try{
 			FileInputStream fip = openFileInput (FILEPRO);
@@ -161,6 +175,7 @@ public class ChallengeActivity extends Activity{
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
+
         eq = new Equation(gSettings.equationType, gSettings.difficulty, this);
         final double setTime = gSettings.clock;       
 		int requiredPts = gSettings.level*(gSettings.level-1)*5; //required points calculation
@@ -227,8 +242,11 @@ public class ChallengeActivity extends Activity{
         
         showEq.setText(R.string.press_start_to_begin);
         showIn.setText("");
- 
-        
+
+
+		//check if user should take a break
+		breakTime();
+
         //Decrement game timer and check if time is up
         mUpdateTimer = new Runnable() {   
         	@Override
@@ -615,6 +633,113 @@ public class ChallengeActivity extends Activity{
 		public void onEvent(int eventType, Bundle params){
             Log.d(TAG, "onEvent " + eventType);}
     }
+
+
+	long bTime = 0;
+	TextView title;
+	Runnable breakTimer;
+
+	public void breakTime() {
+		String FILEEXTRA = "m4bfileExt";
+		final long TIME = 2400000;
+		int maxPts = 0;
+		final int MAXPTS = 300;
+		//check if user has exceeded number of max points within time
+		try {
+			//read
+			FileInputStream fi = openFileInput(FILEEXTRA);
+			Scanner in = new Scanner(fi);
+			bTime = Long.parseLong(in.next());
+			maxPts = Integer.parseInt(in.next());
+			in.close();
+			if (bTime < System.currentTimeMillis()) {
+				bTime = System.currentTimeMillis() + TIME;
+				maxPts = Integer.parseInt(gFile[9]) + MAXPTS;
+			}
+			breakTimer = new Runnable() {
+				@Override
+				public void run() {
+					int min = (int) (bTime - System.currentTimeMillis()) / 60000;
+					int sec = (int) ((bTime - System.currentTimeMillis()) - (min * 60000)) / 1000;
+					title.setText(min + ":" + sec);
+					if (min == 0 && sec == 0) finish();
+
+					//show Fullscreen add
+					if (System.currentTimeMillis()%2==0 && mInterstitialAd != null && mInterstitialAd.isLoaded()) {
+						mInterstitialAd.show();
+					}
+
+					mHandler.postDelayed(this, 100);
+				}
+			};
+			if (maxPts < Integer.parseInt(gFile[9])) {
+				final Dialog dialog = new Dialog(this);
+				dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+				dialog.setContentView(R.layout.dialogbox);
+				dialog.setCancelable(false);
+				TextView body = (TextView) dialog.findViewById(R.id.textViewMsg);
+				Button dialogButton = (Button) dialog.findViewById(R.id.button1);
+				dialogButton.setVisibility(View.VISIBLE);
+				dialogButton.setText(R.string.close);
+				title = (TextView) dialog.findViewById(R.id.textViewTitle);
+				title.setVisibility(View.VISIBLE);
+				int min = (int) (bTime - System.currentTimeMillis()) / 60000;
+				int sec = (int) ((bTime - System.currentTimeMillis()) - (min * 60000)) / 1000;
+				title.setText(min + ":" + sec);
+				body.setText(R.string.breakMsg);
+				mHandler.postDelayed(breakTimer, 100);
+				dialogButton.setOnClickListener(new View.OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						mHandler.removeCallbacks(breakTimer);
+						finish();
+						dialog.dismiss();
+					}
+				});
+
+				dialog.show();
+
+				//load admob interstitial full screen ad
+                if(System.currentTimeMillis() %2==0 && connection){
+                    mInterstitialAd = new InterstitialAd(this);
+					mInterstitialAd.setAdUnitId("ca-app-pub-8528343456081396/2957766464");
+					requestNewInterstitial();
+					mInterstitialAd.setAdListener(new AdListener() {
+						@Override
+						public void onAdClosed() {
+							//requestNewInterstitial();
+						}
+					});
+				}
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			try {
+				OutputStreamWriter out = new OutputStreamWriter(openFileOutput(FILEEXTRA, 0));
+				out.write((System.currentTimeMillis() + TIME) + " " + Integer.parseInt(gFile[9]) + MAXPTS);
+				out.close();
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+		}
+		//write
+		try {
+			OutputStreamWriter out = new OutputStreamWriter(openFileOutput(FILEEXTRA, 0));
+			out.write(bTime + " " + maxPts);
+			out.close();
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+
+	}
+
+	private void requestNewInterstitial() {
+		AdRequest adRequest = new AdRequest.Builder()
+				.addTestDevice("YOUR_DEVICE_HASH")
+				.build();
+
+		mInterstitialAd.loadAd(adRequest);
+	}
 
 	public void animate(){
 		Animation newAnimation = new TranslateAnimation(0,0,1100,0);

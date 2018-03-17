@@ -63,14 +63,14 @@ public class Multiplayer2Activity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.multiplayer2);
         
-        final Button p1 = (Button) findViewById(R.id.buttonP1);
-        final Button p2 = (Button) findViewById(R.id.buttonP2);
-        final Button refresh = (Button) findViewById(R.id.buttonRefresh);
-        final Button enter = (Button) findViewById(R.id.buttonEnterID);
-        final EditText input = (EditText) findViewById(R.id.editTextInput);
-		final ImageButton share = (ImageButton) findViewById(R.id.buttonShare2);
-        info = (TextView) findViewById(R.id.textViewInform); 
-        text = (TextView) findViewById(R.id.textViewOut); 
+        final Button p1 = findViewById(R.id.buttonP1);
+        final Button p2 = findViewById(R.id.buttonP2);
+        final Button refresh = findViewById(R.id.buttonRefresh);
+        final Button enter = findViewById(R.id.buttonEnterID);
+        final EditText input = findViewById(R.id.editTextInput);
+		final ImageButton share = findViewById(R.id.buttonShare2);
+        info = findViewById(R.id.textViewInform);
+        text = findViewById(R.id.textViewOut);
         arry = new String[FILESIZE]; 
         final Context cntx =this;
         
@@ -169,33 +169,33 @@ public class Multiplayer2Activity extends Activity{
 			public void run(){
 		        setContentView(R.layout.mathquestion);
 		        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-		        final TextView showEq = (TextView) findViewById(R.id.textViewEquation);
-		        final TextView showIn = (TextView) findViewById(R.id.textViewInput);
-		        final TextView result = (TextView) findViewById(R.id.textViewResult);
-		        final TextView clock = (TextView) findViewById(R.id.textViewTimer);
-		        final ImageView backgroundImg = (ImageView) findViewById(R.id.imageViewEqnBackground);
-		        final ImageButton b0 = (ImageButton) findViewById(R.id.button0);
-		        final ImageButton b1 = (ImageButton) findViewById(R.id.button1);
-		        final ImageButton b2 = (ImageButton) findViewById(R.id.button2);
-		        final ImageButton b3 = (ImageButton) findViewById(R.id.button3);
-		        final ImageButton b4 = (ImageButton) findViewById(R.id.button4);
-		        final ImageButton b5 = (ImageButton) findViewById(R.id.button5);
-		        final ImageButton b6 = (ImageButton) findViewById(R.id.button6);
-		        final ImageButton b7 = (ImageButton) findViewById(R.id.button7);
-		        final ImageButton b8 = (ImageButton) findViewById(R.id.button8);
-		        final ImageButton b9 = (ImageButton) findViewById(R.id.button9);
-		        final ImageButton pass = (ImageButton) findViewById(R.id.buttonPass);
-		        final ImageButton clear = (ImageButton) findViewById(R.id.buttonClr);
+		        final TextView showEq =  findViewById(R.id.textViewEquation);
+		        final TextView showIn =  findViewById(R.id.textViewInput);
+		        final TextView result =  findViewById(R.id.textViewResult);
+		        final TextView clock =  findViewById(R.id.textViewTimer);
+		        final ImageView backgroundImg = findViewById(R.id.imageViewEqnBackground);
+		        final ImageButton b0 = findViewById(R.id.button0);
+		        final ImageButton b1 = findViewById(R.id.button1);
+		        final ImageButton b2 = findViewById(R.id.button2);
+		        final ImageButton b3 = findViewById(R.id.button3);
+		        final ImageButton b4 = findViewById(R.id.button4);
+		        final ImageButton b5 = findViewById(R.id.button5);
+		        final ImageButton b6 = findViewById(R.id.button6);
+		        final ImageButton b7 = findViewById(R.id.button7);
+		        final ImageButton b8 = findViewById(R.id.button8);
+		        final ImageButton b9 = findViewById(R.id.button9);
+		        final ImageButton pass = findViewById(R.id.buttonPass);
+		        final ImageButton clear = findViewById(R.id.buttonClr);
 		        final MediaPlayer mp3Correct = MediaPlayer.create(cntx, R.raw.correct);
 		        final GameSettings gSettings = new GameSettings();
 		        final Vibrator vb = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE); 
-		        final ProgressBar progress1 = (ProgressBar) findViewById(R.id.progressBarBlue);
-		        final ProgressBar progress2 = (ProgressBar) findViewById(R.id.progressBarRed);
-		        final ImageButton next = (ImageButton) findViewById(R.id.buttonNext);
-		        final ImageButton back = (ImageButton) findViewById(R.id.buttonBack);
-		        final FrameLayout numPad = (FrameLayout) findViewById(R.id.frameLayoutNumPad);
-		        final ImageView winImg = (ImageView) findViewById(R.id.ImageView05);
-		        final ImageView loseImg = (ImageView) findViewById(R.id.ImageView01);
+		        final ProgressBar progress1 = findViewById(R.id.progressBarBlue);
+		        final ProgressBar progress2 = findViewById(R.id.progressBarRed);
+		        final ImageButton next = findViewById(R.id.buttonNext);
+		        final ImageButton back = findViewById(R.id.buttonBack);
+		        final FrameLayout numPad = findViewById(R.id.frameLayoutNumPad);
+		        final ImageView winImg = findViewById(R.id.ImageView05);
+		        final ImageView loseImg =  findViewById(R.id.ImageView01);
 		        Typeface myTypeface = Typeface.createFromAsset(getAssets(), "digital.ttf");
 		        Typeface myTypeface2 = Typeface.createFromAsset(getAssets(), "fawn.ttf");
 		        clock.setTypeface(myTypeface);
@@ -483,7 +483,7 @@ public class Multiplayer2Activity extends Activity{
 	             * */
 	            // Building Parameters
 	            if(player1){
-		            List<NameValuePair> p1 = new ArrayList<NameValuePair>();
+		            List<NameValuePair> p1 = new ArrayList<>();
 		            p1.add(new BasicNameValuePair(TAG_UID, id));
 		            p1.add(new BasicNameValuePair(TAG_NAME, name));
 		            p1.add(new BasicNameValuePair(TAG_MSG, message));
@@ -495,7 +495,7 @@ public class Multiplayer2Activity extends Activity{
 		            int created = json.getInt(TAG_SUCCESS);
 		            
 		            if(created==1){
-		            	List<NameValuePair> p1b = new ArrayList<NameValuePair>();
+		            	List<NameValuePair> p1b = new ArrayList<>();
 			            p1b.add(new BasicNameValuePair(TAG_UID, id));
 		            	//wait for opponent to connect and receive info
 		            	output = getResources().getString(R.string.waiting_for_opponent);
@@ -511,16 +511,20 @@ public class Multiplayer2Activity extends Activity{
 				            	output += (".");
 				            	if (output.length() > 25) output = getResources().getString(R.string.waiting);
 				            }
+				            try {
+								Thread.sleep(1000);
+							}catch (InterruptedException e){
+				            	e.printStackTrace();
+							}
 			            }
 		            	try{
 		            	//continue to retrieve scores for p1 till game is over
 
-							List<NameValuePair> pScores = new ArrayList<NameValuePair>();
+							List<NameValuePair> pScores = new ArrayList<>();
 							JSONObject json4;
 			            	while(connected && !gameOver){
-			            		//if ( isCancelled()) break;
-								pScores.clear();
 								int p1scr = p1Scr;
+								pScores.clear();
 								pScores.add(new BasicNameValuePair(TAG_UID, id));
 								pScores.add(new BasicNameValuePair(TAG_P1, p1scr+""));
 					            json4 = jsonParser.makeHttpRequest(update_scores,"POST", pScores);
@@ -540,6 +544,11 @@ public class Multiplayer2Activity extends Activity{
 					            	Toast.makeText(getApplicationContext(), R.string.disconnected,Toast.LENGTH_SHORT).show();
 				            		finish();
 					            }
+								try {
+									Thread.sleep(100);
+								}catch (InterruptedException e){
+									e.printStackTrace();
+								}
 			            	}
 		            	}catch(JSONException e){
 		            		Log.d("Error","Error:"+e);
@@ -572,15 +581,17 @@ public class Multiplayer2Activity extends Activity{
 			            equations =(""+json2.getString(TAG_EQ));
 			            Log.d("Equations", equations);
 			            Scanner in = new Scanner(equations);
+
 			            for(int i=0; i<numEqn; i++){
-			            	String str = in.next();
 			            	try{
+							String str = in.next();
 			            	eqnArry[i][0]=str.replace("_"," ");
 			            	eqnArry[i][1]=in.next();
 			            	}catch(NoSuchElementException e){
 			            		e.printStackTrace();
 			            		i = numEqn;
 			            	}
+			            	i++;
 			            }
 			            connected = true;
 	            	}
@@ -610,6 +621,11 @@ public class Multiplayer2Activity extends Activity{
 				            	Toast.makeText(getApplicationContext(), R.string.disconnected,Toast.LENGTH_SHORT).show();
 			            		finish();
 				            }
+							try {
+								Thread.sleep(100);
+							}catch (InterruptedException e){
+								e.printStackTrace();
+							}
 		            	}
 		            }catch(JSONException e){
 	            		Log.d("Error","Error:"+e);
@@ -618,10 +634,12 @@ public class Multiplayer2Activity extends Activity{
 	            	}
 	            }
 	            //Remove connection
-            	List<NameValuePair> p = new ArrayList<>();
-        		p.add(new BasicNameValuePair(TAG_UID, id));
-        		JSONObject json = jsonParser.makeHttpRequest(close_session,"POST", p);
-        		Log.d("Session Close",(json.getString(TAG_MESSAGE))+"");
+				if(player1) {
+					List<NameValuePair> p = new ArrayList<>();
+					p.add(new BasicNameValuePair(TAG_UID, id));
+					JSONObject json = jsonParser.makeHttpRequest(close_session, "POST", p);
+					Log.d("Session Close", (json.getString(TAG_MESSAGE)) + "");
+				}
         	}
         	catch (NullPointerException e) {
 				output = getString(R.string.disconnected);
