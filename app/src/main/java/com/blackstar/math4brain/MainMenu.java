@@ -338,11 +338,17 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
         // Inflate the menu items for use in the action bar
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_actions, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        invalidateOptionsMenu();
         if (AccessToken.getCurrentAccessToken() != null)
             menu.getItem(0).setTitle(R.string.sign_out);
         else
             menu.getItem(0).setTitle(R.string.sign_in);
-        return super.onCreateOptionsMenu(menu);
+        return super.onPrepareOptionsMenu(menu);
     }
 
     @Override
@@ -509,34 +515,37 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
             dialog.show();
         }
 
-        /*if (fb == 7 && !blackberry && points > 0 && connection && !pro) {
-            //open tapjoy dialog
-            final Dialog dialog = new Dialog(this);
-            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-            dialog.setContentView(R.layout.dialogbox);
-            TextView body = dialog.findViewById(R.id.textViewMsg);
-            body.setText(this.getString(R.string.get_free_points));
-            Button dialogButton = dialog.findViewById(R.id.button1);
-            dialogButton.setVisibility(View.VISIBLE);
-            dialogButton.setText(R.string.yes);
-            dialogButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    getPoints();
-                    dialog.dismiss();
-                }
-            });
-            Button dialogButton2 = dialog.findViewById(R.id.button2);
-            dialogButton2.setVisibility(View.VISIBLE);
-            dialogButton2.setText(R.string.no);
-            dialogButton2.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    dialog.dismiss();
-                }
-            });
-            dialog.show();
-        }*/
+        if ((fb == 7 || fb == 11 ) && !blackberry && points > 100 && connection) {
+            if (getResources().getConfiguration().locale.toString().contains("en")) {
+                //open new app dialog
+                final Dialog dialog = new Dialog(this);
+                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                dialog.setContentView(R.layout.dialogbox);
+                TextView body = dialog.findViewById(R.id.textViewMsg);
+                body.setText("The developer of this app has selected you to test a new app. \n" +
+                        "Are you interested in learning how to code?"); //TODO:Update Text
+                Button dialogButton = dialog.findViewById(R.id.button1);
+                dialogButton.setVisibility(View.VISIBLE);
+                dialogButton.setText(R.string.yes);
+                dialogButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/apps/testing/com.amensah.easycoder")));
+                        dialog.dismiss();
+                    }
+                });
+                Button dialogButton2 = dialog.findViewById(R.id.button2);
+                dialogButton2.setVisibility(View.VISIBLE);
+                dialogButton2.setText(R.string.no);
+                dialogButton2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                    }
+                });
+                dialog.show();
+            }
+        }
 
 
         if ((fb == 8) && !blackberry && points > 0 && connection && !pro && !billUsed) {
@@ -578,6 +587,7 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
         TapjoyConnect.getTapjoyConnectInstance().getTapPoints(this);
 
         animateTransition(null);
+        invalidateOptionsMenu();
     }
 
     @Override
@@ -862,16 +872,25 @@ public class MainMenu extends AppCompatActivity implements TapjoyNotifier {
     }
 
     public void leaveFeedback() {
-        Intent i = new Intent(Intent.ACTION_SEND);
-        i.setType("text/plain");
-        i.putExtra(Intent.EXTRA_EMAIL, new String[]{"blackstar.feedback@gmail.com"});
-        i.putExtra(Intent.EXTRA_SUBJECT, R.string.email_subject);
-        i.putExtra(Intent.EXTRA_TEXT, "");
-        try {
-            startActivity(Intent.createChooser(i, getString(R.string.send_email_using)));
-        } catch (android.content.ActivityNotFoundException ex) {
-            Toast.makeText(MainMenu.this, R.string.no_email_client, Toast.LENGTH_SHORT).show();
+        if(gFile[22] != null && gFile[22].contains("@")){
+            Intent intent3 = new Intent(getApplicationContext(), SendMessage.class);
+            intent3.putExtra("name", gFile[13]);
+            intent3.putExtra("email",gFile[22]);
+            startActivity(intent3);
+        }else {
+            Intent i = new Intent(Intent.ACTION_SEND);
+            i.setType("text/plain");
+            i.putExtra(Intent.EXTRA_EMAIL, new String[]{"blackstar.feedback@gmail.com"});
+            i.putExtra(Intent.EXTRA_SUBJECT, R.string.email_subject);
+            i.putExtra(Intent.EXTRA_TEXT, "");
+            try {
+                startActivity(Intent.createChooser(i, getString(R.string.send_email_using)));
+            } catch (android.content.ActivityNotFoundException ex) {
+                Toast.makeText(MainMenu.this, R.string.no_email_client, Toast.LENGTH_SHORT).show();
+            }
         }
+
+
     }
 
     public void rateApp() {
